@@ -1,59 +1,70 @@
+/* components/Navbar.module.css */
 .navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    padding: 0.5rem 0rem; /* reduced vertical padding */
+    border-bottom: 1px solid #5b21b6;
+    position: fixed;
     width: 100%;
-    padding: 1rem 1.5rem;
-    background-color: rgba(13, 17, 23, 0.95);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--border-gray-800);
-  }
-  .container {
-    max-width: 80rem;
+    z-index: 50;
+    font-family: sans-serif; /* matching landing page font */
+}
+
+.container {
+    max-width: 72rem;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  .brand {
+}
+
+.logo {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-  }
-  .logo {
-    color: var(--text-gray-400);
-  }
-  .title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    background: linear-gradient(to right, #60a5fa, #a78bfa);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.logoLink {
+    text-decoration: none; /* removes underline from logo */
+}
+
+.logoNeural {
+    background: linear-gradient(to right, #ec4899, #9333ea);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-  }
-  .searchContainer {
-    position: relative;
-    display: none;
-  }
-  .searchInput {
-    background-color: rgba(31, 41, 55, 0.5);
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem 0.5rem 2.5rem;
-    font-size: 0.875rem;
-    color: #e5e7eb;
-    outline: none;
-    border: none;
-  }
-  .searchInput::placeholder {
-    color: #6b7280;
-  }
-  .searchIcon {
-    position: absolute;
-    left: 0.75rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--text-gray-400);
-  }
-  @media (min-width: 768px) {
-    .searchContainer {
-      display: flex;
-      align-items: center;
+}
+
+.logoPiggy {
+    margin-left: 0.5rem;
+    color: white;
+}
+
+.logoBank {
+    margin-left: 0.5rem;
+    background: linear-gradient(to right, #a855f7, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.navLinks {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navItem {
+    list-style: none;
+}
+
+    .navItem a {
+        color: #9ca3af;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-family: sans-serif;
+        font-size: 1rem;
     }
-  }
+
+        .navItem a:hover {
+            color: white;
+        }
