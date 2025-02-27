@@ -1,0 +1,111 @@
+{
+    "deductions": [
+        {
+            "category": "Home Office",
+            "rate": 0.30,
+            "max_limit": 5000
+          },
+          {
+            "category": "Software & Subscriptions",
+            "rate": 0.50,
+            "max_limit": 3000
+          },
+          {
+            "category": "Freelancer Platform Fees",
+            "rate": 0.25,
+            "max_limit": 2000
+          },
+          {
+            "category": "Work Equipment",
+            "rate": 0.50,
+            "max_limit": 5000
+          },
+          {
+            "category": "Internet & Phone",
+            "rate": 0.40,
+            "max_limit": 2500
+          },
+          {
+            "category": "Education & Training",
+            "rate": 0.60,
+            "max_limit": 4000
+          },
+          {
+            "category": "Business Travel",
+            "rate": 0.35,
+            "max_limit": 3500
+          },
+          {
+            "category": "Client Entertainment",
+            "rate": 0.20,
+            "max_limit": 1500
+          }
+        ,
+        {
+            "category": "Business Travel",
+            "rate": 1.0,
+            "max_limit": 10000,
+            "eligibility": "Must be directly related to business travel and properly documented."
+        },
+        {
+            "category": "Office Supplies",
+            "rate": 1.0,
+            "max_limit": 5000,
+            "eligibility": "Must be necessary for business operations."
+        },
+        {
+            "category": "Software & Tools",
+            "rate": 1.0,
+            "max_limit": 10000,
+            "eligibility": "Must be used for business productivity or development."
+        },
+        {
+            "category": "Meals & Entertainment",
+            "rate": 0.5,
+            "max_limit": 2000,
+            "eligibility": "Must be directly related to business meetings with proper documentation."
+        },
+        {
+            "category": "Healthcare",
+            "rate": 0.0,
+            "max_limit": 0,
+            "eligibility": "Not deductible unless covered under a business health plan."
+        },
+        {
+            "category": "Personal Shopping",
+            "rate": 0.0,
+            "max_limit": 0,
+            "eligibility": "Not deductible as it is for personal use."
+        },
+        {
+            "category": "Education & Training",
+            "rate": 1.0,
+            "max_limit": 5000,
+            "eligibility": "Must be related to business skills enhancement."
+        },
+        {
+            "category": "Rent & Utilities",
+            "rate": 1.0,
+            "max_limit": 15000,
+            "eligibility": "Must be for business premises or home office."
+        },
+        {
+            "category": "Marketing & Advertising",
+            "rate": 1.0,
+            "max_limit": 10000,
+            "eligibility": "Must be directly related to promoting business services or products."
+        },
+        {
+            "category": "Transportation",
+            "rate": 1.0,
+            "max_limit": 5000,
+            "eligibility": "Must be for business-related travel."
+        },
+        {
+            "category": "Groceries",
+            "rate": 0.0,
+            "max_limit": 0,
+            "eligibility": "Not deductible as it is for personal consumption."
+        }
+    ]
+}
