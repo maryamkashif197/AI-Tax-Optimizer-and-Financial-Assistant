@@ -84,104 +84,138 @@ export default function ProfilePage() {
         setMessageInput(question);
     };
 
+    const handleResetChat = () => {
+        // Clear messages state
+        setMessages([]);
+        // Clear input field
+        setMessageInput("");
+    };
+
     return (
         <div className={styles.profileContainer}>
-            <div className={styles.backgroundEffects}>
-                <div className={styles.purpleGlow}></div>
-                <div className={styles.pinkGlow}></div>
-            </div>
-
             <div className={styles.gridLayout}>
-                <div className={styles.column}>
-                    <section className={`${styles.card} ${styles.featureCard}`}>
-                        <h2 className={styles.cardTitle}>
-                            <span className={styles.icon}>📁</span>
-                            <span className={styles.logoBankText}>Document Upload</span>
-                        </h2>
-                        <div className={styles.uploadContent}>
-                            <input
-                                type="file"
-                                multiple
-                                accept=".pdf,image/*,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-                                onChange={handleFileChange}
-                                className={styles.fileInput}
-                            />
-                            <p className={styles.uploadHint}>Supported formats: PDF, DOCX, JPEG, PNG</p>
+                <div className={styles.leftContainer}>
+                    <div className={styles.uploadSection}>
+                        <div className={styles.sectionHeader}>
+                            <span className={styles.sectionIcon}>💜</span>
+                            <h3 className={styles.sectionTitle}>Add Transactions</h3>
                         </div>
-                    </section>
-
-                    <section className={`${styles.card} ${styles.featureCard}`}>
-                        <h2 className={styles.cardTitle}>
-                            <span className={styles.icon}>📂</span>
-                            <span className={styles.logoBankText}>Uploaded Documents</span>
-                        </h2>
-                        <div className={styles.filesContent}>
-                            {files.length === 0 ? (
-                                <p className={styles.emptyState}>No documents uploaded yet</p>
-                            ) : (
-                                <ul className={styles.filesList}>
-                                    {files.map((file, index) => (
-                                        <li key={index} className={styles.fileItem}>
-                                            <div className={styles.fileInfo}>
-                                                <span className={styles.fileName}>{file.name}</span>
-                                                <span className={styles.fileSize}>
-                                                    {(file.size / 1024).toFixed(1)} KB
-                                                </span>
-                                            </div>
-                                            <div className={styles.fileActions}>
-                                                <button
-                                                    onClick={() => removeFile(index)}
-                                                    className={styles.iconButton}
-                                                    aria-label="Delete file"
-                                                >
-                                                    🗑️
-                                                </button>
-                                            </div>
-                                        </li>
-                                    ))}
-                                </ul>
-                            )}
-                        </div>
-                    </section>
-
-                    <section className={`${styles.card} ${styles.featureCard}`}>
-                        <h2 className={styles.cardTitle}>
-                            <span className={styles.icon}>🧮</span>
-                            <span className={styles.logoBankText}>Tax Optimization</span>
-                        </h2>
-                        <div className={styles.taxContent}>
-                            <button
-                                onClick={handleTaxCalculation}
-                                disabled={calculating || files.length === 0}
-                                className={styles.primaryButton}
-                            >
-                                {calculating ? (
-                                    <span className={styles.buttonText}>Analyzing...</span>
-                                ) : (
-                                    <>
-                                        <span className={styles.buttonIcon}>💸</span>
-                                        <span className={styles.buttonText}>Generate Tax Report</span>
-                                    </>
-                                )}
+                        <div className={styles.uploadOptions}>
+                            <button className={styles.uploadBtn}>
+                                <span className={styles.btnIcon}>📄</span>
+                                Upload CSV
                             </button>
-                            {report && (
-                                <div className={styles.report}>
-                                    <p className={styles.reportText}>✅ Analysis Complete!</p>
-                                    <a href="#" download="tax-report.pdf" className={styles.downloadLink}>
-                                        <span className={styles.downloadIcon}>⬇️</span>
-                                        Download Full Report
-                                    </a>
-                                </div>
-                            )}
+                            <button className={styles.manualBtn}>
+                                <span className={styles.btnIcon}>✍️</span>
+                                Add Manual Entry
+                            </button>
                         </div>
-                    </section>
+                    </div>
+
+                    <div className={styles.transactionsList}>
+                        <div className={styles.transactionItem}>
+                            <span className={styles.transactionIcon}>💳</span>
+                            <div className={styles.transactionDetails}>
+                                <div className={styles.transactionTitle}>Transaction 1</div>
+                                <div className={styles.transactionDate}>Jan 1, 2023</div>
+                            </div>
+                            <span className={styles.transactionAmount}>$150.00</span>
+                        </div>
+                        <div className={styles.transactionItem}>
+                            <span className={styles.transactionIcon}>💳</span>
+                            <div className={styles.transactionDetails}>
+                                <div className={styles.transactionTitle}>Transaction 1</div>
+                                <div className={styles.transactionDate}>Jan 1, 2023</div>
+                            </div>
+                            <span className={styles.transactionAmount}>$150.00</span>
+                        </div>
+                        <div className={styles.transactionItem}>
+                            <span className={styles.transactionIcon}>💳</span>
+                            <div className={styles.transactionDetails}>
+                                <div className={styles.transactionTitle}>Transaction 1</div>
+                                <div className={styles.transactionDate}>Jan 1, 2023</div>
+                            </div>
+                            <span className={styles.transactionAmount}>$150.00</span>
+                        </div>
+                        <div className={styles.transactionItem}>
+                            <span className={styles.transactionIcon}>💸</span>
+                            <div className={styles.transactionDetails}>
+                                <div className={styles.transactionTitle}>Transaction 2</div>
+                                <div className={styles.transactionDate}>Jan 15, 2023</div>
+                            </div>
+                            <span className={styles.transactionAmount}>$275.50</span>
+                        </div>
+                        <div className={styles.transactionItem}>
+                            <span className={styles.transactionIcon}>🛒</span>
+                            <div className={styles.transactionDetails}>
+                                <div className={styles.transactionTitle}>Transaction 3</div>
+                                <div className={styles.transactionDate}>Feb 3, 2023</div>
+                            </div>
+                            <span className={styles.transactionAmount}>$89.99</span>
+                        </div>
+                    </div>
+
+                    <div className={styles.taxSection}>
+                        <div className={styles.taxCalculation}>
+                            <div className={styles.sectionHeader}>
+                                <span className={styles.sectionIcon}>✨</span>
+                                <h4 className={styles.sectionTitle}>Tax Calculation</h4>
+                            </div>
+                            <div className={styles.taxRow}>
+                                <span>Total Income:</span>
+                                <span className={styles.taxValue}>$515.49</span>
+                            </div>
+                            <div className={styles.taxRow}>
+                                <span>Estimated Tax:</span>
+                                <span className={styles.taxValue}>$103.10</span>
+                            </div>
+                            <div className={styles.taxRow}>
+                                <span>Savings:</span>
+                                <span className={styles.taxSavings}>$42.75</span>
+                            </div>
+                        </div>
+                        <button className={styles.downloadBtn} onClick={handleTaxCalculation}>
+                            <span className={styles.btnIcon}>📥</span>
+                            {calculating ? "Processing..." : "Download Report"}
+                        </button>
+                    </div>
                 </div>
 
                 <div className={styles.column}>
-                    <section className={`${styles.card} ${styles.trustCard}`}>
+                    <section className={styles.savingsCard}>
+                        <div className={styles.savingsHeader}>
+                            <span className={styles.savingsIcon}>💰</span>
+                            <h2 className={styles.savingsTitle}>Total Savings</h2>
+                        </div>
+                        <div className={styles.savingsContent}>
+                            <div className={styles.savingsAmount}>
+                                $12,345
+                            </div>
+                            <div className={styles.savingsProgress}>
+                                <div className={styles.progressBar}>
+                                    <div
+                                        className={styles.progressFill}
+                                        style={{ width: '65%' }}
+                                    ></div>
+                                </div>
+                                <div className={styles.progressText}>
+                                    65% of your goal
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section className={styles.card}>
                         <h2 className={styles.cardTitle}>
-                            <span className={styles.icon}>💬</span>
-                            <span className={styles.logoBankText}>Support Assistant</span>
+                            <span className={styles.icon}>💬</span> Support Assistant
+                            <button
+                                onClick={handleResetChat}
+                                className={styles.resetButton}
+                                type="button"
+                            >
+                                <span className={styles.btnIcon}>🔄</span>
+                                Reset Chat
+                            </button>
                         </h2>
                         <div className={styles.chatContent}>
                             <div className={styles.chatBox}>
@@ -203,6 +237,13 @@ export default function ProfilePage() {
                                             >
                                                 Required documents
                                             </button>
+                                            <button
+                                                type="button"
+                                                onClick={() => handleExampleQuestion("Calculate my tax savings")}
+                                                className={styles.exampleButton}
+                                            >
+                                                Calculate my tax savings
+                                            </button>
                                         </div>
                                     </div>
                                 ) : (
@@ -217,7 +258,7 @@ export default function ProfilePage() {
                                     ))
                                 )}
                                 {isLoading && (
-                                    <div className={styles.chatMessage}>
+                                    <div className={`${styles.chatMessage} ${styles.botMessage}`}>
                                         <div className={styles.typingIndicator}>
                                             <div className={styles.dot}></div>
                                             <div className={styles.dot}></div>
@@ -247,24 +288,6 @@ export default function ProfilePage() {
                     </section>
                 </div>
             </div>
-
-            <footer className={styles.footer}>
-                <div className={styles.footerContainer}>
-                    <div className={styles.footerContent}>
-                        <div className={styles.footerBranding}>
-                            <div className={styles.footerLogo}>NeuralPiggyBank</div>
-                            <div className={styles.footerCopyright}>
-                                © {new Date().getFullYear()} All rights reserved
-                            </div>
-                        </div>
-                        <div className={styles.footerLinks}>
-                            <a href="#" className={styles.footerLink}>Privacy</a>
-                            <a href="#" className={styles.footerLink}>Terms</a>
-                            <a href="#" className={styles.footerLink}>Support</a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
         </div>
     );
 }

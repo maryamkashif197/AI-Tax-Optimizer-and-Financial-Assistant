@@ -1,20 +1,31 @@
-import React, { useState } from 'react';
+"use client";
+import React, { useRef } from 'react';
 import { ArrowDownCircle, ChevronDown, DollarSign, Brain, Shield, Globe } from 'lucide-react';
 import styles from './CSS/NPBLanding.module.css';
 
 // Landing page component for Neural Piggy Bank
 const NeuralPiggyBankLanding = () => {
+
+    const featuresRef = useRef<HTMLElement | null>(null);
+
+    // 2. Scroll function with type safety
+    const scrollToFeatures = () => {
+        if (featuresRef.current) {
+            featuresRef.current.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    };
+
+
     return (
         <div className={styles.container}>
-            {/* Hero Section */}
             <div className={styles.hero}>
-                {/* Background gradient effects */}
                 <div className={styles.backgroundEffects}>
                     <div className={styles.purpleGlow}></div>
                     <div className={styles.pinkGlow}></div>
                 </div>
-
-                {/* Logo and headline */}
                 <div className={styles.heroContent}>
                     <div className={styles.logoContainer}>
                         <div className={styles.logoWrapper}>
@@ -34,13 +45,10 @@ const NeuralPiggyBankLanding = () => {
                         </button>
                     </div>
                 </div>
-
-            <div className={styles.scrollIndicator} >
+                <div className={styles.scrollIndicator} onClick={scrollToFeatures}>
                     <ArrowDownCircle size={36} />
                 </div>
             </div>
-
-            {/* Features Section */}
             <div id="more-info" className={styles.featuresSection}>
                 <div className={styles.sectionContainer}>
                     <h2 className={styles.sectionTitle}>
@@ -48,7 +56,6 @@ const NeuralPiggyBankLanding = () => {
                     </h2>
 
                     <div className={styles.featuresGrid}>
-                        {/* Feature 1 */}
                         <div className={styles.featureCard}>
                             <div className={styles.featureIcon}>
                                 <DollarSign size={24} />
@@ -56,8 +63,6 @@ const NeuralPiggyBankLanding = () => {
                             <h3 className={styles.featureTitle}>Tax Optimization</h3>
                             <p className={styles.featureDescription}>Our AI analyzes your transactions to find tax deductions and optimize your financial strategy.</p>
                         </div>
-
-                        {/* Feature 2 */}
                         <div className={styles.featureCard}>
                             <div className={styles.featureIcon}>
                                 <Brain size={24} />
@@ -65,8 +70,6 @@ const NeuralPiggyBankLanding = () => {
                             <h3 className={styles.featureTitle}>AI-Powered Insights</h3>
                             <p className={styles.featureDescription}>Machine learning algorithms continuously improve to deliver personalized tax-saving suggestions.</p>
                         </div>
-
-                        {/* Feature 3 */}
                         <div className={styles.featureCard}>
                             <div className={styles.featureIcon}>
                                 <Globe size={24} />
@@ -75,8 +78,6 @@ const NeuralPiggyBankLanding = () => {
                             <p className={styles.featureDescription}>Currently supporting Egypt and the USA, with more countries coming soon to our platform.</p>
                         </div>
                     </div>
-
-                    {/* How It Works */}
                     <div className={styles.howItWorksSection}>
                         <h2 className={styles.sectionTitle}>
                             How It Works
