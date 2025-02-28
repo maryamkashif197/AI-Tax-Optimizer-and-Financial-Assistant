@@ -132,7 +132,7 @@ NeuralPiggyBank.AI assists users with tax-related queries and financial recommen
       });
   
       // Find the user's chat
-      let userChat = await this.chatModel.findOne({ userId });
+      let userChat = await this.chatModel.findOne({ userId:userId });
   
       // If the user has no chat, create a new one with empty history
       if (!userChat) {

@@ -1,6 +1,7 @@
 ﻿"use client";
 import React, { useState, FormEvent } from "react";
 import styles from "../CSS/profile.module.css";
+import axios from '../api/axios';
 
 interface ChatMessage {
     id: number;
@@ -51,19 +52,10 @@ export default function ProfilePage() {
             setMessages(prev => [...prev, newMessage]);
             setMessageInput("");
 
-            const response = await fetch('http://localhost:5000/chat', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    message: input,
-                    history: messages.map(msg => ({
-                        role: msg.role,
-                        parts: [msg.content]
-                    }))
-                }),
-            });
+            const response = await axios.post("/api/chat", { message: input, userId:'67c1101d817707ffda2f374e' });
 
-            const data = await response.json();
+            const data = await response.data;
+            console.log(data);
             setMessages(prev => [
                 ...prev,
                 { id: Date.now(), role: 'bot', content: data.response }
