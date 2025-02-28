@@ -1,0 +1,372 @@
+/* profile.module.css */
+.profileContainer {
+    padding: 7.5rem 4rem 0 4rem;
+    background-color: #0f172a;
+    color: #fff;
+    min-height: 100vh;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #3b82f6, #8b5cf6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: -0.05em;
+}
+
+.gridLayout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    background: #1e293b;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #334155;
+}
+
+.cardTitle {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0 0 1.5rem 0;
+    font-size: 1.25rem;
+    color: #e2e8f0;
+}
+
+.icon {
+    font-size: 1.5em;
+}
+
+/* Upload Section */
+.uploadContent {
+    border: 2px dashed #334155;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: border-color 0.3s ease;
+}
+
+    .uploadContent:hover {
+        border-color: #3b82f6;
+    }
+
+.fileInput {
+    width: 100%;
+    padding: 0.75rem;
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    color: #e2e8f0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+    .fileInput:hover {
+        background: #1e293b;
+    }
+
+.uploadHint {
+    color: #94a3b8;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+}
+
+/* Files List */
+.filesContent {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.filesList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fileItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #0f172a;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+}
+
+.fileInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.fileName {
+    font-weight: 500;
+    color: #e2e8f0;
+}
+
+.fileSize {
+    font-size: 0.875rem;
+    color: #94a3b8;
+}
+
+.iconButton {
+    background: none;
+    border: none;
+    color: #94a3b8;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+    .iconButton:hover {
+        color: #3b82f6;
+    }
+
+.emptyState {
+    text-align: center;
+    color: #64748b;
+    padding: 2rem;
+}
+
+/* Tax Section */
+.taxContent {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.calcButton {
+    background: linear-gradient(to right, #3b82f6, #6366f1);
+    border: none;
+    padding: 1.25rem 2rem;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+    .calcButton:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+    }
+
+    .calcButton:hover:not(:disabled) {
+        transform: translateY(-2px);
+    }
+
+.buttonIcon {
+    font-size: 1.2em;
+}
+
+.report {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #0f172a;
+    border-radius: 8px;
+}
+
+.reportText {
+    color: #86efac;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+}
+
+.downloadLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+    .downloadLink:hover {
+        color: #60a5fa;
+    }
+
+/* Chat Section */
+.chatContent {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+.chatBox {
+    flex: 1;
+    background: #0f172a;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    overflow-y: auto;
+}
+
+.chatMessage {
+    background: #1e293b;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    color: #e2e8f0;
+}
+
+.chatForm {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.chatInput {
+    flex: 1;
+    padding: 0.875rem;
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    color: #e2e8f0;
+    font-size: 1rem;
+}
+
+.chatButton {
+    background: #3b82f6;
+    border: none;
+    padding: 0.875rem 1.5rem;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+    .chatButton:hover {
+        background: #2563eb;
+    }
+
+.exampleQuestions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.exampleButton {
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid #3b82f6;
+    color: #3b82f6;
+    padding: 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+    .exampleButton:hover {
+        background: rgba(59, 130, 246, 0.2);
+    }
+
+
+/* Add gradient text effects */
+.logoBankText {
+    background: linear-gradient(to right, #a855f7, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Enhance feature cards */
+.featureCard {
+    background: linear-gradient(to bottom right, #111, #000);
+    border: 1px solid #6b21a8;
+    transition: all 0.3s;
+}
+
+    .featureCard:hover {
+        transform: scale(1.02);
+        box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.2);
+    }
+
+/* Update primary button styles */
+.primaryButton {
+    background: linear-gradient(to right, #ec4899, #9333ea);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    transition: all 0.3s;
+}
+
+    .primaryButton:hover:not(:disabled) {
+        transform: scale(1.05);
+        background: linear-gradient(to right, #db2777, #7e22ce);
+    }
+
+/* Add trust card styling */
+.trustCard {
+    background: linear-gradient(to bottom right, #111, #000);
+    border: 1px solid #6b21a8;
+}
+
+/* Footer styles */
+.footer {
+    margin-top: 4rem;
+    padding: 2rem 1rem;
+    background-color: #000;
+    border-top: 1px solid #5b21b6;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footerLogo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #ec4899, #9333ea);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.footerLink {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+    .footerLink:hover {
+        color: #a855f7;
+    }
+
+
+
+
+
+
+
+

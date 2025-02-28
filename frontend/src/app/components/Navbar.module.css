@@ -1,0 +1,70 @@
+/* components/Navbar.module.css */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    padding: 0.5rem 0rem; /* reduced vertical padding */
+    border-bottom: 1px solid #5b21b6;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    font-family: sans-serif; /* matching landing page font */
+}
+
+.container {
+    max-width: 72rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.logoLink {
+    text-decoration: none; /* removes underline from logo */
+}
+
+.logoNeural {
+    background: linear-gradient(to right, #ec4899, #9333ea);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.logoPiggy {
+    margin-left: 0.5rem;
+    color: white;
+}
+
+.logoBank {
+    margin-left: 0.5rem;
+    background: linear-gradient(to right, #a855f7, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.navLinks {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navItem {
+    list-style: none;
+}
+
+    .navItem a {
+        color: #9ca3af;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-family: sans-serif;
+        font-size: 1rem;
+    }
+
+        .navItem a:hover {
+            color: white;
+        }

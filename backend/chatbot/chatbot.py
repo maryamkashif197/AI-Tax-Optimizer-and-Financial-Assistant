@@ -1,8 +1,14 @@
 import os
 import google.generativeai as genai
 from dotenv import load_dotenv
+from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 load_dotenv()
+
+app = Flask(__name__)
+CORS(app)  # Enable CORS for cross-origin requests
+
 
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
@@ -102,7 +108,7 @@ NeuralPiggyBank.AI assists users with tax-related queries and financial recommen
 3. **Automate Savings** – Set up automatic transfers to your savings account each month.  
 4. **Explore Down Payment Assistance Programs** – Some programs offer grants or low-interest loans for first-time homebuyers.  
 5. **Invest Wisely** – Consider low-risk investments to grow your savings faster.  
-6. ONLY ANSWER FINACE, BUDGET, INVESTMENT, SAVINGS, TAXES,TAX related stuff no irrelevant stuff 
+6. ONLY ANSWER FINANCE, BUDGET, INVESTMENT, SAVINGS, TAXES,TAX related stuff no irrelevant stuff 
 "Would you like more details on any of these steps? 😊"  
 """
 
@@ -122,15 +128,31 @@ chat_session = model.start_chat(history=[])
 history=[]
 
 
+@app.route('/chat', methods=['POST'])
+def chat():
+    try:
+        data = request.get_json()
+        user_message = data.get('message')
+        # Get existing history from request or initialize empty
+        history = data.get('history', [])  
+        
+        # Initialize chat with existing history
+        chat_session = model.start_chat(history=history)
+        response = chat_session.send_message(user_message)
+        
+        # Update history with new interaction
+        updated_history = history + [
+            {"role": "user", "parts": [user_message]},
+            {"role": "model", "parts": [response.text]}
+        ]
+        
+        return jsonify({
+            'response': response.text,
+            'history': updated_history
+        })
+        
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
-while True:
-    user_input = input("You: ")
-    chat_session = model.start_chat(history=history)
-    response = chat_session.send_message(user_input)
-    model_response = response.text
-
-    print(f'Mr. Neural: {model_response}')
-    print()
-    
-    chat_session.history.append({"role": "user", "parts": [user_input]})
-    chat_session.history.append({"role": "model", "parts": [model_response]})
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
