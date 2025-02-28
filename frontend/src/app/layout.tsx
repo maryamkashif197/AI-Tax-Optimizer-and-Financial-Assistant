@@ -1,15 +1,17 @@
-import React from "react";
-import { Navbar } from "../app/components/Navbar";
-import { HeroSection } from "../app/components/HeroSection";
-export default function Home() {
-  return (
-    <html>
-      <body>
-    <main>
-      <Navbar />
-      <HeroSection />
-    </main>
-    </body>
-    </html>
-  );
+import Navbar from '../app/components/Navbar';
+import './CSS/globals.css';
+
+export default function RootLayout({ children }) {
+    return (
+        <html lang="en">
+            <head>
+                <title>Neural Piggy Bank</title>
+                {/* You can add meta tags, links, etc. here */}
+            </head>
+            <body>
+                <Navbar />
+                {children}
+            </body>
+        </html>
+    );
 }
