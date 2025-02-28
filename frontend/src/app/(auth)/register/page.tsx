@@ -128,7 +128,7 @@ export default function RegisterP(){
                                 value={formData.password}
                                 onChange={handleChange}
                                 className={`${styles.formInput} ${formData.password && styles[passwordStrength]}`}
-                                placeholder=".........."
+                                placeholder="***********"
                                 required
                                 minLength={8}
                             />
@@ -159,7 +159,7 @@ export default function RegisterP(){
                                 value={formData.confirmPassword}
                                 onChange={handleChange}
                                 className={`${styles.formInput} ${formData.confirmPassword && (passwordsMatch ? styles.match : styles.mismatch)}`}
-                                placeholder="........"
+                                placeholder="***********"
                                 required
                             />
                             <button
@@ -176,23 +176,6 @@ export default function RegisterP(){
                             </div>
                         )}
                     </div>
-
-                    <div className={styles.termsContainer}>
-                        <div className={styles.rememberMe}>
-                            <input
-                                id="agreeToTerms"
-                                type="checkbox"
-                                checked={agreeToTerms}
-                                onChange={() => setAgreeToTerms(!agreeToTerms)}
-                                className={styles.checkbox}
-                                required
-                            />
-                            <label htmlFor="agreeToTerms">
-                                I agree to the <Link href="/terms" className={styles.termsLink}>Terms of Service</Link> and <Link href="/privacy" className={styles.termsLink}>Privacy Policy</Link>
-                            </label>
-                        </div>
-                    </div>
-
                     <button
                         type="submit"
                         className={`${styles.authButton} ${isLoading ? styles.loading : ''}`}

@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { ArrowLeft, Eye, EyeOff } from 'lucide-react';
 import Link from 'next/link';
-import styles from '../../CSS/auth.module.css';
+import styles from '../../CSS/Auth.module.css';
 import axios from '@/app/api/axios';
 import { useRouter } from 'next/navigation';
 
@@ -79,7 +79,7 @@ const LoginP = () => {
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                                 className={styles.formInput}
-                                placeholder="........."
+                                placeholder="***********"
                                 required
                             />
                             <button
