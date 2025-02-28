@@ -1,26 +1,10 @@
 /* profile.module.css */
 .profileContainer {
-    padding: 7.5rem 4rem 0 4rem;
-    background-color: #0f172a;
+    padding: 5rem 4rem 0 4rem;
+    background-color: #0a0010; /* Darker black with purple tint */
     color: #fff;
-    min-height: 100vh;
+    min-height: calc(100vh - 5rem);
     font-family: 'Segoe UI', system-ui, sans-serif;
-    min-height: 100vh;
-    background-color: #000;
-    color: #fff;
-    font-family: sans-serif;
-}
-
-.title {
-    text-align: center;
-    margin-bottom: 3rem;
-    font-size: 2.5rem;
-    font-weight: 700;
-    background: linear-gradient(to right, #3b82f6, #8b5cf6);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    letter-spacing: -0.05em;
 }
 
 .gridLayout {
@@ -31,18 +15,145 @@
     margin: 0 auto;
 }
 
-.column {
+/* Left Container */
+.leftContainer {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    background: #1a0933; /* Dark purple */
+    border-radius: 16px;
+    border: 1px solid #3d1a66; /* Medium purple */
+    box-shadow: 0 8px 20px rgba(138, 43, 226, 0.2); /* Purple glow */
+    overflow: hidden;
 }
 
-.card {
-    background: #1e293b;
+.uploadSection {
+    padding: 1.5rem;
+    border-bottom: 1px solid #3d1a66;
+}
+
+.uploadOptions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.uploadBtn,
+.manualBtn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.uploadBtn {
+    background: linear-gradient(135deg, #8a2be2, #9932cc); /* Purple gradient */
+    color: white;
+    box-shadow: 0 4px 8px rgba(138, 43, 226, 0.3);
+}
+
+    .uploadBtn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(138, 43, 226, 0.4);
+    }
+
+.manualBtn {
+    background: linear-gradient(135deg, #ff1493, #ff69b4); /* Pink gradient */
+    color: white;
+    box-shadow: 0 4px 8px rgba(255, 20, 147, 0.3);
+}
+
+    .manualBtn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(255, 20, 147, 0.4);
+    }
+
+.transactionsList {
+    height: 25rem; /* Set a fixed height - adjust as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 1rem 1.5rem;
+    /* Custom scrollbar styling for webkit browsers */
+    &::-webkit-scrollbar
+
+{
+    width: 8px;
+}
+
+&::-webkit-scrollbar-track {
+    background: #13052a; /* Dark purple background */
+    border-radius: 4px;
+}
+
+&::-webkit-scrollbar-thumb {
+    background: #3d1a66; /* Medium purple thumb */
+    border-radius: 4px;
+}
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #8a2be2; /* Brighter purple on hover */
+    }
+
+/* Firefox scrollbar styling */
+scrollbar-width: thin;
+scrollbar-color: #3d1a66 #13052a;
+}
+
+.transactionItem {
+    cursor: default;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    background: #13052a; /* Darker purple */
+    border: 1px solid #3d1a66;
+    border-radius: 8px;
+    color: #e2e8f0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .transactionItem:hover {
+        transform: translateX(4px);
+        box-shadow: 0 4px 12px rgba(138, 43, 226, 0.2);
+    }
+
+.taxSection {
+    margin-top: auto;
+    padding: 1.5rem;
+    background: #13052a; /* Darker purple */
+    border-top: 1px solid #3d1a66;
+}
+
+.taxRow {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    color: #e2e8f0;
+}
+
+.downloadBtn {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(to right, #8a2be2, #ff1493); /* Purple to pink gradient */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 20, 147, 0.3);
+}
+
+    .downloadBtn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 14px rgba(255, 20, 147, 0.4);
+    }
+
+/* Right Container */
+.rightContainer, .card {
+    background: #1a0933; /* Dark purple */
     border-radius: 16px;
     padding: 1.5rem;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    border: 1px solid #334155;
+    box-shadow: 0 8px 20px rgba(138, 43, 226, 0.2); /* Purple glow */
+    border: 1px solid #3d1a66; /* Medium purple */
 }
 
 .cardTitle {
@@ -54,186 +165,62 @@
     color: #e2e8f0;
 }
 
-.icon {
-    font-size: 1.5em;
-}
-
-/* Upload Section */
-.uploadContent {
-    border: 2px dashed #334155;
-    border-radius: 12px;
-    padding: 2rem;
-    text-align: center;
-    transition: border-color 0.3s ease;
-}
-
-    .uploadContent:hover {
-        border-color: #3b82f6;
-    }
-
-.fileInput {
-    width: 100%;
-    padding: 0.75rem;
-    background: #0f172a;
-    border: 1px solid #334155;
-    border-radius: 8px;
-    color: #e2e8f0;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-    .fileInput:hover {
-        background: #1e293b;
-    }
-
-.uploadHint {
-    color: #94a3b8;
-    font-size: 0.875rem;
-    margin-top: 1rem;
-}
-
-/* Files List */
-.filesContent {
-    max-height: 400px;
-    overflow-y: auto;
-}
-
-.filesList {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.fileItem {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background: #0f172a;
-    border-radius: 8px;
-    margin-bottom: 0.75rem;
-}
-
-.fileInfo {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-}
-
-.fileName {
-    font-weight: 500;
-    color: #e2e8f0;
-}
-
-.fileSize {
-    font-size: 0.875rem;
-    color: #94a3b8;
-}
-
-.iconButton {
-    background: none;
-    border: none;
-    color: #94a3b8;
-    font-size: 1.2rem;
-    padding: 0.5rem;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-    .iconButton:hover {
-        color: #3b82f6;
-    }
-
-.emptyState {
-    text-align: center;
-    color: #64748b;
-    padding: 2rem;
-}
-
-/* Tax Section */
-.taxContent {
-    text-align: center;
-    padding: 2rem 1rem;
-}
-
-.calcButton {
-    background: linear-gradient(to right, #3b82f6, #6366f1);
-    border: none;
-    padding: 1.25rem 2rem;
-    border-radius: 12px;
-    color: white;
-    font-weight: 600;
-    cursor: pointer;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
-    transition: transform 0.2s, opacity 0.2s;
-}
-
-    .calcButton:disabled {
-        opacity: 0.7;
-        cursor: not-allowed;
-    }
-
-    .calcButton:hover:not(:disabled) {
-        transform: translateY(-2px);
-    }
-
-.buttonIcon {
-    font-size: 1.2em;
-}
-
-.report {
-    margin-top: 1.5rem;
-    padding: 1rem;
-    background: #0f172a;
-    border-radius: 8px;
-}
-
-.reportText {
-    color: #86efac;
-    font-weight: 600;
-    margin: 0 0 1rem 0;
-}
-
-.downloadLink {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: #3b82f6;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-    .downloadLink:hover {
-        color: #60a5fa;
-    }
-
-/* Chat Section */
 .chatContent {
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: calc(100vh - 30rem);
 }
 
 .chatBox {
     flex: 1;
-    background: #0f172a;
+    background: #13052a; /* Darker purple */
     border-radius: 12px;
     padding: 1rem;
     margin-bottom: 1rem;
     overflow-y: auto;
+    /* Custom scrollbar styling for webkit browsers */
+    &::-webkit-scrollbar
+
+{
+    width: 8px;
 }
 
+&::-webkit-scrollbar-track {
+    background: #13052a; /* Dark purple background */
+    border-radius: 4px;
+}
+
+&::-webkit-scrollbar-thumb {
+    background: #3d1a66; /* Medium purple thumb */
+    border-radius: 4px;
+}
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #8a2be2; /* Brighter purple on hover */
+    }
+
+/* Firefox scrollbar styling */
+scrollbar-width: thin;
+scrollbar-color: #3d1a66 #13052a;
+}
+
+
+
 .chatMessage {
-    background: #1e293b;
+    background: #1a0933; /* Dark purple */
     padding: 0.75rem 1rem;
     border-radius: 8px;
     margin-bottom: 0.75rem;
     color: #e2e8f0;
+    border-left: 3px solid #8a2be2; /* Purple accent */
+}
+
+.userMessage {
+    border-left-color: #ff1493; /* Pink accent for user messages */
+}
+
+.botMessage {
+    border-left-color: #8a2be2; /* Purple accent for bot messages */
 }
 
 .chatForm {
@@ -244,26 +231,35 @@
 .chatInput {
     flex: 1;
     padding: 0.875rem;
-    background: #0f172a;
-    border: 1px solid #334155;
+    background: #13052a; /* Darker purple */
+    border: 1px solid #3d1a66;
     border-radius: 8px;
     color: #e2e8f0;
     font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+    .chatInput:focus {
+        outline: none;
+        border-color: #8a2be2;
+        box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.2);
+    }
+
 .chatButton {
-    background: #3b82f6;
+    background: linear-gradient(135deg, #8a2be2, #9932cc); /* Purple gradient */
     border: none;
     padding: 0.875rem 1.5rem;
     border-radius: 8px;
     color: white;
     font-weight: 600;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(138, 43, 226, 0.3);
 }
 
     .chatButton:hover {
-        background: #2563eb;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(138, 43, 226, 0.4);
     }
 
 .exampleQuestions {
@@ -274,99 +270,206 @@
 }
 
 .exampleButton {
-    background: rgba(59, 130, 246, 0.1);
-    border: 1px solid #3b82f6;
-    color: #3b82f6;
-    padding: 0.5rem;
-    border-radius: 6px;
+    background: rgba(138, 43, 226, 0.1);
+    border: 1px solid #8a2be2; /* Purple border */
+    color: #d8b3ff; /* Light purple text */
+    padding: 0.75rem;
+    border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s;
 }
 
     .exampleButton:hover {
-        background: rgba(59, 130, 246, 0.2);
+        background: rgba(138, 43, 226, 0.2);
+        border-color: #b64fff;
     }
 
-
-/* Add gradient text effects */
-.logoBankText {
-    background: linear-gradient(to right, #a855f7, #ec4899);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+/* Total Savings Card */
+.savingsCard {
+    background: linear-gradient(135deg, #1a0933, #13052a); /* Purple gradient */
+    border-radius: 16px;
+    padding: 1.5rem;
+    border: 1px solid #3d1a66;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 20px rgba(138, 43, 226, 0.2);
 }
 
-/* Enhance feature cards */
-.featureCard {
-    background: linear-gradient(to bottom right, #111, #000);
-    border: 1px solid #6b21a8;
-    transition: all 0.3s;
-}
-
-    .featureCard:hover {
-        transform: scale(1.02);
-        box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.2);
-    }
-
-/* Update primary button styles */
-.primaryButton {
-    background: linear-gradient(to right, #ec4899, #9333ea);
-    border: none;
-    padding: 1rem 2rem;
-    border-radius: 9999px;
-    transition: all 0.3s;
-}
-
-    .primaryButton:hover:not(:disabled) {
-        transform: scale(1.05);
-        background: linear-gradient(to right, #db2777, #7e22ce);
-    }
-
-/* Add trust card styling */
-.trustCard {
-    background: linear-gradient(to bottom right, #111, #000);
-    border: 1px solid #6b21a8;
-}
-
-/* Footer styles */
-.footer {
-    margin-top: 4rem;
-    padding: 2rem 1rem;
-    background-color: #000;
-    border-top: 1px solid #5b21b6;
-}
-
-.footerContent {
+.savingsHeader {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
 }
 
-.footerLogo {
-    font-size: 1.25rem;
-    font-weight: 700;
-    background: linear-gradient(to right, #ec4899, #9333ea);
+.savingsIcon {
+    font-size: 1.5rem;
+    background: linear-gradient(45deg, #ff1493, #ff69b4); /* Pink gradient */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 
-.footerLink {
-    color: #9ca3af;
-    text-decoration: none;
-    transition: color 0.2s;
+.savingsTitle {
+    font-size: 1.25rem;
+    color: #e2e8f0;
+    margin: 0;
 }
 
-    .footerLink:hover {
-        color: #a855f7;
+.savingsAmount {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ff69b4; /* Pink text */
+    text-align: center;
+    position: relative;
+}
+
+.savingsSubtext {
+    position: absolute;
+    bottom: -0.75rem;
+    right: 0;
+    font-size: 0.875rem;
+    color: #d8b3ff; /* Light purple text */
+    font-weight: 400;
+}
+
+.progressBar {
+    height: 8px;
+    background: #3d1a66; /* Medium purple */
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    background: linear-gradient(90deg, #8a2be2, #ff1493); /* Purple to pink gradient */
+    border-radius: 4px;
+}
+
+.progressText {
+    text-align: center;
+    color: #d8b3ff; /* Light purple text */
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+/* Additional styles for the section header and icons */
+.sectionHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.sectionIcon {
+    font-size: 1.25rem;
+}
+
+.sectionTitle {
+    margin: 0;
+    color: #e2e8f0;
+    font-size: 1.125rem;
+}
+
+/* Styling for transaction details */
+.transactionDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.transactionTitle {
+    font-weight: 500;
+    color: #e2e8f0;
+}
+
+.transactionDate {
+    font-size: 0.875rem;
+    color: #d8b3ff; /* Light purple */
+}
+
+.transactionAmount {
+    font-weight: 600;
+    color: #ff69b4; /* Pink */
+}
+
+/* Typing indicator animation */
+.typingIndicator {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #8a2be2; /* Purple */
+    border-radius: 50%;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+    .dot:nth-child(2) {
+        animation-delay: 0.2s;
+        background-color: #a64dff; /* Medium purple */
     }
 
+    .dot:nth-child(3) {
+        animation-delay: 0.4s;
+        background-color: #c47aff; /* Light purple */
+    }
 
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
 
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
 
+/* Column class for right side */
+.column {
+    display: flex;
+    flex-direction: column;
+}
 
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .gridLayout {
+        grid-template-columns: 1fr;
+    }
 
+    .profileContainer {
+        padding: 7.5rem 2rem 0 2rem;
+    }
+}
 
+.chatActions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
 
+.resetButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(138, 43, 226, 0.1);
+    border: 1px solid #3d1a66;
+    color: #d8b3ff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+}
+
+    .resetButton:hover {
+        background: rgba(138, 43, 226, 0.2);
+        border-color: #8a2be2;
+        transform: translateY(-2px);
+    }
+
+.btnIcon {
+    font-size: 1rem;
+}

@@ -2,7 +2,6 @@
 .navbar {
     background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
     padding: 0.5rem 0rem; /* reduced vertical padding */
-    border-bottom: 1px solid #5b21b6;
     position: fixed;
     width: 100%;
     z-index: 50;
