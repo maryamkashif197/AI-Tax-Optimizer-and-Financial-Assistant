@@ -3,24 +3,30 @@
 import React, { useState } from 'react';
 import { ArrowLeft, Eye, EyeOff } from 'lucide-react';
 import Link from 'next/link';
-import styles from '../CSS/Auth.module.css';
+import styles from '../../CSS/auth.module.css';
+import axios from '@/app/api/axios';
+import { useRouter } from 'next/navigation';
 
 const LoginP = () => {
+    const router = useRouter();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
     const [rememberMe, setRememberMe] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
 
-    const handleLogin = (e: React.FormEvent) => {
+    const handleLogin = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsLoading(true);
 
         // Simulate API call
-        setTimeout(() => {
+        setTimeout(async () => {
             setIsLoading(false);
             // Handle login logic here
             console.log('Login attempt with:', { email, password, rememberMe });
+            await axios.post('/auth/login', { email, password });
+            // Redirect to dashboard
+            router.push('/profile');
         }, 1500);
     };
 

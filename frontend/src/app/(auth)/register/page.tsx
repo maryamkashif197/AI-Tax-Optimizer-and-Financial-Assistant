@@ -3,9 +3,12 @@
 import React, { useState } from 'react';
 import { ArrowLeft, Eye, EyeOff } from 'lucide-react';
 import Link from 'next/link';
-import styles from '../CSS/Auth.module.css';
+import styles from '../../CSS/Auth.module.css';
+import { useRouter } from "next/navigation";
+import axios from '@/app/api/axios';
 
 export default function RegisterP(){
+    const router = useRouter();
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
@@ -26,15 +29,18 @@ export default function RegisterP(){
         }));
     };
 
-    const handleRegister = (e: React.FormEvent) => {
+    const handleRegister = async (e: React.FormEvent)  => {
         e.preventDefault();
         setIsLoading(true);
 
         // Simulate API call
-        setTimeout(() => {
+        setTimeout(async () => {
             setIsLoading(false);
             // Handle registration logic here
             console.log('Registration attempt with:', formData);
+            await axios.post('/auth/register', formData);
+            // Redirect to login page
+            router.push('/login');
         }, 1500);
     };
 

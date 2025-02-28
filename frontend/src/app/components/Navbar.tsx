@@ -1,8 +1,10 @@
 // components/Navbar.tsx
 import Link from 'next/link';
 import styles from './Navbar.module.css';
+import { useAuth } from './AuthContext';
 
 export default function Navbar() {
+    const { tokenDetails, isLoading, logout } = useAuth();
     return (
         <nav className={styles.navbar}>
             <div className={styles.container}>

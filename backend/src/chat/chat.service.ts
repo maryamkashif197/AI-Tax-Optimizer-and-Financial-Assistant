@@ -181,7 +181,7 @@ NeuralPiggyBank.AI assists users with tax-related queries and financial recommen
 
   async getChatHistory(userId: string) {
     try {
-      const chat = await this.chatModel.findById({userId:userId});
+      const chat = await this.chatModel.findOne({userId:userId});
       if (!chat) {
         throw new Error('Chat not found');
       }

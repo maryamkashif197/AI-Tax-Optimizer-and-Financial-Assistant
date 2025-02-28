@@ -22,15 +22,6 @@ export class ChatController {
     }
   }
 
-  @Get(':chatId')
-  async getChatHistory(@Param('chatId') chatId: string) {
-    try {
-      return { history: await this.chatService.getChatHistory(chatId) };
-    } catch (error) {
-      throw new HttpException('Failed to get chat history', HttpStatus.INTERNAL_SERVER_ERROR);
-    }
-  }
-
   // reset chat history
   @Delete('reset')
   async resetChatHistory(@Req() request: Request) {
@@ -38,6 +29,15 @@ export class ChatController {
       return await this.chatService.resetChatHistory(request["user"].userid);
     } catch (error) {
       throw new HttpException('Failed to reset chat history', HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+  }
+
+  @Get()
+  async getChatHistory(@Req() request: Request) {
+    try {
+      return { history: await this.chatService.getChatHistory(request["user"].userid) };
+    } catch (error) {
+      throw new HttpException('Failed to get chat history', HttpStatus.INTERNAL_SERVER_ERROR);
     }
   }
 }

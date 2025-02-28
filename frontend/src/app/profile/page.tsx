@@ -52,7 +52,7 @@ export default function ProfilePage() {
             setMessages(prev => [...prev, newMessage]);
             setMessageInput("");
 
-            const response = await axios.post("/api/chat", { message: input, userId:'67c1101d817707ffda2f374e' });
+            const response = await axios.post("/api/chat", { message: input });
 
             const data = await response.data;
             console.log(data);
@@ -76,11 +76,13 @@ export default function ProfilePage() {
         setMessageInput(question);
     };
 
-    const handleResetChat = () => {
+    const handleResetChat = async () => {
         // Clear messages state
         setMessages([]);
         // Clear input field
         setMessageInput("");
+
+        await axios.delete("/api/chat/reset");
     };
 
     return (
