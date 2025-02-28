@@ -1,1001 +1,201 @@
 transaction_id,user_id,date,amount,currency,category,description,deduction_rate,max_limit,merchant,payment_method,country,tax_deductible
-29d2a257-b403-4c29-b733-1a53efc9dfeb,1966,2024-04-25,2681.19,EUR,Transportation,Fuel cost for business trips,1.0,5000,Google,Cash,Germany,True
-5d0b4545-3017-42a9-9348-397f1287e00c,1635,2024-11-29,1957.2,EUR,Transportation,Monthly public transport pass,1.0,5000,Walmart,Cash,Australia,True
-941f257d-c103-40fb-8280-699a99398381,1082,2025-01-22,19449.91,GBP,Rent & Utilities,Electricity bill for workspace,1.0,15000,Apple,Bank Transfer,France,False
-248af6cd-a009-4ee9-aeaa-5e84ede0c4bd,1137,2024-08-05,800.21,USD,Client Entertainment,Drinks at networking event,0.2,1500,Walmart,Credit Card,USA,True
-5066598a-2d65-49e0-bd45-af65229b6f68,1446,2024-05-12,19920.51,EUR,Rent & Utilities,Office rent payment,1.0,15000,Uber,Bank Transfer,UK,False
-8b7d40f6-c36a-4022-ae8e-c859ebf7ceed,1982,2024-07-15,1481.49,USD,Rent & Utilities,Water and cleaning service charges,1.0,15000,Airbnb,PayPal,UK,True
-ddace50c-2296-4bcb-bb1c-a8ff98090b12,1156,2025-02-26,1908.62,GBP,Freelancer Platform Fees,Upwork service fee,0.25,2000,Netflix,PayPal,USA,True
-7e53469c-2c2f-44c9-ac32-8e538e608dbb,1907,2024-10-18,22181.08,EUR,Rent & Utilities,Office rent payment,1.0,15000,Amazon,Bank Transfer,Germany,False
-4db477cc-ea6d-4e1e-b0b6-395a8c2ed321,1778,2024-09-14,1841.69,USD,Home Office,Office rent for remote work,0.3,5000,Amazon,Bank Transfer,USA,True
-73b9d4e8-fedc-4e01-9e48-78fce7bd2257,1318,2024-05-15,4860.2,USD,Home Office,Coworking space membership,0.3,5000,Microsoft,Cash,Germany,True
-f2c64d6a-1026-47c0-b8f0-d66c2d62ae3f,1132,2024-06-20,6163.74,EUR,Home Office,Desk and chair for home office,0.3,5000,Microsoft,Credit Card,UK,False
-9be00c49-5e33-4be8-a781-e26dd0ff95a4,1789,2024-04-23,21581.49,USD,Rent & Utilities,Office rent payment,1.0,15000,Airbnb,PayPal,UK,False
-db04ff60-c429-4249-a044-bfcfaaa351b1,1462,2024-06-25,2055.48,GBP,Client Entertainment,Drinks at networking event,0.2,1500,Microsoft,Credit Card,Canada,False
-b8d63c70-edf8-48f2-8d56-51474f2f468a,1950,2024-10-27,6906.07,GBP,Transportation,Fuel cost for business trips,1.0,5000,Zoom,Credit Card,Australia,False
-1eb10538-5f69-4d16-b920-9d508c648833,1296,2024-04-06,2217.47,EUR,Transportation,Fuel cost for business trips,1.0,5000,Google,PayPal,Germany,True
-6fb393de-e855-48ac-8be2-6dd2c6663927,1905,2024-06-22,2215.08,EUR,Client Entertainment,Drinks at networking event,0.2,1500,Microsoft,PayPal,Canada,False
-1287f564-7754-471b-8ed7-d26573eaa6ce,1565,2024-08-28,13558.0,GBP,Rent & Utilities,Office rent payment,1.0,15000,Netflix,PayPal,UK,True
-c0360f86-78be-4cb8-9061-77911ed94af1,1889,2024-07-15,2065.54,USD,Transportation,Taxi fare for client visit,1.0,5000,Zoom,Cash,Australia,True
-b2bc6725-b5ed-42c5-aa82-c4941bf25fa9,1476,2024-07-20,669.81,USD,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Netflix,Cash,UK,True
-67dd1750-8343-43c4-8bf4-06210b426823,1161,2024-03-27,1830.51,USD,Transportation,Taxi fare for client visit,1.0,5000,Google,Bank Transfer,Canada,True
-0e8bc9c1-aaf3-461f-a5e0-189e3d605768,1827,2024-08-31,12568.69,EUR,Marketing & Advertising,Social media promotions,1.0,10000,Netflix,Bank Transfer,UK,False
-01063af3-5dfa-433e-b02b-edbc4fdc19c0,1733,2025-02-06,3680.99,USD,Work Equipment,External monitor for work,0.5,5000,Amazon,Credit Card,USA,True
-42aed3b9-f4c0-4f60-96c6-e2a852027926,1332,2024-06-15,3587.27,EUR,Marketing & Advertising,Social media promotions,1.0,10000,Airbnb,Cash,USA,True
-90c0497d-41f7-49f3-84b4-716c7f3ffb65,1404,2024-04-07,2614.07,USD,Home Office,Lighting and furniture for workspace,0.3,5000,Apple,Bank Transfer,USA,True
-d92c5fe6-6a21-4a19-90c0-cf663fed72c9,1301,2024-07-09,2033.43,GBP,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Google,Bank Transfer,Australia,True
-548c49f9-927e-4f7e-9a4a-8b297ebf1c57,1571,2024-08-29,6469.73,GBP,Rent & Utilities,Office rent payment,1.0,15000,Apple,Cash,France,True
-982284e1-384c-4555-a97f-1d9c8e268e44,1555,2024-10-21,936.91,USD,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Zoom,PayPal,UK,True
-296d6756-f871-4fea-844c-f64312465219,1348,2024-07-06,5456.79,USD,Work Equipment,External monitor for work,0.5,5000,Apple,Cash,Australia,False
-4b46ecd2-f4cb-4e58-8b80-282a48aaf21e,1429,2025-01-02,3896.72,EUR,Software & Subscriptions,Project management software renewal,0.5,3000,Google,Cash,Australia,False
-351140cd-92e8-4610-a9e1-c1952758a6d7,1886,2024-12-14,10817.51,USD,Marketing & Advertising,SEO service for website optimization,1.0,10000,Airbnb,Crypto,UK,False
-9fa30756-b8fd-4a96-ac99-0c44da5b2ac3,1272,2024-11-12,912.49,GBP,Education & Training,Subscription to educational platforms,0.6,4000,Google,Bank Transfer,Germany,True
-86d5588d-6dfc-45a0-a0f9-aea23658d92f,1076,2024-03-23,2646.19,EUR,Education & Training,Subscription to educational platforms,0.6,4000,Apple,Cash,UK,True
-5b19042e-75b3-42f7-9c19-b403e01df42d,1179,2024-08-19,3450.23,EUR,Work Equipment,External monitor for work,0.5,5000,Apple,Bank Transfer,Germany,True
-eb386109-e186-46a7-a91d-ce960201e349,1712,2025-01-24,3756.56,USD,Work Equipment,New laptop for development,0.5,5000,Apple,Cash,France,True
-7f91b197-1db2-436c-82b7-1096d21eba31,1925,2024-08-17,8665.24,USD,Marketing & Advertising,Social media promotions,1.0,10000,Netflix,PayPal,UK,True
-4460e995-b760-4e28-b7fc-b1032a46fe4b,1799,2024-08-22,2743.7,USD,Home Office,Desk and chair for home office,0.3,5000,Uber,PayPal,USA,True
-88b20248-ed01-4a87-a37e-05de06fe0aed,1253,2024-04-05,9923.38,EUR,Marketing & Advertising,SEO service for website optimization,1.0,10000,Apple,Credit Card,Australia,True
-db443c03-b99a-419c-bc85-744b6578b30c,1666,2024-11-18,3069.39,EUR,Internet & Phone,VoIP phone service for international clients,0.4,2500,Walmart,Credit Card,UK,False
-7d4d1c25-59f9-40ad-bc3f-9dc055b42fce,1219,2025-01-25,2168.85,USD,Internet & Phone,VoIP phone service for international clients,0.4,2500,Uber,Credit Card,USA,True
-1363cc53-ee0d-4aa9-a8f7-0a0a26d4f116,1861,2024-05-21,3986.72,USD,Education & Training,Conference registration for industry insights,0.6,4000,Airbnb,PayPal,Canada,True
-bc4d2491-190e-4e57-b18e-bb66b82c601f,1548,2024-10-18,2473.66,USD,Internet & Phone,Business internet subscription,0.4,2500,Airbnb,Crypto,USA,True
-785ee6aa-b297-4f28-9c45-8ef86e4f724e,1738,2024-10-04,1578.08,USD,Client Entertainment,Dinner with potential client,0.2,1500,Amazon,Bank Transfer,Germany,False
-d2167b99-2176-4f86-a31e-6795a928ae23,1558,2024-07-31,4831.71,EUR,Home Office,Lighting and furniture for workspace,0.3,5000,Zoom,PayPal,Australia,True
-cd4305c8-3c01-480e-9139-683462559f9e,1935,2024-03-19,1587.13,EUR,Client Entertainment,Dinner with potential client,0.2,1500,Uber,Cash,Canada,False
-aa431795-e8b3-4a2f-8d4e-3550a846fad3,1926,2024-06-09,2173.05,EUR,Client Entertainment,Drinks at networking event,0.2,1500,Uber,Bank Transfer,USA,False
-5dba1656-cff9-4395-9c89-0a2d6657a643,1875,2024-11-13,4118.71,EUR,Education & Training,Conference registration for industry insights,0.6,4000,Zoom,Crypto,France,False
-8bd011e7-1691-4504-a2fc-db2a1f8be4ec,1730,2024-07-01,2904.85,USD,Education & Training,Subscription to educational platforms,0.6,4000,Apple,Bank Transfer,Australia,True
-22c1730e-256a-4fb5-81e9-89165441e5b0,1162,2025-02-05,7324.3,GBP,Work Equipment,External monitor for work,0.5,5000,Amazon,Cash,France,False
-e9afdadb-e08e-42a7-99c2-bef3d52032aa,1153,2024-03-21,1627.47,GBP,Internet & Phone,VoIP phone service for international clients,0.4,2500,Apple,Cash,Australia,True
-ea5fb06d-d599-4f08-8e8a-a1ce405b9d68,1232,2024-10-24,2574.61,EUR,Business Travel,Flight to client meeting,0.35,3500,Amazon,Crypto,Canada,True
-17e638d7-6212-4a6d-b65e-77a1e768c413,1356,2025-02-09,4295.16,EUR,Rent & Utilities,Water and cleaning service charges,1.0,15000,Netflix,Bank Transfer,Australia,True
-b2dd2c09-6594-42e7-b3db-63b1f07f07f2,1767,2024-04-04,699.27,USD,Client Entertainment,Event tickets for client meeting,0.2,1500,Google,Crypto,UK,True
-5d1e90a2-3599-40db-8fe9-8a7a4f20e485,1014,2024-09-10,88.15,EUR,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Apple,Credit Card,Australia,True
-7986c5bf-d1c0-421c-8818-23f8b2d6f61f,1697,2024-05-04,14939.63,USD,Marketing & Advertising,Social media promotions,1.0,10000,Walmart,Crypto,USA,False
-a3cba6df-3ca8-49dd-849b-fcaf730d1d6a,1237,2024-06-10,3041.24,EUR,Internet & Phone,VoIP phone service for international clients,0.4,2500,Google,Credit Card,Canada,False
-3fc07703-e52b-45f9-9527-431380950b3e,1450,2025-01-06,2455.14,USD,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Airbnb,Bank Transfer,Germany,False
-20b5b756-16f2-4da7-bbf2-5bae6e4050f8,1216,2024-12-30,2280.34,USD,Education & Training,Online course on data science,0.6,4000,Apple,PayPal,UK,True
-06cbff2a-61c8-4312-8ca1-0d3d8df82aaf,1587,2024-07-07,2008.04,GBP,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Walmart,Crypto,Australia,True
-e68fff6a-1d22-4417-be56-45febbfe846f,1504,2024-06-22,15226.3,EUR,Rent & Utilities,Electricity bill for workspace,1.0,15000,Uber,Credit Card,France,False
-b8ccf27e-fa93-4c6a-b156-f2e8931d838a,1127,2025-01-30,1399.13,GBP,Freelancer Platform Fees,Upwork service fee,0.25,2000,Netflix,Crypto,Canada,True
-ba8a6eaa-30d7-49ff-b8d2-34cf9df2b42d,1859,2024-07-27,1833.06,USD,Client Entertainment,Event tickets for client meeting,0.2,1500,Walmart,PayPal,UK,False
-2c121127-dc21-4488-906a-e8fb2d22459b,1397,2024-08-04,590.36,EUR,Client Entertainment,Event tickets for client meeting,0.2,1500,Apple,Crypto,Germany,True
-4f5f131c-e272-4a83-a525-2ffc2da788a4,1729,2024-10-19,1345.64,EUR,Internet & Phone,VoIP phone service for international clients,0.4,2500,Amazon,Bank Transfer,USA,True
-99df9a61-c2aa-4d29-b2cb-dd1cbf61a7ae,1623,2024-08-17,3411.16,GBP,Transportation,Fuel cost for business trips,1.0,5000,Uber,Bank Transfer,USA,True
-f6d52bdd-b804-4448-a9b0-d4f15a6e788d,1744,2024-12-15,5612.79,GBP,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Airbnb,Crypto,France,False
-fffa8192-66f7-42c2-946b-766abd863e4c,1314,2024-08-08,7183.92,GBP,Home Office,Coworking space membership,0.3,5000,Walmart,PayPal,France,False
-8d9eaa6c-4709-4956-935e-602d4fe0f976,1788,2024-10-02,2336.16,USD,Internet & Phone,Business internet subscription,0.4,2500,Google,Cash,Canada,True
-c75ef782-e8dc-4f60-b69f-69e42eaca903,1647,2024-08-07,7962.05,USD,Rent & Utilities,Office rent payment,1.0,15000,Amazon,Bank Transfer,France,True
-6df1f415-f3b5-4db6-9f80-c879ddb34e2a,1265,2025-01-18,5865.13,EUR,Marketing & Advertising,SEO service for website optimization,1.0,10000,Google,PayPal,USA,True
-64a229da-033b-411e-80d5-e399d3159b5d,1332,2024-09-29,2111.93,EUR,Home Office,Coworking space membership,0.3,5000,Uber,Cash,Australia,True
-eef98f2f-3df6-486a-ac90-97e21e7e6a4d,1717,2024-12-23,1210.23,USD,Client Entertainment,Event tickets for client meeting,0.2,1500,Google,Credit Card,Germany,True
-85ea9cad-2fcb-47b6-bc6c-3073f6828887,1477,2024-12-27,2156.4,GBP,Transportation,Monthly public transport pass,1.0,5000,Netflix,PayPal,Canada,True
-093247f5-b92e-4daf-805a-3b39b939d169,1946,2024-05-28,2970.66,USD,Rent & Utilities,Water and cleaning service charges,1.0,15000,Uber,Bank Transfer,USA,True
-1afd862c-773f-48b4-9a80-5d6d7b5c8049,1794,2025-02-04,1864.93,EUR,Client Entertainment,Drinks at networking event,0.2,1500,Zoom,Credit Card,Canada,False
-3b749b7c-4634-4691-936c-c221277f2b69,1686,2024-08-12,5953.89,EUR,Education & Training,Subscription to educational platforms,0.6,4000,Microsoft,Cash,France,False
-23df6254-f35d-4d12-8acd-4f1a111028e0,1086,2024-07-25,2798.79,GBP,Transportation,Fuel cost for business trips,1.0,5000,Netflix,Bank Transfer,Canada,True
-0291526e-4936-42d5-837b-92c29a964bd6,1314,2024-10-06,1410.47,USD,Client Entertainment,Drinks at networking event,0.2,1500,Uber,Cash,USA,True
-3e533fae-e6f3-49ed-9fa2-26be959a9a7b,1465,2024-08-24,6432.44,EUR,Work Equipment,New laptop for development,0.5,5000,Walmart,Bank Transfer,Canada,False
-df6e0f23-7e92-40b5-a0b8-d33c29fa2755,1188,2024-06-30,1071.78,EUR,Internet & Phone,VoIP phone service for international clients,0.4,2500,Microsoft,Cash,UK,True
-99f98877-2f8d-4034-8ac8-ff7208fdc848,1116,2024-03-17,4938.23,EUR,Home Office,Coworking space membership,0.3,5000,Microsoft,Credit Card,Canada,True
-a7b5ed84-3f75-4f33-8ef8-31c293533c3b,1602,2024-12-11,115.04,USD,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Google,Cash,Canada,True
-af703c99-dee9-4bee-af05-4609003b9cb7,1660,2025-02-14,3416.3,USD,Internet & Phone,VoIP phone service for international clients,0.4,2500,Airbnb,Cash,Canada,False
-4d0791ce-78fd-4510-85de-77b2412ad363,1344,2025-02-24,3394.29,EUR,Business Travel,Car rental for on-site project,0.35,3500,Netflix,Bank Transfer,Germany,True
-a91e9e96-4a57-4439-b39d-45cae66ac5c6,1364,2024-06-29,10368.43,EUR,Marketing & Advertising,Social media promotions,1.0,10000,Airbnb,Cash,UK,False
-d63fffb4-a62b-4834-8007-663775f45e92,1980,2024-03-19,5090.99,USD,Business Travel,Hotel stay for business conference,0.35,3500,Microsoft,Credit Card,UK,False
-b0fb2b1d-7a0f-463c-b016-d2cce50b12fd,1907,2025-01-22,2155.72,EUR,Internet & Phone,VoIP phone service for international clients,0.4,2500,Netflix,Credit Card,France,True
-5abd99e0-1e90-4ab5-a6d5-07f8d2ab79c4,1045,2025-01-20,900.81,USD,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Apple,Crypto,France,True
-91cf1647-d787-46f7-84a3-da7ac2464d57,1678,2024-05-02,927.3,EUR,Education & Training,Online course on data science,0.6,4000,Uber,Crypto,Canada,True
-80a95f7a-53e1-404c-bed3-4266bfb0d604,1002,2024-08-04,2745.32,USD,Rent & Utilities,Electricity bill for workspace,1.0,15000,Amazon,Cash,Australia,True
-b38c37bc-dad6-41e9-8750-d4e361823b92,1695,2024-07-31,2304.09,GBP,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Airbnb,PayPal,UK,False
-5ca1aaca-26aa-4607-9fc9-81b388a1f3f1,1541,2024-04-17,3697.77,GBP,Education & Training,Subscription to educational platforms,0.6,4000,Microsoft,Crypto,USA,True
-baaa6e10-19cc-40a3-93ec-20ef858e2914,1549,2024-06-27,4306.53,EUR,Business Travel,Flight to client meeting,0.35,3500,Airbnb,PayPal,Germany,False
-7f7f38e4-a323-42f4-a924-319a7b87a2a2,1796,2024-10-07,1963.77,EUR,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Walmart,Credit Card,USA,True
-eb797c8e-06bc-42e9-9464-24415af0e2f0,1102,2024-11-16,2581.4,USD,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Apple,Bank Transfer,Australia,False
-065095ca-8384-4195-b7b0-3ef47e62eac8,1677,2024-11-16,7211.99,GBP,Home Office,Lighting and furniture for workspace,0.3,5000,Google,PayPal,France,False
-680a9dfe-791f-4f75-835e-96663d284e3a,1812,2024-11-23,8110.64,EUR,Rent & Utilities,Water and cleaning service charges,1.0,15000,Amazon,Bank Transfer,UK,True
-65e1051e-bd9e-423b-be49-fe04eb28188a,1679,2024-09-08,13336.89,USD,Marketing & Advertising,SEO service for website optimization,1.0,10000,Walmart,Cash,UK,False
-6d9f08bc-ca1b-4ca4-b7d2-d319f07cb48e,1766,2025-01-10,2859.1,USD,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Apple,PayPal,USA,True
-e72a23d3-d0d3-42e7-8a3b-aa6ccd9aeecd,1517,2025-01-03,9569.28,GBP,Marketing & Advertising,Social media promotions,1.0,10000,Uber,Bank Transfer,USA,True
-4a545738-d625-490c-a8f7-9b46da26a1d2,1181,2024-09-03,1041.0,EUR,Client Entertainment,Event tickets for client meeting,0.2,1500,Uber,Credit Card,Germany,True
-5d170629-e4dc-4686-b748-6e3a76dab9db,1379,2024-07-17,3376.8,GBP,Business Travel,Flight to client meeting,0.35,3500,Amazon,PayPal,Germany,True
-986d0cd9-e68b-49b6-8e3c-7918c50e1990,1584,2024-10-07,2226.66,USD,Internet & Phone,Mobile data plan for work calls,0.4,2500,Microsoft,PayPal,Canada,True
-450622a5-57ff-4434-8cd2-0fea4b19785f,1338,2024-05-15,690.25,GBP,Client Entertainment,Event tickets for client meeting,0.2,1500,Zoom,Bank Transfer,USA,True
-7784e808-b2de-42ce-be18-5e4276cc6778,1810,2024-03-30,1751.95,EUR,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Netflix,Crypto,UK,True
-cc0602ee-0d74-4128-ae78-4889970f0186,1230,2025-02-11,4430.6,EUR,Business Travel,Flight to client meeting,0.35,3500,Walmart,PayPal,Germany,False
-fc12d265-5548-41e8-81d0-c432f4fd1260,1017,2024-09-02,1594.39,USD,Client Entertainment,Drinks at networking event,0.2,1500,Airbnb,Cash,Canada,False
-32c5437b-b97a-4b8e-8195-7e78b912a3f0,1776,2025-02-09,3413.54,EUR,Work Equipment,Professional camera for photography business,0.5,5000,Apple,PayPal,USA,True
-7d5b566b-d928-4c95-b99c-6c3475cc755a,1696,2024-11-26,1566.73,GBP,Software & Subscriptions,Subscription to design tools,0.5,3000,Airbnb,Credit Card,UK,True
-ff46360e-d7a6-4835-b582-c96a14b21c24,1177,2024-11-21,8456.82,USD,Rent & Utilities,Electricity bill for workspace,1.0,15000,Amazon,Cash,USA,True
-86ec0f29-35bb-4ecb-90f3-c8c44c694dfa,1680,2024-06-06,888.03,EUR,Client Entertainment,Drinks at networking event,0.2,1500,Apple,Bank Transfer,France,True
-ada831f3-5641-4325-a46e-6767d7d547cb,1051,2024-07-16,5567.68,GBP,Work Equipment,New laptop for development,0.5,5000,Uber,PayPal,Germany,False
-27d4c8ae-95a0-4583-b9f5-6783a309d105,1820,2024-10-11,2419.59,USD,Home Office,Office rent for remote work,0.3,5000,Uber,Cash,Canada,True
-30002fa7-cfc3-4ebd-993c-9594c524c525,1354,2025-02-22,1334.7,EUR,Client Entertainment,Drinks at networking event,0.2,1500,Google,Crypto,Germany,True
-09e602cd-5681-43b8-ba0f-cbc3cfa22e6c,1540,2024-09-29,689.37,GBP,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Airbnb,Credit Card,Australia,True
-8e1315b2-e4ff-4b47-baa9-32d66a85d3d1,1592,2025-02-17,459.38,USD,Software & Subscriptions,Subscription to design tools,0.5,3000,Netflix,Cash,France,True
-00f4e8a6-2551-4041-8c69-4f304df109f6,1715,2024-04-05,4275.36,EUR,Work Equipment,Professional camera for photography business,0.5,5000,Amazon,Bank Transfer,Canada,True
-9ef0f66e-eac1-4fec-8604-6df6fa4f9a53,1608,2024-08-17,6695.44,EUR,Transportation,Taxi fare for client visit,1.0,5000,Uber,Cash,Germany,False
-b6e8f36e-245d-4927-b532-42a653e73eec,1845,2024-03-25,3152.22,EUR,Work Equipment,Professional camera for photography business,0.5,5000,Amazon,PayPal,Germany,True
-e72eb976-f77d-4d97-8ed6-e4fccc04d070,1530,2025-02-07,1824.12,GBP,Transportation,Monthly public transport pass,1.0,5000,Apple,Crypto,UK,True
-702ea7f8-7314-47fc-9aed-b1cd881326b8,1654,2024-03-28,11009.61,EUR,Rent & Utilities,Office rent payment,1.0,15000,Amazon,Credit Card,France,True
-cc102b24-2c79-4b67-b214-2b1bdede2d8d,1814,2024-07-12,4190.69,EUR,Business Travel,Flight to client meeting,0.35,3500,Amazon,Crypto,Australia,False
-07dfb78d-23a8-4639-b46a-a0e9718ad533,1277,2024-05-31,4169.13,EUR,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Zoom,PayPal,France,False
-7ca7f6ba-9eb9-4e8f-a3ac-dff6028f0ceb,1424,2024-06-06,2596.56,USD,Freelancer Platform Fees,Upwork service fee,0.25,2000,Netflix,Crypto,Canada,False
-dc3af740-b180-42a0-be2d-2289f70034ad,1022,2024-03-04,3132.21,EUR,Software & Subscriptions,Subscription to design tools,0.5,3000,Google,Bank Transfer,France,False
-1e0125cf-01e6-4024-8081-0c5828cd4d49,1589,2024-03-23,5804.53,EUR,Education & Training,Online course on data science,0.6,4000,Google,Bank Transfer,USA,False
-bbaef38f-d958-4a7c-92d4-53cc0aff8efe,1190,2024-09-09,6042.32,EUR,Marketing & Advertising,Google Ads campaign,1.0,10000,Microsoft,Crypto,Canada,True
-1e2a9763-8450-4841-adb2-328185ae9850,1492,2024-05-27,476.26,USD,Business Travel,Hotel stay for business conference,0.35,3500,Walmart,PayPal,Germany,True
-72f434ec-9ea2-42d8-83ae-b8d5a95b8e09,1702,2024-12-22,3766.29,GBP,Home Office,Lighting and furniture for workspace,0.3,5000,Airbnb,PayPal,USA,True
-10926081-8784-4099-9f7a-c3d127b9ff7c,1225,2024-03-20,3205.59,USD,Internet & Phone,Mobile data plan for work calls,0.4,2500,Apple,Bank Transfer,UK,False
-2b95720f-343e-4f45-bee0-b46353a818b2,1164,2024-08-12,1417.77,EUR,Transportation,Fuel cost for business trips,1.0,5000,Netflix,Crypto,USA,True
-7127214c-4b94-441b-b6a9-490951d826fd,1619,2024-04-24,800.3,GBP,Client Entertainment,Event tickets for client meeting,0.2,1500,Zoom,Bank Transfer,Australia,True
-0723d05d-5820-4724-bfd0-98bc3f1ec314,1358,2024-06-11,17450.13,EUR,Rent & Utilities,Electricity bill for workspace,1.0,15000,Google,Bank Transfer,Canada,False
-ad41da12-9af6-4d30-b757-a4696bdf9dfe,1539,2024-06-21,1124.96,GBP,Software & Subscriptions,Subscription to design tools,0.5,3000,Apple,Credit Card,Australia,True
-2ee356a0-a5ab-45d9-8394-889e5727c621,1339,2024-03-24,2921.1,GBP,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Netflix,Bank Transfer,Australia,True
-70585045-9519-4710-962e-73a960e14c1b,1580,2024-08-17,2757.4,GBP,Software & Subscriptions,Subscription to design tools,0.5,3000,Walmart,Credit Card,Germany,True
-5f17a89c-08bc-418d-8590-418a89a07873,1638,2024-04-17,4590.31,USD,Education & Training,Conference registration for industry insights,0.6,4000,Apple,Credit Card,France,False
-22e3d575-717d-4800-bf5e-8814317e6871,1604,2024-12-21,14908.14,EUR,Marketing & Advertising,SEO service for website optimization,1.0,10000,Microsoft,Bank Transfer,UK,False
-eede0806-f652-4111-982b-d0519e22689b,1327,2025-01-23,1328.77,GBP,Internet & Phone,Business internet subscription,0.4,2500,Apple,Credit Card,Germany,True
-73967cbe-dbf8-4b9d-8c29-8d7246272ba7,1834,2024-03-28,15189.79,GBP,Rent & Utilities,Office rent payment,1.0,15000,Airbnb,Cash,Canada,False
-bb18100e-f4d3-4031-a844-bea9f32a860c,1575,2024-08-05,17631.98,GBP,Rent & Utilities,Water and cleaning service charges,1.0,15000,Microsoft,Credit Card,UK,False
-e9841572-bb4e-460d-bd82-1560e602fdc4,1852,2025-01-13,2975.19,EUR,Business Travel,Car rental for on-site project,0.35,3500,Google,Cash,France,True
-1b2f5d11-d2aa-4261-bf94-91c872b2997a,1211,2024-08-15,3301.67,GBP,Internet & Phone,VoIP phone service for international clients,0.4,2500,Microsoft,Bank Transfer,France,False
-09e6a9d1-6572-46db-8d82-7cf17f088f07,1243,2024-03-31,572.21,GBP,Education & Training,Conference registration for industry insights,0.6,4000,Zoom,Cash,France,True
-7db6191c-c029-4c62-b81c-70873dc03512,1619,2025-01-15,2048.45,EUR,Education & Training,Subscription to educational platforms,0.6,4000,Google,PayPal,Canada,True
-3250401e-42b5-4167-bbb2-3d85fa8404a0,1756,2025-02-02,4080.09,USD,Home Office,Office rent for remote work,0.3,5000,Zoom,Cash,Canada,True
-6d3d797e-f010-4f00-9774-965881729863,1687,2024-04-15,1425.08,EUR,Freelancer Platform Fees,Upwork service fee,0.25,2000,Google,Bank Transfer,UK,True
-5d234c42-de9f-4839-9fd5-bf47d2a84542,1987,2024-10-04,4719.76,EUR,Work Equipment,External monitor for work,0.5,5000,Amazon,Bank Transfer,USA,True
-5bd5f55a-1a2e-48fa-be8e-7d3438cea524,1942,2024-08-18,6709.08,USD,Marketing & Advertising,Social media promotions,1.0,10000,Uber,Crypto,USA,True
-2fd9c2c2-0122-4953-91d8-8ab59c893f44,1876,2025-01-02,20895.5,GBP,Rent & Utilities,Electricity bill for workspace,1.0,15000,Uber,Cash,USA,False
-18910ec7-0b50-4b2e-baba-175bdc866fdd,1927,2024-06-09,2010.3,EUR,Work Equipment,External monitor for work,0.5,5000,Amazon,Credit Card,Canada,True
-ee740126-5e41-4ae2-8ca8-00562d37fbfd,1491,2024-04-21,4222.15,USD,Transportation,Monthly public transport pass,1.0,5000,Airbnb,PayPal,USA,True
-3294e6bd-80bf-4cbd-b96f-1e9405a24aee,1882,2024-06-21,3996.63,USD,Business Travel,Hotel stay for business conference,0.35,3500,Apple,Credit Card,France,False
-74f0a908-ac4a-43c9-84f6-6568704f7e8a,1502,2024-11-12,17015.41,USD,Rent & Utilities,Office rent payment,1.0,15000,Uber,Cash,France,False
-c8a741fe-71af-4bac-8aa6-3a745e91825d,1940,2024-08-26,3613.4,GBP,Business Travel,Flight to client meeting,0.35,3500,Amazon,Crypto,Australia,False
-bc6dc443-f840-4a7e-a2a8-09174ad41d07,1252,2024-05-13,3778.54,GBP,Business Travel,Flight to client meeting,0.35,3500,Uber,Credit Card,Canada,False
-2e5e9373-4c12-4de4-b074-3c8c1f6d7ec6,1244,2024-11-29,1340.02,USD,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Airbnb,PayPal,UK,True
-41360c9b-31d6-41b6-9d89-b8e16e1889f1,1193,2024-12-26,4362.44,USD,Transportation,Fuel cost for business trips,1.0,5000,Amazon,Credit Card,Germany,True
-31ec22eb-3f4c-4562-b52c-bfc447989818,1362,2024-03-22,775.93,USD,Education & Training,Subscription to educational platforms,0.6,4000,Netflix,Bank Transfer,France,True
-b7c7b597-04b1-4f95-97e3-127c7984514e,1475,2025-01-01,5142.17,EUR,Home Office,Lighting and furniture for workspace,0.3,5000,Microsoft,Crypto,Canada,False
-c5a5bdd8-c282-41da-8f31-ff44a6577db8,1014,2024-04-19,13352.95,USD,Rent & Utilities,Office rent payment,1.0,15000,Walmart,Cash,Canada,True
-2389b8c5-9c98-422f-9c4b-be11d17f1ee9,1128,2024-05-17,4064.78,USD,Work Equipment,External monitor for work,0.5,5000,Microsoft,Credit Card,France,True
-b78afc1e-a017-4f0f-a3c0-9c4c3a859399,1087,2024-10-25,482.95,USD,Internet & Phone,VoIP phone service for international clients,0.4,2500,Airbnb,PayPal,USA,True
-5f216e8a-231d-45cd-9539-f7fcfd5e2458,1818,2024-10-12,6972.2,GBP,Home Office,Desk and chair for home office,0.3,5000,Microsoft,PayPal,Australia,False
-aa163e48-5798-42ba-a7a2-7f42d9096697,1026,2025-01-15,9388.25,EUR,Rent & Utilities,Office rent payment,1.0,15000,Microsoft,Cash,UK,True
-b1d78744-e67a-42ab-a1f2-cb4b561f8602,1563,2024-05-29,1636.6,USD,Work Equipment,Professional camera for photography business,0.5,5000,Apple,Bank Transfer,USA,True
-49c15317-55de-4a6f-91fe-aaf1956363d0,1934,2024-12-13,607.03,GBP,Internet & Phone,VoIP phone service for international clients,0.4,2500,Airbnb,Credit Card,France,True
-83ab79fe-26ba-4e39-a644-66a03d3ec79b,1732,2024-06-16,4821.47,EUR,Education & Training,Conference registration for industry insights,0.6,4000,Walmart,Crypto,Australia,False
-b1a44a04-d8e5-4323-80da-7b8a7fda688a,1689,2024-06-30,7661.62,GBP,Rent & Utilities,Water and cleaning service charges,1.0,15000,Google,Crypto,USA,True
-65a5cd22-7613-4d0e-ac77-09b1ce10728e,1541,2024-12-14,3491.84,USD,Transportation,Monthly public transport pass,1.0,5000,Google,Bank Transfer,Germany,True
-ccb7ffec-f60d-490e-a6da-b18bed775634,1396,2024-10-27,694.63,EUR,Freelancer Platform Fees,Upwork service fee,0.25,2000,Google,Bank Transfer,USA,True
-24ecd858-311b-4626-bc0b-4280e0e1134e,1589,2024-08-26,445.43,USD,Client Entertainment,Drinks at networking event,0.2,1500,Amazon,Bank Transfer,Canada,True
-11c0b833-1649-4b81-b579-39d3b6f2a05b,1102,2024-07-15,4932.18,GBP,Rent & Utilities,Water and cleaning service charges,1.0,15000,Walmart,Crypto,France,True
-9b6efaba-3d6a-4326-a678-f14055d41973,1342,2024-07-10,1528.8,GBP,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Microsoft,Credit Card,UK,True
-47e20c34-9772-482d-8755-87711f9bc488,1892,2024-12-15,1403.81,USD,Internet & Phone,Mobile data plan for work calls,0.4,2500,Amazon,Cash,Germany,True
-060e64de-d661-4f77-a250-0c57497370a3,1197,2024-07-22,1984.77,GBP,Client Entertainment,Drinks at networking event,0.2,1500,Netflix,Cash,USA,False
-10871f00-e621-406a-bb69-177b71a050f9,1135,2024-11-05,1511.19,EUR,Internet & Phone,Mobile data plan for work calls,0.4,2500,Netflix,PayPal,Canada,True
-8f26f857-7f9c-4e78-8f67-b6830c07a065,1818,2024-12-09,2298.09,GBP,Education & Training,Subscription to educational platforms,0.6,4000,Google,Credit Card,UK,True
-8ff2701e-6639-4f4d-8839-3531b3b11967,1757,2024-10-15,425.35,GBP,Client Entertainment,Dinner with potential client,0.2,1500,Netflix,Crypto,UK,True
-1e6aa036-d79d-4327-ad67-9b7c81a1d23b,1570,2024-12-19,1551.33,USD,Client Entertainment,Event tickets for client meeting,0.2,1500,Microsoft,Bank Transfer,Germany,False
-198f148c-cbe2-430a-9aae-ed253a248c24,1306,2024-07-04,1281.69,EUR,Transportation,Monthly public transport pass,1.0,5000,Amazon,Crypto,Canada,True
-bb902e3b-2288-4dc8-8a12-c3ffecd1f219,1228,2024-11-18,4087.27,USD,Rent & Utilities,Electricity bill for workspace,1.0,15000,Uber,PayPal,USA,True
-52097ed8-6680-43d3-9231-dae84ae0980c,1028,2024-05-07,3487.16,EUR,Education & Training,Subscription to educational platforms,0.6,4000,Microsoft,PayPal,UK,True
-0f851c40-9bc0-418d-925c-9b382f846869,1485,2024-03-24,15330.33,EUR,Rent & Utilities,Water and cleaning service charges,1.0,15000,Apple,PayPal,Australia,False
-74223a44-9806-45d7-851b-69768f8d52ae,1476,2024-11-22,4133.59,EUR,Home Office,Coworking space membership,0.3,5000,Airbnb,Crypto,France,True
-fa06f380-56ff-4b62-a5ad-b210a21d36a4,1289,2024-11-16,12105.99,USD,Marketing & Advertising,SEO service for website optimization,1.0,10000,Amazon,Crypto,Australia,False
-6c9dc628-0d25-4dc0-99ad-841fc9e9e513,1573,2024-09-08,1548.97,USD,Client Entertainment,Event tickets for client meeting,0.2,1500,Amazon,Credit Card,USA,False
-457a1279-c168-4ab8-b505-168dbe524666,1965,2024-03-10,12435.49,EUR,Rent & Utilities,Office rent payment,1.0,15000,Zoom,PayPal,Australia,True
-b77a69d2-a382-4c39-bba4-277b328fffda,1979,2024-09-09,2042.71,GBP,Freelancer Platform Fees,Upwork service fee,0.25,2000,Netflix,Bank Transfer,France,False
-5ddc9d62-630c-4b27-b598-a04337fca25b,1505,2025-02-12,5572.47,USD,Home Office,Lighting and furniture for workspace,0.3,5000,Netflix,Credit Card,USA,False
-6feb5c06-0989-443d-a2b2-225c11af96a8,1777,2024-05-26,1816.3,GBP,Work Equipment,Professional camera for photography business,0.5,5000,Apple,PayPal,UK,True
-152d120a-bddf-4db8-9639-b34c60762020,1518,2024-11-18,133.9,USD,Internet & Phone,Business internet subscription,0.4,2500,Google,Bank Transfer,Canada,True
-71d7e2ad-898b-4ce1-a1ed-11ec8e78f427,1340,2024-09-07,292.31,EUR,Internet & Phone,Business internet subscription,0.4,2500,Microsoft,Cash,Australia,True
-90cb3c18-1bd7-44c6-86ec-d220fabe5dcf,1767,2025-02-03,4717.29,EUR,Work Equipment,External monitor for work,0.5,5000,Netflix,Cash,Canada,True
-0476b67f-44e2-4988-a032-7a3d9189cbae,1248,2024-04-08,5400.3,USD,Education & Training,Subscription to educational platforms,0.6,4000,Microsoft,Bank Transfer,UK,False
-45a436d7-9d9d-4078-8db6-7911080a0a86,1079,2024-09-21,4398.24,EUR,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Walmart,Bank Transfer,Germany,True
-4ac69eef-c80b-4506-a92e-2f51319f7615,1099,2025-02-09,11633.07,EUR,Rent & Utilities,Office rent payment,1.0,15000,Microsoft,Crypto,USA,True
-e59a3b68-a6fe-44cb-85c3-cbe84466616f,1988,2025-02-24,394.57,GBP,Business Travel,Car rental for on-site project,0.35,3500,Walmart,Bank Transfer,UK,True
-dee7fea2-3712-42a5-83a3-e39e08438f46,1839,2024-08-09,5729.8,EUR,Work Equipment,Professional camera for photography business,0.5,5000,Airbnb,Bank Transfer,Germany,False
-b38a1cfc-4599-4735-816b-da5e73100bab,1920,2024-04-22,6351.42,USD,Home Office,Lighting and furniture for workspace,0.3,5000,Airbnb,Bank Transfer,Canada,False
-e0270044-b555-44aa-9888-5b741c88ee04,1842,2025-01-07,3367.49,EUR,Internet & Phone,VoIP phone service for international clients,0.4,2500,Microsoft,Cash,UK,False
-977f9a99-78ad-4c67-b6cc-d42715ea6d20,1234,2024-03-25,1046.55,EUR,Client Entertainment,Event tickets for client meeting,0.2,1500,Zoom,PayPal,France,True
-6d94699d-cbac-4efc-b864-05f28f04e49d,1418,2024-03-24,469.24,USD,Education & Training,Conference registration for industry insights,0.6,4000,Zoom,Cash,UK,True
-3987a5ea-efda-4472-addb-aa319e2d5235,1371,2024-06-02,6800.14,GBP,Home Office,Coworking space membership,0.3,5000,Walmart,Credit Card,Canada,False
-3e8f8ce7-2ce0-478c-86f5-735bd575a9db,1937,2024-03-18,4262.14,USD,Home Office,Desk and chair for home office,0.3,5000,Zoom,PayPal,UK,True
-4213043b-31ef-423c-9ad2-13cb0eb986f4,1062,2025-01-02,79.21,GBP,Home Office,Office rent for remote work,0.3,5000,Apple,Bank Transfer,Canada,True
-734d2183-7539-42a5-ae30-11a5afdfd7a5,1507,2024-04-14,382.14,GBP,Software & Subscriptions,Subscription to design tools,0.5,3000,Zoom,Bank Transfer,UK,True
-97593cbd-9655-4218-8242-c532314c6600,1711,2024-11-12,3276.21,EUR,Rent & Utilities,Office rent payment,1.0,15000,Apple,Cash,Germany,True
-8a892c2c-2016-4b27-b2ab-544ef393e23d,1137,2025-02-14,5138.13,EUR,Business Travel,Flight to client meeting,0.35,3500,Walmart,Credit Card,Germany,False
-27e70258-2b61-4459-a5ed-37c762dffef9,1884,2024-04-20,17401.24,USD,Rent & Utilities,Electricity bill for workspace,1.0,15000,Walmart,Crypto,UK,False
-d8f61ee9-cedf-43d3-bfad-d80a951104ac,1564,2025-01-13,2696.65,EUR,Internet & Phone,Business internet subscription,0.4,2500,Amazon,Credit Card,USA,False
-63cb9212-97fb-4c81-b3a0-c8ae87850c46,1402,2024-12-06,2322.69,EUR,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Uber,PayPal,Canada,False
-28561252-ba84-4d3d-8174-1b0cd46967e4,1274,2024-04-02,7748.35,EUR,Marketing & Advertising,Google Ads campaign,1.0,10000,Amazon,Bank Transfer,Australia,True
-fc796792-6d38-410e-96c2-692cc408428a,1533,2024-06-23,229.53,GBP,Internet & Phone,Business internet subscription,0.4,2500,Airbnb,Credit Card,USA,True
-5734b9e9-cb52-41b9-81b2-259bb0b2d516,1290,2024-12-07,2121.44,GBP,Business Travel,Flight to client meeting,0.35,3500,Apple,Bank Transfer,Canada,True
-57bd7f5f-317c-4b0d-bb06-459c8033f1c9,1033,2024-11-09,776.92,USD,Transportation,Fuel cost for business trips,1.0,5000,Zoom,Credit Card,Germany,True
-654b88d5-c0ca-48c5-a6d9-4cbed2679b58,1464,2024-06-23,7976.21,GBP,Rent & Utilities,Electricity bill for workspace,1.0,15000,Netflix,Cash,France,True
-20345da4-d0a3-4736-a3f8-a3ba851a91ab,1182,2024-06-10,2470.48,USD,Freelancer Platform Fees,Upwork service fee,0.25,2000,Amazon,Cash,Australia,False
-c4673665-1851-4814-834d-d48ccad9538d,1069,2024-08-30,3324.09,GBP,Internet & Phone,VoIP phone service for international clients,0.4,2500,Walmart,Credit Card,France,False
-a83ee3e7-6338-4fe4-bfbd-efa41389e7ca,1025,2024-08-11,670.03,GBP,Transportation,Fuel cost for business trips,1.0,5000,Uber,Credit Card,USA,True
-95c13561-3309-4228-9732-2b3afaec9029,1492,2024-12-17,2910.42,EUR,Transportation,Monthly public transport pass,1.0,5000,Walmart,Crypto,Germany,True
-89f9eff2-7b3c-425d-b3ee-f3fe96089168,1946,2024-08-21,11089.52,EUR,Rent & Utilities,Water and cleaning service charges,1.0,15000,Netflix,PayPal,Australia,True
-ec264f5f-430d-4670-a7cc-9ab42215c3e9,1551,2024-03-18,613.52,EUR,Client Entertainment,Event tickets for client meeting,0.2,1500,Zoom,PayPal,France,True
-691a4ee0-bef1-4512-bc2b-132950f6cff3,1955,2024-12-06,4422.42,GBP,Work Equipment,New laptop for development,0.5,5000,Google,Cash,Australia,True
-d7e10a28-33e6-458a-9633-b10743e004a0,1326,2024-06-28,3395.8,GBP,Rent & Utilities,Electricity bill for workspace,1.0,15000,Walmart,Crypto,Australia,True
-b2587ce1-5b85-45b8-9b82-6c8ada229cf2,1074,2025-02-01,2371.24,USD,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Microsoft,PayPal,Canada,False
-bcb489b3-0f43-43a7-8550-513413ec1042,1315,2024-07-18,4416.12,USD,Home Office,Lighting and furniture for workspace,0.3,5000,Uber,Credit Card,USA,True
-b27a7c91-ffac-400a-8130-ef534a30224e,1037,2024-12-22,448.19,USD,Marketing & Advertising,Google Ads campaign,1.0,10000,Airbnb,PayPal,France,True
-074b7fa4-505f-4902-a3ae-d1a3dbe635fd,1389,2024-08-28,6004.37,USD,Home Office,Desk and chair for home office,0.3,5000,Netflix,Bank Transfer,UK,False
-ebe49892-26c8-4fc9-99b1-c1c0d86a2261,1747,2024-04-02,1866.44,GBP,Marketing & Advertising,Social media promotions,1.0,10000,Walmart,Bank Transfer,Germany,True
-f348ec99-b7ad-4e1a-b90f-4643bda33af9,1223,2024-04-23,1306.85,EUR,Internet & Phone,Business internet subscription,0.4,2500,Apple,Credit Card,UK,True
-2444b8bf-b602-42a3-b52c-552ae26808a0,1343,2024-05-20,2616.52,GBP,Home Office,Desk and chair for home office,0.3,5000,Zoom,Cash,USA,True
-d785376f-e3c7-4741-971c-4ac3ec18f86a,1197,2024-04-22,1076.72,GBP,Internet & Phone,Mobile data plan for work calls,0.4,2500,Zoom,Cash,USA,True
-f3b885a1-233e-4dec-abfe-fdc8d69d56b0,1124,2024-08-21,4583.31,GBP,Education & Training,Subscription to educational platforms,0.6,4000,Microsoft,Bank Transfer,Germany,False
-e80ebce9-ec4b-4787-8f70-80aa31f0966c,1992,2024-12-30,3937.43,GBP,Education & Training,Online course on data science,0.6,4000,Microsoft,Bank Transfer,UK,True
-0e5908b2-d58e-4eda-8e03-668c191a2e88,1099,2024-11-11,5030.71,USD,Marketing & Advertising,Google Ads campaign,1.0,10000,Zoom,Crypto,France,True
-c2072224-a8ab-4906-bc77-25674533abb8,1981,2024-12-09,3080.32,EUR,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Uber,Credit Card,Australia,True
-568ee331-93b6-4226-a84e-563f1f3f0375,1590,2025-02-23,7128.5,USD,Work Equipment,New laptop for development,0.5,5000,Google,Cash,Germany,False
-7d106b77-9585-4011-b3b3-49d3c25b59ad,1179,2025-02-10,1045.6,USD,Internet & Phone,Business internet subscription,0.4,2500,Uber,Bank Transfer,Canada,True
-d38c4447-49ba-4397-948e-dde643f634bb,1850,2024-10-11,9300.39,USD,Marketing & Advertising,Google Ads campaign,1.0,10000,Amazon,Crypto,USA,True
-d082bc93-1a88-4191-889d-69bb4fd0f71d,1896,2024-10-01,1296.43,USD,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Zoom,Credit Card,France,True
-7a9c10d5-bdfa-4f49-b6f9-805d506302f9,1160,2025-02-19,1016.9,USD,Business Travel,Hotel stay for business conference,0.35,3500,Uber,Crypto,UK,True
-68839b0c-981a-4451-a466-92d0301d2304,1474,2024-03-02,1811.07,EUR,Business Travel,Flight to client meeting,0.35,3500,Airbnb,Cash,France,True
-54558aa4-d608-47fd-86b2-cfb7a380b652,1007,2024-03-08,1745.67,USD,Client Entertainment,Dinner with potential client,0.2,1500,Microsoft,Cash,France,False
-3c017044-37d7-4fd6-9bdf-cd2f71945878,1131,2024-10-02,6168.22,GBP,Rent & Utilities,Electricity bill for workspace,1.0,15000,Zoom,PayPal,France,True
-b863ec53-0515-4d4a-9fa8-4ab03138e7e6,1608,2024-07-23,1012.32,EUR,Home Office,Coworking space membership,0.3,5000,Airbnb,Bank Transfer,Australia,True
-8e5e52ce-9f58-4cb6-bbf7-e047d835f38a,1090,2024-10-31,19926.08,EUR,Rent & Utilities,Water and cleaning service charges,1.0,15000,Apple,Crypto,Australia,False
-03bf98cd-527e-4a34-b77a-5e524755c1d9,1480,2024-05-21,495.33,GBP,Marketing & Advertising,Google Ads campaign,1.0,10000,Netflix,Cash,Canada,True
-5b1315ec-9837-46ed-85e7-2ba7dab7fe06,1844,2024-08-28,3935.64,GBP,Work Equipment,External monitor for work,0.5,5000,Microsoft,Crypto,Germany,True
-e023400d-f63b-4ac6-8f33-ca24098709da,1835,2024-04-15,2964.43,EUR,Freelancer Platform Fees,Upwork service fee,0.25,2000,Netflix,Crypto,France,False
-807d0d43-0721-464c-ba77-e5520c2d8719,1208,2024-11-15,2796.26,EUR,Work Equipment,Professional camera for photography business,0.5,5000,Apple,Bank Transfer,Canada,True
-e7013ab4-faad-44b6-a657-2964728a6b68,1937,2024-03-22,5719.84,EUR,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Netflix,Cash,France,False
-705e0ffc-0560-4bf4-97b1-256fc4a16dc3,1980,2024-12-27,4201.47,USD,Transportation,Taxi fare for client visit,1.0,5000,Google,PayPal,France,True
-15cccc98-96a5-412f-b45b-4ee0565d8ff2,1665,2024-04-09,4700.25,EUR,Education & Training,Conference registration for industry insights,0.6,4000,Uber,Cash,UK,False
-bcfce852-1e00-44d2-b54d-871af808d1e9,1767,2024-07-06,1040.48,GBP,Client Entertainment,Event tickets for client meeting,0.2,1500,Airbnb,Bank Transfer,Canada,True
-f530b278-672e-4243-a9ad-0248dc19a558,1080,2024-03-06,3660.26,EUR,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Airbnb,Credit Card,Australia,False
-a4940001-a052-4369-94ac-4ce75ca41318,1187,2024-12-13,2934.17,USD,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Google,Bank Transfer,Australia,False
-91d2788e-74f3-474a-8f33-45f52ca93d52,1766,2024-10-08,1902.32,GBP,Client Entertainment,Drinks at networking event,0.2,1500,Uber,Bank Transfer,France,False
-0c41d94d-bf1f-413e-a125-be597d8c7b3b,1792,2024-10-23,7752.68,EUR,Rent & Utilities,Water and cleaning service charges,1.0,15000,Microsoft,Crypto,UK,True
-03a2a501-42b4-4885-8a47-e0c67c7b6a8f,1185,2024-09-09,3738.78,USD,Transportation,Taxi fare for client visit,1.0,5000,Amazon,PayPal,Germany,True
-39448a3f-cfc5-49e4-b13b-ccff07a23c35,1152,2024-10-02,1315.99,USD,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Zoom,Bank Transfer,Canada,True
-ae2db8a8-3c1d-44b9-8be7-913cf9852e06,1900,2024-05-08,1467.62,EUR,Work Equipment,Professional camera for photography business,0.5,5000,Amazon,PayPal,Canada,True
-1a914d78-84e4-43f9-ad49-feae214e386f,1660,2025-02-11,13607.76,USD,Rent & Utilities,Water and cleaning service charges,1.0,15000,Apple,Credit Card,Canada,True
-38517734-f01f-4ee4-9292-74971f49b74d,1728,2024-07-09,7349.93,EUR,Transportation,Taxi fare for client visit,1.0,5000,Apple,Bank Transfer,Australia,False
-a5ea20db-0888-462a-b399-14291a37cac1,1950,2024-04-11,315.49,USD,Home Office,Desk and chair for home office,0.3,5000,Walmart,Crypto,Australia,True
-0b30748b-ce12-4f4c-b496-df306078c5c5,1138,2024-04-16,4193.48,USD,Work Equipment,Professional camera for photography business,0.5,5000,Google,Crypto,Australia,True
-721967cb-18b1-439c-b227-3324b471409b,1222,2025-02-08,6831.4,USD,Home Office,Lighting and furniture for workspace,0.3,5000,Uber,Crypto,USA,False
-7c0a7414-0caf-4029-8bb1-86fc73e33f09,1136,2024-06-20,3401.79,GBP,Business Travel,Car rental for on-site project,0.35,3500,Netflix,Bank Transfer,Canada,True
-abc4caea-4da1-4486-b984-c125992617b6,1173,2025-01-27,5898.99,USD,Home Office,Coworking space membership,0.3,5000,Microsoft,Bank Transfer,Canada,False
-09c5f06a-973f-482a-8f58-8744f035fbd9,1406,2024-12-24,16.93,GBP,Business Travel,Flight to client meeting,0.35,3500,Netflix,Crypto,Germany,True
-c6bbf464-2ba7-4626-8b7d-bc670d27e122,1901,2024-12-03,3037.26,EUR,Education & Training,Online course on data science,0.6,4000,Zoom,Credit Card,USA,True
-62b35b30-65dc-4e2f-a38c-70cf5144d2a7,1898,2024-11-07,208.63,EUR,Business Travel,Hotel stay for business conference,0.35,3500,Netflix,Credit Card,USA,True
-89e2328d-6a6a-48c5-ac14-a944c1996bdc,1839,2024-05-04,8362.54,GBP,Rent & Utilities,Office rent payment,1.0,15000,Apple,PayPal,USA,True
-22a767a1-1a18-403d-977d-650d279112ad,1166,2024-06-23,2834.23,GBP,Education & Training,Online course on data science,0.6,4000,Apple,Credit Card,USA,True
-c86c9161-3afc-4944-b40c-b357d73bbc81,1395,2025-02-03,3533.04,EUR,Business Travel,Flight to client meeting,0.35,3500,Uber,Bank Transfer,USA,False
-8e3e93d2-d07a-4016-84df-eddd455368c9,1231,2024-11-18,826.74,GBP,Client Entertainment,Event tickets for client meeting,0.2,1500,Google,Credit Card,Germany,True
-d0d79bb0-3e40-4e7b-bbb3-b9ee09cffe57,1364,2024-07-23,1117.82,EUR,Software & Subscriptions,Subscription to design tools,0.5,3000,Walmart,Crypto,UK,True
-06a0a77b-c7c9-45c0-a762-cbfb09d6ff22,1357,2024-06-23,6539.42,EUR,Home Office,Lighting and furniture for workspace,0.3,5000,Amazon,Cash,France,False
-3004a402-4c33-4453-af26-d014ae501088,1348,2024-11-11,5753.14,EUR,Work Equipment,Professional camera for photography business,0.5,5000,Uber,Crypto,USA,False
-6d063115-3220-46e5-9cad-c49d34703fc6,1461,2024-08-09,7292.06,GBP,Work Equipment,New laptop for development,0.5,5000,Apple,Credit Card,USA,False
-a72723d6-cbb7-487b-be36-75d66928df7d,1221,2024-05-11,1828.66,USD,Education & Training,Conference registration for industry insights,0.6,4000,Microsoft,Cash,Canada,True
-3a0ce28b-9b94-4d3f-a3a7-f33340133195,1150,2024-12-15,5348.51,USD,Home Office,Coworking space membership,0.3,5000,Netflix,PayPal,Canada,False
-cb9cc487-5907-4e84-ba4d-f1e60611aba9,1559,2025-02-01,7878.31,GBP,Rent & Utilities,Electricity bill for workspace,1.0,15000,Walmart,Bank Transfer,USA,True
-a7f86587-6eb2-4cc9-ab87-acfdb0bbaca2,1927,2024-04-08,872.48,EUR,Business Travel,Car rental for on-site project,0.35,3500,Microsoft,PayPal,Canada,True
-9f573ed5-4b5b-4fe0-9b3d-d30658c5c1a5,1217,2024-03-22,3349.38,EUR,Software & Subscriptions,Project management software renewal,0.5,3000,Airbnb,PayPal,Canada,False
-7fdde8bb-5079-4b78-8af3-cd0429b7756b,1245,2024-05-23,4114.8,GBP,Work Equipment,Professional camera for photography business,0.5,5000,Apple,Crypto,France,True
-147f2d9b-8f7f-44a3-ba75-a0c4be2e52df,1548,2025-02-16,979.09,USD,Internet & Phone,Business internet subscription,0.4,2500,Uber,Bank Transfer,Germany,True
-6a443bd0-8e32-4f8a-bda9-4768463ba32f,1007,2024-04-26,1989.84,GBP,Internet & Phone,Mobile data plan for work calls,0.4,2500,Uber,Cash,France,True
-3f1c688e-8edb-4485-8e77-001ec918c77b,1696,2024-07-06,1206.8,EUR,Client Entertainment,Dinner with potential client,0.2,1500,Apple,Bank Transfer,Canada,True
-980c768f-2710-45c4-95be-d2dec515a60c,1870,2024-08-03,11458.46,GBP,Rent & Utilities,Water and cleaning service charges,1.0,15000,Microsoft,Cash,UK,True
-e0ff9e0b-aa73-49bd-8c89-6ae49509b16b,1108,2024-11-22,1376.77,EUR,Internet & Phone,VoIP phone service for international clients,0.4,2500,Airbnb,Crypto,Canada,True
-657060e0-6ab9-4800-ab60-f694b722cfb1,1114,2024-04-30,1791.98,USD,Client Entertainment,Dinner with potential client,0.2,1500,Walmart,Cash,Australia,False
-0285bff9-d5e7-4d5e-ae4b-dd578736bd7e,1872,2024-03-11,858.38,EUR,Client Entertainment,Dinner with potential client,0.2,1500,Apple,Credit Card,USA,True
-2a6f2773-b0bd-44ba-a93a-a30553c22182,1820,2024-07-20,4051.42,GBP,Transportation,Taxi fare for client visit,1.0,5000,Netflix,Crypto,USA,True
-79a5ea02-6e32-4da0-a114-a87b85616e11,1543,2024-12-25,4242.91,USD,Business Travel,Hotel stay for business conference,0.35,3500,Netflix,Credit Card,USA,False
-90476d5b-4038-4aa3-b4c7-0f5ed2a16a4d,1320,2024-12-25,2054.18,GBP,Internet & Phone,VoIP phone service for international clients,0.4,2500,Apple,Crypto,France,True
-d5e91f0a-2ff1-45e5-9da8-339d0faa26d7,1169,2025-02-05,1845.94,USD,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Airbnb,Crypto,Canada,True
-e18808a8-2c95-4fa8-9eed-d602f3546e4e,1861,2024-05-21,1493.41,USD,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Airbnb,Cash,USA,True
-35157009-2a97-47eb-981b-300559763b2d,1721,2025-02-07,11373.62,USD,Rent & Utilities,Office rent payment,1.0,15000,Walmart,Bank Transfer,France,True
-34c07abe-c439-4140-8e62-10655f7953cd,1467,2024-09-05,611.99,GBP,Internet & Phone,VoIP phone service for international clients,0.4,2500,Airbnb,Crypto,UK,True
-fef833c0-5e31-4fb5-9af0-eaec0684629b,1653,2024-07-30,3799.19,EUR,Business Travel,Hotel stay for business conference,0.35,3500,Apple,Bank Transfer,UK,False
-17b062e5-88d4-4757-9142-166282e2b1c0,1508,2025-01-18,1304.63,GBP,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Google,Credit Card,Germany,True
-5b284844-4bac-47d3-bcd0-9a9c9ed0f562,1367,2024-09-07,6241.39,EUR,Work Equipment,External monitor for work,0.5,5000,Amazon,Crypto,USA,False
-6e5dfeb1-ccb4-48d5-8cd5-e52fb40c5bec,1942,2024-07-22,656.49,GBP,Transportation,Fuel cost for business trips,1.0,5000,Netflix,Bank Transfer,USA,True
-05072933-ae8e-47f4-89d8-5eab6860baaf,1919,2024-08-21,3713.48,USD,Software & Subscriptions,Subscription to design tools,0.5,3000,Walmart,Cash,USA,False
-d3cfd575-0dec-4177-b5f0-a269553d5249,1477,2024-07-20,3249.26,USD,Home Office,Lighting and furniture for workspace,0.3,5000,Netflix,PayPal,UK,True
-a60e2f5e-1cd8-42eb-b070-69b50e9214ec,1553,2024-03-01,4877.73,USD,Education & Training,Conference registration for industry insights,0.6,4000,Uber,PayPal,Canada,False
-788b15d5-c1c0-428e-af68-544b6019d155,1329,2024-12-19,2639.98,GBP,Education & Training,Subscription to educational platforms,0.6,4000,Microsoft,Credit Card,Australia,True
-da7d4a5b-1e81-4cae-a5b7-42f3c1c6c793,1696,2024-11-23,5151.12,USD,Education & Training,Conference registration for industry insights,0.6,4000,Netflix,Crypto,UK,False
-1e210a2e-c6c5-425d-877b-19ecf84db528,1308,2024-08-04,3306.93,EUR,Internet & Phone,Business internet subscription,0.4,2500,Apple,Bank Transfer,Germany,False
-72f50afa-dc49-49ed-8da3-9b46a0c67714,1923,2024-05-24,2525.75,USD,Transportation,Monthly public transport pass,1.0,5000,Apple,Credit Card,UK,True
-47f60add-fe54-4af4-b31d-893ea553464c,1370,2024-10-29,4233.78,USD,Marketing & Advertising,Google Ads campaign,1.0,10000,Google,Crypto,UK,True
-4bce4a5a-dc3a-49a3-b350-300486cb7e39,1918,2024-12-12,1547.17,EUR,Transportation,Monthly public transport pass,1.0,5000,Amazon,Credit Card,UK,True
-9134c7e8-5eca-4c0f-a746-6f472c9b3dc3,1043,2024-11-13,860.59,EUR,Client Entertainment,Event tickets for client meeting,0.2,1500,Amazon,Credit Card,Australia,True
-dfe8a80a-ab54-4d20-90ec-8f769e6b571f,1964,2024-02-28,5017.11,EUR,Business Travel,Flight to client meeting,0.35,3500,Netflix,PayPal,Australia,False
-6afe35c7-2703-4ec2-bf3e-620b83ca6c9f,1245,2024-07-06,3971.01,EUR,Home Office,Desk and chair for home office,0.3,5000,Airbnb,Cash,Canada,True
-7dd85199-7ca4-496c-aa69-5586ef431a4c,1703,2025-02-15,6576.7,EUR,Home Office,Coworking space membership,0.3,5000,Uber,Cash,UK,False
-a172ffa8-d49a-48c2-9e60-35d606db2511,1496,2024-06-10,128.0,GBP,Freelancer Platform Fees,Upwork service fee,0.25,2000,Zoom,Cash,UK,True
-ed590bd5-f8a3-4a26-9bcb-dd3e84c354a0,1080,2024-07-14,2517.51,USD,Freelancer Platform Fees,Upwork service fee,0.25,2000,Google,Bank Transfer,Germany,False
-807e060b-46c0-4048-8aa7-935f868acb06,1037,2024-03-13,3936.77,USD,Work Equipment,External monitor for work,0.5,5000,Amazon,Cash,Australia,True
-f9fead98-f28a-4caf-9bae-3af328e665a6,1102,2025-01-31,13045.3,GBP,Marketing & Advertising,Google Ads campaign,1.0,10000,Microsoft,Bank Transfer,France,False
-68ccda46-a56c-4c8b-807d-14360ee1312a,1493,2024-10-06,369.74,USD,Business Travel,Flight to client meeting,0.35,3500,Netflix,Cash,Germany,True
-52afd0d8-c6cf-4983-8d2c-6656e1c1f1ac,1022,2024-10-20,8255.41,USD,Rent & Utilities,Water and cleaning service charges,1.0,15000,Google,Credit Card,Germany,True
-b5803b01-419b-4f63-97ba-0ead679f873d,1056,2024-07-06,1906.54,GBP,Work Equipment,Professional camera for photography business,0.5,5000,Amazon,PayPal,UK,True
-b2f8ca69-fc03-45c0-8983-c78947f88e42,1400,2024-09-18,3360.94,USD,Work Equipment,External monitor for work,0.5,5000,Zoom,PayPal,France,True
-b27f73b5-7600-41b8-b9df-6c6056745e89,1342,2024-12-21,567.45,USD,Business Travel,Hotel stay for business conference,0.35,3500,Netflix,Cash,Germany,True
-3410586f-8270-4950-974b-c339ca6ac33e,1426,2024-08-18,10868.61,GBP,Marketing & Advertising,Google Ads campaign,1.0,10000,Google,Crypto,USA,False
-998750f2-8b71-4093-bb0b-e2505987fc00,1445,2024-06-26,886.18,GBP,Work Equipment,Professional camera for photography business,0.5,5000,Zoom,PayPal,USA,True
-ff4c1cd5-408a-416a-a97e-cd7d0055103b,1036,2024-08-26,3584.41,EUR,Software & Subscriptions,Project management software renewal,0.5,3000,Airbnb,Crypto,France,False
-26552dc1-da42-410f-ad32-81166e294b81,1340,2024-05-31,88.05,EUR,Freelancer Platform Fees,Upwork service fee,0.25,2000,Netflix,Bank Transfer,Australia,True
-ee34ce90-f20e-4745-b159-c5222617bc2b,1248,2024-07-23,4224.16,USD,Education & Training,Online course on data science,0.6,4000,Netflix,Credit Card,Germany,False
-82899d54-84bf-4836-a37f-31b6b14f703b,1740,2024-04-08,1987.92,GBP,Internet & Phone,Business internet subscription,0.4,2500,Walmart,Bank Transfer,Canada,True
-c71a6790-473b-4a26-b8e0-9219910c3025,1286,2024-04-18,2314.87,GBP,Home Office,Desk and chair for home office,0.3,5000,Apple,Cash,USA,True
-21dac48f-4dfc-49f1-9735-a499f84106bd,1815,2024-07-03,4394.23,GBP,Work Equipment,External monitor for work,0.5,5000,Airbnb,Cash,UK,True
-15ad3644-242e-4f51-bc8b-a0f7114e6739,1995,2024-05-03,1428.2,EUR,Education & Training,Conference registration for industry insights,0.6,4000,Google,Bank Transfer,Canada,True
-04c403a4-5d22-4096-83b9-b50253e1a8e8,1903,2024-07-31,386.94,USD,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Airbnb,Crypto,USA,True
-8a299d31-9f02-49e3-87dd-4d4d03450a02,1508,2025-02-05,4251.9,EUR,Work Equipment,External monitor for work,0.5,5000,Netflix,Bank Transfer,Australia,True
-b2b9dccd-8dd7-4e06-bbdf-5b7393b6e051,1430,2024-12-27,3506.8,GBP,Home Office,Desk and chair for home office,0.3,5000,Uber,Credit Card,France,True
-8c6b5e1c-da35-47ba-8a46-4afd4cecac12,1926,2024-11-25,610.84,USD,Education & Training,Conference registration for industry insights,0.6,4000,Uber,Crypto,Germany,True
-a78bd86e-4ade-4fc6-9341-0417be957c7c,1819,2025-02-20,31.84,USD,Client Entertainment,Dinner with potential client,0.2,1500,Apple,Bank Transfer,USA,True
-949860ce-1134-4fd6-8060-073d3a5a0c39,1668,2025-01-27,251.06,EUR,Education & Training,Subscription to educational platforms,0.6,4000,Amazon,Credit Card,Canada,True
-3822f397-a1d9-4a32-800e-90c9ff88784b,1475,2024-08-06,6783.32,GBP,Marketing & Advertising,SEO service for website optimization,1.0,10000,Airbnb,Bank Transfer,Australia,True
-57bc24ce-2e19-43ab-ace4-116cc7012f25,1060,2024-11-25,3388.14,EUR,Business Travel,Hotel stay for business conference,0.35,3500,Netflix,Bank Transfer,USA,True
-16f1ca09-17ac-4568-8cc7-55eb8e5df03f,1488,2024-08-22,266.56,EUR,Rent & Utilities,Electricity bill for workspace,1.0,15000,Uber,Crypto,Australia,True
-61fa8bbb-aca9-4f6b-a4c2-c2f2fec746ed,1340,2024-07-11,252.09,EUR,Rent & Utilities,Water and cleaning service charges,1.0,15000,Walmart,PayPal,France,True
-34a61d73-4e56-463a-8822-d984b221cc9b,1972,2024-12-26,7334.27,EUR,Rent & Utilities,Electricity bill for workspace,1.0,15000,Zoom,Credit Card,Germany,True
-991bb5f5-b865-4505-8823-45db82497825,1602,2025-02-22,2196.36,GBP,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Airbnb,Crypto,Australia,True
-f1752be0-7ab3-4061-a278-aefa9f98c659,1879,2024-12-24,3057.86,USD,Work Equipment,External monitor for work,0.5,5000,Zoom,Cash,France,True
-6938794a-5fb5-4d03-ac2e-7dc9cbe01f64,1623,2024-03-08,860.58,GBP,Business Travel,Car rental for on-site project,0.35,3500,Microsoft,PayPal,France,True
-12a17d86-7e95-402d-bf43-f508313bb190,1684,2024-12-20,5594.55,GBP,Work Equipment,External monitor for work,0.5,5000,Walmart,PayPal,USA,False
-3f13df87-380f-4cbe-adc5-974f8ac349c7,1746,2024-05-22,432.43,EUR,Rent & Utilities,Electricity bill for workspace,1.0,15000,Netflix,Bank Transfer,Canada,True
-82223cb8-d69d-45c5-bc55-060b87e87eae,1001,2024-12-29,20742.76,GBP,Rent & Utilities,Electricity bill for workspace,1.0,15000,Amazon,Credit Card,USA,False
-768ec8c2-da81-4fcc-b3da-9f96042227ac,1833,2024-08-03,2642.33,GBP,Transportation,Taxi fare for client visit,1.0,5000,Zoom,PayPal,Australia,True
-260b83c5-8bc2-47e6-a580-1b4020e59af4,1187,2024-05-07,3733.01,USD,Transportation,Monthly public transport pass,1.0,5000,Airbnb,Bank Transfer,France,True
-82517708-919c-4d81-b6ec-5419013be27b,1468,2025-02-26,3559.75,GBP,Internet & Phone,VoIP phone service for international clients,0.4,2500,Netflix,Cash,Canada,False
-f5434864-c69e-413f-ae1b-bd14972fb02b,1029,2024-07-20,1700.92,USD,Business Travel,Car rental for on-site project,0.35,3500,Microsoft,Cash,France,True
-ca4611ab-5f89-4319-9002-360bfcb15675,1952,2024-06-20,2282.56,GBP,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Zoom,Crypto,UK,True
-3f782001-7a8e-4b7b-83e6-ccfcbc20a31d,1114,2025-02-01,562.5,EUR,Client Entertainment,Event tickets for client meeting,0.2,1500,Airbnb,Crypto,Germany,True
-6052602f-3930-4d3d-8ce6-6c5f6c884b29,1003,2024-11-27,1869.23,GBP,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Amazon,Cash,France,True
-0ea135e0-25ea-424d-ae22-9bafdd43509f,1554,2024-11-11,702.28,EUR,Education & Training,Online course on data science,0.6,4000,Walmart,Credit Card,UK,True
-d2bf9cbb-dcca-4162-aef1-791fb594d6fb,1641,2024-03-16,11207.33,EUR,Rent & Utilities,Office rent payment,1.0,15000,Microsoft,PayPal,UK,True
-941ead50-8827-465a-9b1d-64cf26c0d3b4,1578,2025-02-10,5564.62,EUR,Home Office,Coworking space membership,0.3,5000,Walmart,Crypto,Germany,False
-989020aa-3203-47c8-8ed1-1e3b94cdd197,1561,2024-10-13,1840.57,USD,Transportation,Taxi fare for client visit,1.0,5000,Walmart,PayPal,Australia,True
-5c8cbe21-2ec6-4922-bbc2-923055ac41da,1805,2024-10-09,112.72,EUR,Internet & Phone,Mobile data plan for work calls,0.4,2500,Walmart,Credit Card,Australia,True
-2d6aa086-c07b-462a-8a76-61525efea076,1452,2025-02-15,4727.77,USD,Home Office,Coworking space membership,0.3,5000,Airbnb,Bank Transfer,USA,True
-809ae953-8835-49ef-99a9-4c2f693b9fe7,1982,2024-12-24,3685.48,EUR,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Uber,Bank Transfer,France,False
-a5884cfe-1acd-4bee-aa12-23477cdb292b,1316,2024-04-05,12961.28,EUR,Marketing & Advertising,Google Ads campaign,1.0,10000,Amazon,Credit Card,Canada,False
-a629d718-0c17-4455-88ac-178962313c19,1905,2024-08-01,2134.45,EUR,Software & Subscriptions,Subscription to design tools,0.5,3000,Airbnb,Bank Transfer,Australia,True
-f971bcf2-c432-4538-be71-ce3a8c866b40,1985,2024-09-09,1638.42,USD,Freelancer Platform Fees,Upwork service fee,0.25,2000,Airbnb,Cash,UK,True
-1c809ae1-e74d-42a7-986e-dd7ca8a9967e,1048,2025-02-11,4377.42,USD,Software & Subscriptions,Subscription to design tools,0.5,3000,Microsoft,Credit Card,USA,False
-8d35c1a7-7901-4086-84ba-6991ba14f27b,1239,2024-09-19,6281.01,USD,Transportation,Monthly public transport pass,1.0,5000,Uber,Cash,France,False
-5edfe0e9-7c47-40ac-8114-58175feb4390,1875,2025-02-26,7569.78,EUR,Rent & Utilities,Office rent payment,1.0,15000,Microsoft,Credit Card,Australia,True
-5d8eee3b-24f0-4d03-891a-b771ea623423,1937,2024-05-06,3821.74,USD,Transportation,Taxi fare for client visit,1.0,5000,Apple,Crypto,France,True
-d2db9b05-02f1-48c3-a642-5d1dc662ecf7,1810,2024-03-20,5633.43,USD,Marketing & Advertising,Google Ads campaign,1.0,10000,Google,Crypto,Germany,True
-e2d1b8cc-65e7-44db-8404-bd1b7e52a17a,1009,2024-07-19,2440.44,USD,Business Travel,Flight to client meeting,0.35,3500,Apple,Crypto,Germany,True
-9d1fff53-0728-4afe-bd84-6afde2bb5094,1242,2024-08-25,1524.65,USD,Software & Subscriptions,Project management software renewal,0.5,3000,Apple,Credit Card,Canada,True
-e6b811fd-6d39-409a-ae49-5a1f0b3dbaed,1790,2025-02-12,311.72,GBP,Internet & Phone,VoIP phone service for international clients,0.4,2500,Google,Cash,UK,True
-8a1e00dc-ce8f-4196-9e11-69ff65fae8ea,1313,2024-08-08,3900.86,EUR,Software & Subscriptions,Subscription to design tools,0.5,3000,Walmart,Credit Card,Canada,False
-b46e91a2-4ff5-43cc-935e-7cffec9dcd06,1317,2025-02-02,2875.42,USD,Transportation,Taxi fare for client visit,1.0,5000,Microsoft,Cash,Australia,True
-11373086-adf5-4ad8-b0d0-4afd35f70036,1958,2024-12-10,2765.2,USD,Business Travel,Hotel stay for business conference,0.35,3500,Uber,Cash,USA,True
-efd5f692-55cb-4fc2-864e-4113ca72b27e,1604,2024-07-07,83.85,GBP,Client Entertainment,Dinner with potential client,0.2,1500,Google,Credit Card,Australia,True
-e326f152-d26b-49ce-bd97-77d635d0657b,1488,2024-03-23,63.88,GBP,Software & Subscriptions,Subscription to design tools,0.5,3000,Airbnb,PayPal,Germany,True
-fab58b30-8a26-4605-b477-299537c13b42,1860,2024-05-21,1882.06,EUR,Home Office,Office rent for remote work,0.3,5000,Airbnb,Cash,UK,True
-06c9dc95-26bf-4e71-9e62-868657dc2a27,1048,2024-05-15,551.28,GBP,Client Entertainment,Dinner with potential client,0.2,1500,Apple,Credit Card,USA,True
-55820f3a-ebab-44a7-a88f-bf152833f54c,1541,2024-08-21,2345.2,GBP,Work Equipment,New laptop for development,0.5,5000,Netflix,Bank Transfer,USA,True
-d7945bd3-bb31-4cda-a389-c32e3b4e47bd,1032,2024-10-22,10805.32,EUR,Rent & Utilities,Water and cleaning service charges,1.0,15000,Zoom,Crypto,France,True
-9df6d61e-9d30-4b43-9faf-9d698e0d43a1,1331,2024-11-23,2306.69,EUR,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Amazon,Crypto,Canada,False
-68085bd9-a884-43ee-8426-4b4b4f113593,1056,2024-05-29,401.27,USD,Education & Training,Conference registration for industry insights,0.6,4000,Netflix,Crypto,Australia,True
-9760a105-c580-4fd6-9dc6-addf194d19b9,1136,2024-10-07,1952.31,GBP,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Airbnb,Crypto,Australia,True
-49cb54a4-bfdd-4fed-8fea-70b813029041,1571,2024-12-06,9439.1,EUR,Marketing & Advertising,Social media promotions,1.0,10000,Walmart,Credit Card,USA,True
-6d8d5985-5d5a-4904-ad9c-9639a774b86f,1627,2024-05-26,5463.83,USD,Transportation,Taxi fare for client visit,1.0,5000,Apple,Cash,France,False
-591a3fef-4b75-4285-8613-bfa7c3a9496c,1463,2024-02-27,856.85,USD,Work Equipment,External monitor for work,0.5,5000,Microsoft,Crypto,USA,True
-0511a801-d085-4d55-973b-18a001070901,1120,2024-12-25,1669.19,USD,Transportation,Fuel cost for business trips,1.0,5000,Walmart,Crypto,UK,True
-f3a39385-db07-43d0-b159-5a043a62f4b6,1678,2024-03-02,1246.71,GBP,Client Entertainment,Drinks at networking event,0.2,1500,Walmart,Bank Transfer,UK,True
-fe3648e1-88e3-4349-8b72-f3af7d4b4d2d,1682,2024-11-05,6329.28,USD,Marketing & Advertising,SEO service for website optimization,1.0,10000,Amazon,Credit Card,France,True
-cc4c7483-d2be-40c5-b8ad-9dcbb7807863,1219,2024-05-20,10452.29,GBP,Marketing & Advertising,Google Ads campaign,1.0,10000,Microsoft,Crypto,Germany,False
-904103d3-32f8-4c67-ab4f-2755a66c840a,1825,2024-07-01,230.14,GBP,Client Entertainment,Event tickets for client meeting,0.2,1500,Zoom,Cash,UK,True
-f716dbbb-d838-4c0c-9fe7-fbf2b06537f3,1256,2024-09-20,14416.03,GBP,Rent & Utilities,Water and cleaning service charges,1.0,15000,Microsoft,Bank Transfer,USA,True
-8b8de823-7c1d-4cce-9f20-010a1992a710,1938,2024-09-11,934.54,GBP,Freelancer Platform Fees,Upwork service fee,0.25,2000,Netflix,Credit Card,Australia,True
-25f3908a-0c05-438f-bc2f-ce1dc9d1f3f1,1667,2025-01-01,20435.99,GBP,Rent & Utilities,Water and cleaning service charges,1.0,15000,Netflix,Cash,UK,False
-246e781c-efd0-40e2-9761-38e06af31aac,1105,2024-08-17,481.97,EUR,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Microsoft,Bank Transfer,Germany,True
-4fbd5230-e169-43ee-89fd-0b1e011e65e5,1119,2024-10-01,2413.33,GBP,Software & Subscriptions,Project management software renewal,0.5,3000,Uber,Crypto,USA,True
-99d88cc7-643c-4b3d-b462-4f37939ebc23,1485,2024-09-01,1458.4,GBP,Education & Training,Online course on data science,0.6,4000,Google,PayPal,Canada,True
-ba3f1012-d83c-4426-908a-6c45867d8b9a,1316,2024-04-19,6028.29,USD,Transportation,Taxi fare for client visit,1.0,5000,Microsoft,Crypto,Australia,False
-da29e881-900c-46c3-8473-cc487e660f71,1942,2024-03-20,2604.89,GBP,Freelancer Platform Fees,Upwork service fee,0.25,2000,Walmart,Cash,Australia,False
-b8730572-df8c-43a1-b1fe-05375252f57a,1435,2024-09-25,2826.04,USD,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Microsoft,Bank Transfer,Germany,True
-cf786d87-3d7c-4f03-b514-f433103ebd3b,1751,2024-06-19,1089.54,GBP,Freelancer Platform Fees,Upwork service fee,0.25,2000,Apple,Credit Card,USA,True
-3185258d-53b6-47a8-af21-bad841369781,1116,2024-12-27,5061.65,GBP,Transportation,Monthly public transport pass,1.0,5000,Microsoft,Credit Card,USA,False
-6daef76d-6f5d-4c5d-b130-804fea7d3b8b,1861,2024-04-15,5284.68,USD,Home Office,Lighting and furniture for workspace,0.3,5000,Zoom,Credit Card,Canada,False
-7eed6a51-cde1-4a52-9467-1c2d9ba32e63,1256,2024-06-24,8506.34,USD,Marketing & Advertising,SEO service for website optimization,1.0,10000,Walmart,Crypto,Germany,True
-eeb00021-54ae-4192-8404-d1bf9771ee0b,1966,2024-09-05,7559.94,USD,Rent & Utilities,Water and cleaning service charges,1.0,15000,Airbnb,Crypto,Australia,True
-325e011c-dbed-4271-ace1-7c8f40a8b9bf,1463,2024-11-16,991.16,USD,Business Travel,Flight to client meeting,0.35,3500,Apple,Crypto,Australia,True
-4def2941-1014-4e3d-aa76-d9897699ee97,1257,2024-10-03,1578.87,USD,Home Office,Lighting and furniture for workspace,0.3,5000,Walmart,Cash,UK,True
-e1b39d88-1356-4010-bbad-519763b22220,1611,2025-02-19,1857.49,GBP,Internet & Phone,Business internet subscription,0.4,2500,Zoom,Bank Transfer,France,True
-6dcfed99-ede5-4738-9c0b-23632b11f0e8,1336,2024-05-01,1362.5,USD,Client Entertainment,Event tickets for client meeting,0.2,1500,Airbnb,Credit Card,USA,True
-e586c73d-f191-4bb0-95d6-7e5bd91b55ba,1516,2024-07-09,3030.37,USD,Home Office,Desk and chair for home office,0.3,5000,Google,Cash,USA,True
-4ca140d6-f773-41eb-be51-c88eff4c73b7,1617,2024-03-29,592.01,USD,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Microsoft,Crypto,Germany,True
-9a173725-1937-41d7-93ce-ef48be715b0d,1118,2024-08-19,4072.1,EUR,Software & Subscriptions,Project management software renewal,0.5,3000,Walmart,Bank Transfer,USA,False
-68436298-f8be-49d9-ab0a-9abb7c29291d,1130,2024-12-20,2726.17,USD,Freelancer Platform Fees,Upwork service fee,0.25,2000,Zoom,Crypto,Canada,False
-1556a74c-d6d3-4339-97da-77bdeaf9daed,1605,2024-03-12,16123.12,USD,Rent & Utilities,Electricity bill for workspace,1.0,15000,Walmart,Crypto,USA,False
-5469c6ea-6a5c-4102-b3e4-dfaa67898c89,1212,2024-05-26,15071.53,EUR,Rent & Utilities,Electricity bill for workspace,1.0,15000,Airbnb,Bank Transfer,USA,False
-54f243e7-3104-4d2d-9b96-45c6d416708b,1382,2024-08-29,2969.67,EUR,Home Office,Coworking space membership,0.3,5000,Microsoft,Cash,Germany,True
-d81595a9-a177-4ca1-98b5-e7dcb2fce7c4,1212,2025-01-11,20589.48,USD,Rent & Utilities,Water and cleaning service charges,1.0,15000,Netflix,PayPal,Germany,False
-d020f299-b0eb-4116-a16b-9c3c899c8e01,1159,2024-06-06,3677.77,GBP,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Airbnb,Credit Card,USA,True
-57cdf9e8-29bf-4a3f-be86-87e6d0c422c5,1904,2024-11-20,14395.77,EUR,Marketing & Advertising,Google Ads campaign,1.0,10000,Apple,Credit Card,Canada,False
-3ea5f81a-46ee-47e0-9362-a68a423d16e0,1491,2024-03-09,1273.95,EUR,Work Equipment,New laptop for development,0.5,5000,Walmart,Bank Transfer,Australia,True
-99afdd34-ca1c-4d64-9dc1-7e54d82750c1,1296,2024-06-21,791.59,GBP,Internet & Phone,Mobile data plan for work calls,0.4,2500,Apple,Credit Card,USA,True
-ac66b5aa-c8c4-4e6f-a776-b54e13015c28,1297,2024-08-04,692.55,USD,Education & Training,Conference registration for industry insights,0.6,4000,Walmart,Crypto,Australia,True
-dd910dc0-7f70-4a01-bfd1-56d22f0669e1,1876,2024-03-16,3100.88,EUR,Education & Training,Online course on data science,0.6,4000,Zoom,Crypto,USA,True
-0015a582-4762-4431-8279-8a21ba1d4084,1719,2024-08-22,14735.93,GBP,Marketing & Advertising,Google Ads campaign,1.0,10000,Uber,Crypto,USA,False
-7552f6ec-bb1e-4b79-b25b-6ee937d881f5,1982,2024-05-14,7098.72,GBP,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Uber,Credit Card,Germany,False
-3f9f84dc-c6c2-489c-8c13-1c7a57ae3ef5,1736,2024-03-17,2328.51,USD,Work Equipment,External monitor for work,0.5,5000,Amazon,Credit Card,Germany,True
-60415fde-5073-4d5e-9d43-128ba0d06e57,1341,2025-02-02,1687.9,USD,Education & Training,Subscription to educational platforms,0.6,4000,Airbnb,PayPal,Canada,True
-e1fa6c37-2bc5-4ef2-8ff7-eed05ab616d1,1726,2024-08-23,2423.53,EUR,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Apple,PayPal,Germany,False
-f00de821-f314-4ac0-8449-d17887ea426c,1265,2024-07-19,2570.73,GBP,Marketing & Advertising,Social media promotions,1.0,10000,Zoom,Cash,UK,True
-f1fc61ed-231d-4e6d-ad84-9ea6aecd0ae4,1905,2024-06-06,4951.47,USD,Transportation,Taxi fare for client visit,1.0,5000,Uber,PayPal,UK,True
-e28c0971-8dfc-4e93-b354-2bb7cf99d18c,1854,2024-03-20,672.4,GBP,Business Travel,Flight to client meeting,0.35,3500,Microsoft,PayPal,France,True
-c21f2c18-895e-49f5-88c3-5adaf99e2b58,1976,2024-04-13,10240.88,USD,Rent & Utilities,Electricity bill for workspace,1.0,15000,Uber,Bank Transfer,Australia,True
-ffba262d-f058-45e5-a49f-c9a828f68513,1346,2024-11-18,3639.63,USD,Business Travel,Car rental for on-site project,0.35,3500,Netflix,Cash,Australia,False
-91174f71-235c-450c-ab15-8f2714ff7180,1126,2024-04-18,21070.96,USD,Rent & Utilities,Electricity bill for workspace,1.0,15000,Zoom,Credit Card,Germany,False
-4850a97f-acfd-4bea-88aa-805423ad225b,1047,2024-04-18,2612.43,EUR,Work Equipment,New laptop for development,0.5,5000,Uber,Crypto,Australia,True
-343e5b2d-bffc-4811-b5b0-4b004c3d4d1e,1830,2024-10-23,13116.67,EUR,Rent & Utilities,Electricity bill for workspace,1.0,15000,Amazon,Cash,Australia,True
-7eb77d9a-4874-4c58-b70f-bb8f12fe02ef,1252,2024-05-18,6016.06,EUR,Rent & Utilities,Water and cleaning service charges,1.0,15000,Amazon,Credit Card,Canada,True
-64781de1-c052-4163-b74b-2857d7993420,1868,2024-05-25,584.3,EUR,Freelancer Platform Fees,Upwork service fee,0.25,2000,Zoom,Bank Transfer,Australia,True
-d5b86804-6852-4c60-bbd5-155787013c87,1873,2024-12-27,5631.46,EUR,Home Office,Lighting and furniture for workspace,0.3,5000,Walmart,Crypto,Germany,False
-4d327d5e-5e57-4d04-8a62-d918dba0d959,1052,2024-09-02,603.78,USD,Freelancer Platform Fees,Upwork service fee,0.25,2000,Netflix,PayPal,France,True
-bbd9500b-141d-4cf6-abba-2e5009708205,1382,2024-10-18,4495.09,GBP,Work Equipment,New laptop for development,0.5,5000,Uber,PayPal,USA,True
-f5c32497-9430-4c11-9c89-2f275d40e2f5,1387,2024-08-29,3957.2,EUR,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Zoom,Cash,UK,False
-808bd7df-a5fe-492e-ab15-90939519e7e5,1311,2024-07-31,5071.47,GBP,Education & Training,Conference registration for industry insights,0.6,4000,Zoom,PayPal,UK,False
-0b8d6431-d0bc-4e73-b6c3-dd474bb0e1fe,1550,2025-01-05,2932.42,GBP,Marketing & Advertising,Social media promotions,1.0,10000,Airbnb,PayPal,Canada,True
-150103fd-d3bb-4553-a430-f0ab25e5904b,1198,2024-09-09,280.75,EUR,Client Entertainment,Drinks at networking event,0.2,1500,Amazon,Credit Card,Canada,True
-ff463d57-dd04-4462-88a8-b22b5388c060,1497,2024-12-14,6653.8,USD,Work Equipment,External monitor for work,0.5,5000,Microsoft,Bank Transfer,France,False
-d4cd6644-6699-4775-936d-a9d34f7dcd16,1461,2024-12-11,16769.04,USD,Rent & Utilities,Water and cleaning service charges,1.0,15000,Apple,Bank Transfer,UK,False
-960e802b-ea03-488c-9c3f-4c5dd6357031,1874,2024-10-18,1505.37,EUR,Business Travel,Hotel stay for business conference,0.35,3500,Airbnb,Credit Card,Australia,True
-339f0376-236a-4076-ac17-760ae2577cc2,1056,2024-03-27,845.84,GBP,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Amazon,Bank Transfer,Australia,True
-c69f849e-7df8-4840-a55f-058bf36dac4f,1867,2024-08-08,3882.91,GBP,Business Travel,Flight to client meeting,0.35,3500,Amazon,Cash,UK,False
-410429a6-3cea-4637-be6e-441138e98e1b,1514,2024-06-13,178.59,EUR,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Walmart,PayPal,UK,True
-722e4cce-8a89-4521-bad9-0d0214ba78f7,1013,2024-10-01,883.26,USD,Freelancer Platform Fees,Upwork service fee,0.25,2000,Netflix,Crypto,Germany,True
-d27f5f76-93ec-4c45-8e48-35503d0c4539,1481,2025-01-13,1117.92,GBP,Software & Subscriptions,Subscription to design tools,0.5,3000,Airbnb,Credit Card,Canada,True
-b0e4575c-a94d-4551-b58c-c45803f2f329,1860,2024-07-24,1325.22,GBP,Work Equipment,External monitor for work,0.5,5000,Uber,Crypto,France,True
-c5bf26ea-6665-402e-a724-d0a591dfb861,1773,2024-07-17,968.51,USD,Client Entertainment,Dinner with potential client,0.2,1500,Google,Bank Transfer,UK,True
-f8b8f291-bf2b-4c2a-b251-177817cb4cf3,1914,2024-11-02,1455.46,USD,Client Entertainment,Event tickets for client meeting,0.2,1500,Zoom,Bank Transfer,Canada,True
-b64b1bd6-37dd-4a36-a349-f6c3c861c968,1836,2024-07-18,2788.15,USD,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Microsoft,Crypto,Canada,False
-b70a422c-0900-40e8-b86a-1440dee5fd91,1073,2024-03-30,420.0,GBP,Freelancer Platform Fees,Upwork service fee,0.25,2000,Uber,Crypto,Canada,True
-69d8615b-3bea-45ec-bf16-1070c82f4f12,1950,2024-11-01,2127.44,GBP,Software & Subscriptions,Project management software renewal,0.5,3000,Zoom,Bank Transfer,Canada,True
-451afda3-b7e5-496e-a093-26f72a686274,1289,2024-07-05,1381.99,USD,Home Office,Office rent for remote work,0.3,5000,Microsoft,Bank Transfer,Germany,True
-c7edc4db-866c-4fc1-8d83-d5e1eeb0f95b,1074,2024-06-06,739.13,EUR,Business Travel,Flight to client meeting,0.35,3500,Zoom,Bank Transfer,Germany,True
-73de1ebb-3443-4fd7-b6e6-b93cda434a44,1016,2024-04-10,2191.73,EUR,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Microsoft,PayPal,Canada,False
-8c002dc7-d49b-4050-a15d-1898b07185f6,1501,2024-05-08,2189.12,GBP,Business Travel,Hotel stay for business conference,0.35,3500,Microsoft,Bank Transfer,France,True
-ac4e3bf7-4c4c-4e76-a8c8-66a70b5a75af,1974,2024-05-15,584.96,GBP,Business Travel,Car rental for on-site project,0.35,3500,Netflix,Cash,Canada,True
-11a972fd-a378-4dae-bdd0-aba85b6447f9,1616,2024-11-08,808.45,EUR,Freelancer Platform Fees,Upwork service fee,0.25,2000,Google,PayPal,Australia,True
-6bdf501e-c6da-4ecc-bf1e-406f6b7ceb94,1929,2024-03-12,69.17,GBP,Home Office,Coworking space membership,0.3,5000,Airbnb,Cash,France,True
-63b1ec48-e342-41f1-aa36-13fa5b7c9ea4,1159,2025-02-03,1889.78,GBP,Client Entertainment,Drinks at networking event,0.2,1500,Walmart,PayPal,UK,False
-b09deb12-b41c-4cd4-8523-bff250f57a7f,1255,2024-08-06,258.5,GBP,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Uber,Cash,Australia,True
-eb20316e-8d4d-4052-b42b-683c880f2ee5,1118,2024-03-31,2243.63,EUR,Home Office,Coworking space membership,0.3,5000,Airbnb,Credit Card,USA,True
-00a5effc-4f22-4fc9-96da-28f72b818c66,1033,2024-08-25,8936.86,USD,Rent & Utilities,Water and cleaning service charges,1.0,15000,Google,Crypto,UK,True
-e171f99e-e769-4602-8559-e238bcdb0958,1404,2024-06-03,1511.12,USD,Home Office,Office rent for remote work,0.3,5000,Zoom,Credit Card,Germany,True
-d4a8dd28-d444-4c11-bcf6-fb0c46c89571,1804,2024-06-27,1942.99,EUR,Freelancer Platform Fees,Upwork service fee,0.25,2000,Microsoft,PayPal,UK,True
-b1dc72b7-cf59-454c-ae81-0ea6b4b9da83,1225,2024-05-24,2289.18,GBP,Marketing & Advertising,SEO service for website optimization,1.0,10000,Airbnb,Cash,USA,True
-e2af63dc-1064-4a48-bec1-0967d8a4b133,1537,2024-06-08,15797.73,EUR,Rent & Utilities,Office rent payment,1.0,15000,Walmart,PayPal,France,False
-b9804ee3-dcce-43b6-8af0-14de5902b51c,1144,2024-10-20,1669.01,GBP,Home Office,Coworking space membership,0.3,5000,Zoom,Bank Transfer,France,True
-72e2bf9b-c984-4a19-ab57-8d0649399617,1010,2024-08-07,2778.06,GBP,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Uber,Credit Card,Australia,True
-6e5c753b-cd06-43c7-8f66-f62198e9979f,1661,2025-02-15,2685.55,GBP,Transportation,Fuel cost for business trips,1.0,5000,Apple,Credit Card,France,True
-1773bf31-ab37-477d-a4e1-3bd63361ff2e,1666,2024-11-23,1109.33,USD,Home Office,Lighting and furniture for workspace,0.3,5000,Microsoft,Bank Transfer,USA,True
-d3ef2e24-9c2c-4170-b48b-19c404ac1996,1032,2024-06-04,3239.54,GBP,Internet & Phone,Mobile data plan for work calls,0.4,2500,Airbnb,PayPal,UK,False
-c16cc3dd-2ffe-4c2d-9dc5-565d483a8082,1425,2024-09-11,1684.22,EUR,Software & Subscriptions,Subscription to design tools,0.5,3000,Walmart,Cash,Canada,True
-d606e363-b110-4883-9a52-56e04b079a53,1921,2024-08-02,2278.48,USD,Rent & Utilities,Electricity bill for workspace,1.0,15000,Uber,Cash,UK,True
-3deac823-3914-4eed-9802-1a4bb18d1dc8,1977,2024-05-14,259.32,EUR,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Google,Credit Card,Germany,True
-f7a7ad74-8547-4ab2-9587-f4415b2ce2aa,1539,2024-06-21,2865.69,EUR,Business Travel,Car rental for on-site project,0.35,3500,Google,Cash,Australia,True
-25c4dd73-8da2-4b52-a00c-e459f8eb3a87,1721,2025-01-25,7366.52,GBP,Transportation,Taxi fare for client visit,1.0,5000,Microsoft,Crypto,Australia,False
-2283d9aa-b562-40c3-8e23-0a4c1ad66b83,1941,2024-03-18,2815.44,GBP,Software & Subscriptions,Subscription to design tools,0.5,3000,Walmart,Cash,USA,True
-dea0d006-c8d4-47b4-894d-1866112a5fda,1633,2024-09-02,7204.87,USD,Transportation,Fuel cost for business trips,1.0,5000,Uber,PayPal,UK,False
-4b80c23d-39d4-490b-8581-0a90e6a924d8,1068,2024-08-10,2604.42,GBP,Education & Training,Online course on data science,0.6,4000,Netflix,Cash,UK,True
-72be0784-37b3-4e42-90ea-15409ac42ffb,1547,2024-04-05,1149.9,GBP,Education & Training,Subscription to educational platforms,0.6,4000,Google,Credit Card,Australia,True
-8fc6a0c3-8e0e-4e23-a39d-9f02f5f5d2d3,1396,2024-06-30,4399.19,USD,Home Office,Coworking space membership,0.3,5000,Amazon,Credit Card,France,True
-21e6e4d6-226c-42bb-acb6-fe2096e0c7ec,1173,2025-01-19,2870.15,USD,Home Office,Lighting and furniture for workspace,0.3,5000,Walmart,Cash,France,True
-4949fe9b-2849-4b0f-a3c6-c0e5746e347c,1776,2024-06-18,1289.91,GBP,Marketing & Advertising,Google Ads campaign,1.0,10000,Google,Bank Transfer,Australia,True
-e53ee5fc-a7f4-4490-9aa8-9c1989de67a7,1720,2024-07-12,4143.4,EUR,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Amazon,Cash,Germany,False
-64735997-0923-44ce-9c49-1d0ee8cbf2d3,1717,2024-06-03,13255.83,EUR,Rent & Utilities,Electricity bill for workspace,1.0,15000,Apple,Credit Card,France,True
-b7e86999-d974-4a8a-82bb-3144787b9d43,1448,2024-12-02,1111.56,EUR,Marketing & Advertising,SEO service for website optimization,1.0,10000,Apple,PayPal,UK,True
-40b604ee-6927-4b5f-b48c-6e5da5634ebb,1705,2025-01-14,4305.31,GBP,Marketing & Advertising,Google Ads campaign,1.0,10000,Airbnb,Cash,Australia,True
-5cd7a22c-e99f-47f4-9e69-283ed0a2a510,1892,2024-10-29,4019.91,GBP,Software & Subscriptions,Project management software renewal,0.5,3000,Apple,Bank Transfer,Canada,False
-b946dfbf-236f-4843-96da-316c514db00b,1596,2024-08-14,4973.68,GBP,Home Office,Coworking space membership,0.3,5000,Uber,Credit Card,Australia,True
-87637926-e5a1-475b-8dd1-0b8cd1001b91,1991,2024-09-19,1384.27,EUR,Education & Training,Subscription to educational platforms,0.6,4000,Walmart,Credit Card,Australia,True
-83e71a2b-ddb0-4ed9-97f4-37bcf4d9c2c4,1104,2024-11-05,3248.83,GBP,Education & Training,Conference registration for industry insights,0.6,4000,Microsoft,Crypto,Germany,True
-52ee0748-32b8-421b-b472-9a418acd06ce,1051,2024-04-28,874.13,USD,Client Entertainment,Drinks at networking event,0.2,1500,Zoom,Bank Transfer,UK,True
-fd68dcfc-4516-4408-ae6c-c799d8d58c3c,1658,2024-09-07,267.64,GBP,Client Entertainment,Event tickets for client meeting,0.2,1500,Uber,Credit Card,Australia,True
-82772047-3a7d-4a67-ab09-dc28be206b85,1607,2024-12-31,3729.9,USD,Business Travel,Hotel stay for business conference,0.35,3500,Google,PayPal,UK,False
-3acf48fd-8c16-4468-ac45-67a20546858e,1624,2024-12-06,534.3,GBP,Transportation,Fuel cost for business trips,1.0,5000,Netflix,PayPal,USA,True
-64ef2fec-a140-4f74-bba1-c9921864d1ab,1506,2024-08-07,874.44,GBP,Software & Subscriptions,Subscription to design tools,0.5,3000,Airbnb,Cash,Canada,True
-fdb3f313-3fd9-4287-a4da-89a24f088140,1148,2024-06-16,291.84,USD,Freelancer Platform Fees,Upwork service fee,0.25,2000,Uber,Cash,Germany,True
-31cbbbb6-50c0-408d-ac08-1f20482abacf,1242,2024-11-05,5152.59,GBP,Transportation,Monthly public transport pass,1.0,5000,Uber,PayPal,France,False
-67542138-054a-4786-a34f-0b3e8ba073a1,1969,2024-03-03,65.16,GBP,Internet & Phone,Business internet subscription,0.4,2500,Apple,Cash,Germany,True
-8c63f5b1-049f-4c94-af23-605dcfdea750,1254,2024-11-25,5492.6,EUR,Work Equipment,New laptop for development,0.5,5000,Netflix,Credit Card,UK,False
-4c33b048-43e5-4ac3-abd7-d5dacd387033,1432,2024-07-05,2186.33,EUR,Internet & Phone,Mobile data plan for work calls,0.4,2500,Walmart,Credit Card,Australia,True
-4c118da6-0df2-43b5-901c-8d73c2fea986,1308,2024-12-19,5240.45,EUR,Business Travel,Flight to client meeting,0.35,3500,Zoom,Bank Transfer,UK,False
-f1713114-bab6-4b71-888a-91e9b21afff3,1616,2024-10-30,4462.5,USD,Transportation,Taxi fare for client visit,1.0,5000,Apple,Bank Transfer,Germany,True
-8d6b0e54-681c-4683-89e6-c47c34b5e932,1089,2024-04-14,14456.24,GBP,Rent & Utilities,Office rent payment,1.0,15000,Uber,PayPal,Australia,True
-18f2fc3f-6945-4e12-b792-78882c3b9d1c,1439,2024-03-12,16855.13,USD,Rent & Utilities,Electricity bill for workspace,1.0,15000,Uber,Credit Card,Canada,False
-31e87b46-f337-42a3-90f0-627a279f891a,1533,2025-02-06,330.64,USD,Business Travel,Hotel stay for business conference,0.35,3500,Walmart,Credit Card,Canada,True
-2c543dd8-a45e-4fad-a4c1-405cf9f723b3,1379,2024-12-27,3547.84,USD,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Uber,Cash,USA,False
-8a262f4f-90b7-4ff9-8dfb-e95a2bdb8b9c,1526,2024-12-04,3505.79,EUR,Work Equipment,Professional camera for photography business,0.5,5000,Apple,Bank Transfer,UK,True
-f91c577d-6ca6-4b21-8be2-4a7d2eb51f0f,1903,2024-07-08,2767.79,GBP,Internet & Phone,Business internet subscription,0.4,2500,Netflix,Credit Card,Australia,False
-c3de5666-b93f-41d5-a9db-bc9a6ae76032,1868,2024-09-23,3357.58,EUR,Software & Subscriptions,Subscription to design tools,0.5,3000,Airbnb,Credit Card,UK,False
-2760c21a-9aba-41c0-8f5c-1bd57274299c,1988,2025-02-20,2170.43,USD,Education & Training,Conference registration for industry insights,0.6,4000,Airbnb,Cash,USA,True
-a9943379-f108-4af7-8c56-fd2b054c2d6e,1926,2024-11-03,4433.16,GBP,Business Travel,Hotel stay for business conference,0.35,3500,Google,PayPal,USA,False
-cecddfd7-533d-40aa-bad9-9496eeab9ef8,1570,2024-11-24,5015.13,EUR,Work Equipment,New laptop for development,0.5,5000,Apple,Bank Transfer,Canada,False
-1722a4a1-7c97-4b8a-84e8-6f68af62aa09,1478,2024-12-28,1386.5,EUR,Business Travel,Flight to client meeting,0.35,3500,Microsoft,PayPal,Canada,True
-798968b8-9da1-4079-a59c-472dad81d1e1,1108,2024-04-16,153.29,USD,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Amazon,Crypto,USA,True
-04cad5c8-a028-4e16-aae9-ea2e9a83face,1224,2024-11-21,7011.34,USD,Home Office,Office rent for remote work,0.3,5000,Zoom,Cash,USA,False
-2a9d14d7-5103-4639-a279-f53a6aaf6f88,1997,2024-11-08,1340.44,GBP,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Google,Bank Transfer,Germany,True
-c4bd4507-ace6-4cbb-83b8-065bb1abb43b,1454,2024-04-27,657.34,GBP,Transportation,Fuel cost for business trips,1.0,5000,Apple,PayPal,Germany,True
-34f40811-29a6-46d4-82be-c57e122964ed,1905,2024-10-21,7083.73,EUR,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Microsoft,Credit Card,France,False
-44430842-afac-4614-a357-79632fcb4fb8,1776,2024-07-28,6295.11,GBP,Home Office,Desk and chair for home office,0.3,5000,Amazon,Crypto,Australia,False
-df09a5c5-b81c-4cf8-9496-f22d9b2fe6b5,1928,2024-04-08,7447.8,USD,Rent & Utilities,Water and cleaning service charges,1.0,15000,Zoom,Bank Transfer,USA,True
-9db267fb-16e9-4474-8032-e00b2321256f,1501,2024-10-30,5703.07,GBP,Education & Training,Subscription to educational platforms,0.6,4000,Airbnb,Cash,France,False
-6a352348-da82-44d6-aa2f-1cd8c24fff0d,1148,2024-03-05,607.29,EUR,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Netflix,Crypto,Australia,True
-57d7f601-8dde-4b30-b2a5-0606d52fe4ce,1997,2024-06-16,1304.41,EUR,Rent & Utilities,Electricity bill for workspace,1.0,15000,Netflix,Crypto,France,True
-9ec43f39-3e83-4019-a155-30985e5892be,1197,2024-03-04,2282.02,GBP,Software & Subscriptions,Project management software renewal,0.5,3000,Google,Crypto,UK,True
-032fcd6b-48cd-4dd7-9028-9cdd7b7a5bfe,1256,2024-04-25,2800.07,GBP,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Netflix,PayPal,USA,True
-ed3eb5e4-105d-472a-912d-aa0700d41cd0,1857,2024-07-05,1053.38,EUR,Software & Subscriptions,Project management software renewal,0.5,3000,Airbnb,Crypto,USA,True
-36744266-a8e7-4211-ad10-88d24e81dba9,1129,2024-07-13,5132.92,GBP,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Netflix,Crypto,Canada,False
-77699e26-87d9-4d7e-abb0-74b67046c3b7,1488,2024-09-22,341.6,USD,Client Entertainment,Event tickets for client meeting,0.2,1500,Google,Bank Transfer,France,True
-3d7a1f5f-b5b5-4682-ba62-43b84fa5583f,1581,2024-03-31,699.08,GBP,Freelancer Platform Fees,Upwork service fee,0.25,2000,Uber,Cash,Australia,True
-3374d4a6-a901-4099-b38d-f4b79d1179f0,1286,2024-07-13,1596.15,EUR,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Walmart,Crypto,Canada,True
-03f8a085-65a0-444a-aaa3-2a8b68799719,1221,2024-03-05,813.21,GBP,Work Equipment,New laptop for development,0.5,5000,Microsoft,PayPal,France,True
-281cb9e4-57ad-4282-b199-d81db82ed2ac,1435,2024-06-10,395.7,EUR,Client Entertainment,Drinks at networking event,0.2,1500,Microsoft,Crypto,Australia,True
-48fe9e32-0030-46ee-ba01-ff3efb49fd82,1148,2024-11-26,3758.77,EUR,Home Office,Desk and chair for home office,0.3,5000,Zoom,PayPal,UK,True
-00a9c034-b679-4c13-aa67-161609172a10,1439,2024-08-02,10186.17,EUR,Rent & Utilities,Water and cleaning service charges,1.0,15000,Microsoft,Cash,Australia,True
-4a14c5c5-0b94-4d7d-a0be-edb484d769de,1682,2024-06-20,1381.84,USD,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Walmart,PayPal,France,True
-c59b681c-b312-4605-9d48-eebaf5f5916f,1219,2024-06-29,8766.76,EUR,Marketing & Advertising,SEO service for website optimization,1.0,10000,Netflix,PayPal,Canada,True
-cbd32441-4905-4e1c-9d6b-0f6ecc28ca9a,1317,2024-04-15,12830.53,USD,Rent & Utilities,Electricity bill for workspace,1.0,15000,Zoom,Bank Transfer,Australia,True
-ab0cfa86-7931-4d75-98a5-177749dbe229,1932,2024-11-10,4669.94,EUR,Work Equipment,New laptop for development,0.5,5000,Amazon,PayPal,UK,True
-8cc6d6f7-5c76-4fd0-b558-62847c0508dd,1987,2024-05-03,1242.16,EUR,Home Office,Lighting and furniture for workspace,0.3,5000,Microsoft,Credit Card,Canada,True
-5c68a48b-3755-4d10-8719-1a298b814744,1304,2024-07-02,199.23,EUR,Client Entertainment,Drinks at networking event,0.2,1500,Microsoft,Bank Transfer,UK,True
-2793de6a-1590-4e62-98eb-2ff392e2ebac,1570,2025-01-07,431.5,USD,Client Entertainment,Dinner with potential client,0.2,1500,Amazon,Credit Card,UK,True
-3c85a245-d41d-4ffd-accb-ab936141de15,1961,2024-09-22,1471.56,USD,Work Equipment,External monitor for work,0.5,5000,Uber,Credit Card,France,True
-f84e515b-0211-4bf0-820f-7caf1e3a1e07,1051,2024-04-12,5144.83,EUR,Education & Training,Conference registration for industry insights,0.6,4000,Apple,Credit Card,Australia,False
-95fb06ca-bc7a-458d-abe9-55d8bd37b3d3,1464,2024-11-08,202.35,USD,Client Entertainment,Dinner with potential client,0.2,1500,Amazon,PayPal,USA,True
-a7c98c47-622f-4993-b3e2-29c282aeb918,1279,2024-05-10,879.92,GBP,Client Entertainment,Drinks at networking event,0.2,1500,Microsoft,Credit Card,Canada,True
-a53f8ada-3b0c-490c-b15f-e5becb664912,1940,2024-11-29,3559.75,USD,Rent & Utilities,Water and cleaning service charges,1.0,15000,Google,Crypto,France,True
-41da929a-45e9-4131-b6c9-d6a89e482c41,1953,2024-03-13,14786.44,USD,Marketing & Advertising,SEO service for website optimization,1.0,10000,Microsoft,Bank Transfer,UK,False
-779a7ae9-d32e-44dd-90b4-a1c1c0bca613,1633,2025-01-29,6702.05,EUR,Work Equipment,New laptop for development,0.5,5000,Microsoft,Credit Card,Canada,False
-c27bf2a0-b51e-4e5f-a7ce-00635b624199,1505,2024-06-24,1695.93,EUR,Internet & Phone,VoIP phone service for international clients,0.4,2500,Microsoft,Cash,Germany,True
-53b24dc0-c5a6-4c3e-9df2-f92e7b1460e0,1508,2025-01-16,979.35,GBP,Transportation,Fuel cost for business trips,1.0,5000,Google,Bank Transfer,Australia,True
-a69f3f0f-fac0-4621-a991-af4fdf6644c2,1621,2024-07-14,7028.99,GBP,Home Office,Coworking space membership,0.3,5000,Uber,Bank Transfer,UK,False
-527da6c9-8809-40f0-8cb6-416b074d28dc,1017,2024-11-15,4328.59,EUR,Education & Training,Conference registration for industry insights,0.6,4000,Apple,Cash,USA,False
-585344f9-9f1d-46c6-af68-0124872e4435,1269,2024-08-30,3085.84,GBP,Home Office,Coworking space membership,0.3,5000,Airbnb,Credit Card,Canada,True
-398f8623-d0dd-4fe9-87ca-146232dca54f,1539,2024-04-27,1023.16,EUR,Business Travel,Flight to client meeting,0.35,3500,Zoom,PayPal,USA,True
-78eca195-a8af-475f-8c8c-dde14fc9c7fb,1060,2024-09-01,5894.37,EUR,Home Office,Office rent for remote work,0.3,5000,Amazon,Crypto,Germany,False
-45baeea9-8b31-491e-8585-7d61c5fb08b2,1849,2024-05-14,2130.62,USD,Business Travel,Hotel stay for business conference,0.35,3500,Google,Cash,UK,True
-59e92b8e-7b11-43f1-bda1-5f0958c29db4,1342,2024-06-08,2245.58,USD,Rent & Utilities,Electricity bill for workspace,1.0,15000,Apple,Credit Card,Australia,True
-e13331ea-2a2f-4d50-8aba-25c179909a60,1354,2024-04-21,5795.98,GBP,Home Office,Coworking space membership,0.3,5000,Zoom,Crypto,Germany,False
-f935f945-3a28-4987-97bc-bdce9a6f75d7,1147,2024-04-13,2026.73,EUR,Software & Subscriptions,Project management software renewal,0.5,3000,Netflix,Crypto,Germany,True
-7333f558-ef14-40b8-812e-723bb4c88dfb,1475,2024-11-23,975.98,GBP,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Zoom,Credit Card,Germany,True
-2ba767b4-5b99-4657-94fd-70df51c39b0a,1610,2024-04-09,660.25,EUR,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Microsoft,Bank Transfer,Canada,True
-6d787c5f-4dc0-42a6-b688-518834d1c25c,1022,2025-02-26,3662.87,USD,Education & Training,Online course on data science,0.6,4000,Apple,Cash,USA,True
-99ab00d8-8fbe-49a3-b291-bcc563cfdce1,1298,2024-03-13,19644.95,USD,Rent & Utilities,Office rent payment,1.0,15000,Microsoft,Bank Transfer,USA,False
-3fd75446-b0a1-4b5f-984a-9a475b15eb50,1347,2024-08-31,3184.54,GBP,Home Office,Lighting and furniture for workspace,0.3,5000,Netflix,Cash,France,True
-77421ae1-e5f2-4de1-aa29-09a263079e2f,1415,2025-01-18,541.84,USD,Work Equipment,New laptop for development,0.5,5000,Microsoft,Credit Card,UK,True
-483d0caa-ea4c-4aee-b578-f076812739fa,1706,2024-06-27,9001.13,USD,Marketing & Advertising,Social media promotions,1.0,10000,Uber,Credit Card,USA,True
-510d5cc6-3026-4671-b163-20c7950852c9,1483,2025-01-09,284.57,GBP,Work Equipment,External monitor for work,0.5,5000,Airbnb,PayPal,Germany,True
-46a5130a-ea28-4d91-b321-09db298b71ec,1520,2024-04-03,3965.62,EUR,Home Office,Desk and chair for home office,0.3,5000,Apple,Credit Card,Canada,True
-c3b35ec0-a7b3-409a-aaac-40824f731765,1855,2024-06-04,678.89,USD,Education & Training,Online course on data science,0.6,4000,Microsoft,PayPal,USA,True
-daed5a5c-8356-4280-a407-d53a905c0f7e,1518,2025-01-16,11288.78,GBP,Rent & Utilities,Electricity bill for workspace,1.0,15000,Airbnb,PayPal,Australia,True
-f8cf468c-11b9-44f4-9366-0c85e1df907c,1094,2025-02-22,2147.98,GBP,Freelancer Platform Fees,Upwork service fee,0.25,2000,Microsoft,Credit Card,USA,False
-bb514b68-d82b-4af7-84f0-bfdc9f951663,1952,2025-01-23,1348.23,GBP,Software & Subscriptions,Project management software renewal,0.5,3000,Microsoft,PayPal,Germany,True
-5fec9f43-10d6-4418-8d51-60ef98849a8f,1250,2024-05-05,426.44,GBP,Home Office,Desk and chair for home office,0.3,5000,Microsoft,PayPal,Germany,True
-3f74d18b-5a1a-4a39-b1a7-5fb41a14aac4,1840,2024-12-24,1069.25,USD,Internet & Phone,VoIP phone service for international clients,0.4,2500,Airbnb,Cash,Canada,True
-27b15008-ae04-49ae-b511-2932c90ad121,1122,2024-03-16,7332.6,GBP,Transportation,Fuel cost for business trips,1.0,5000,Apple,Cash,Canada,False
-2a94e790-dcf2-40c6-b209-82285afe7b72,1448,2024-12-26,4688.93,EUR,Home Office,Office rent for remote work,0.3,5000,Google,Crypto,USA,True
-0a543093-91ce-45e2-9a43-747c86ed4ccc,1451,2025-02-01,1735.13,USD,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Apple,Cash,Germany,True
-e5cccc7b-f0a9-4aaf-bb19-b97881f93b6b,1542,2024-09-17,7331.59,EUR,Work Equipment,Professional camera for photography business,0.5,5000,Amazon,Credit Card,Canada,False
-efef1b04-80c5-4e05-884c-194c1028fb40,1283,2025-01-30,713.9,USD,Client Entertainment,Dinner with potential client,0.2,1500,Zoom,Crypto,USA,True
-493dc35c-3d91-410e-912a-0bcf5e3daa43,1157,2024-06-20,722.37,USD,Internet & Phone,Business internet subscription,0.4,2500,Apple,Cash,Australia,True
-9f476024-c6cb-4b67-83d8-f3309e7b1d4c,1905,2024-03-21,15399.0,GBP,Rent & Utilities,Water and cleaning service charges,1.0,15000,Uber,Bank Transfer,USA,False
-0a43b8d6-2fe7-4254-9dec-97905dd008e5,1258,2024-06-23,1754.43,EUR,Work Equipment,Professional camera for photography business,0.5,5000,Airbnb,Bank Transfer,Australia,True
-acc5539b-29df-4700-9994-15e7b39f9638,1770,2025-02-25,1662.27,USD,Freelancer Platform Fees,Upwork service fee,0.25,2000,Uber,Bank Transfer,Germany,True
-5e95633b-12fe-42ad-b2c5-dc76716f8477,1311,2024-10-05,1046.46,GBP,Software & Subscriptions,Project management software renewal,0.5,3000,Google,Credit Card,Canada,True
-af874cc7-ad1a-46e9-abe9-e4f717092dd2,1398,2024-11-25,4779.66,EUR,Transportation,Monthly public transport pass,1.0,5000,Walmart,Crypto,UK,True
-5960bd3f-27e6-4e95-8fa8-8180267905fc,1293,2024-05-02,6164.98,EUR,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Amazon,PayPal,USA,False
-237229b5-7f49-4d17-9636-673164ddc930,1744,2024-04-12,5349.11,GBP,Work Equipment,External monitor for work,0.5,5000,Apple,Bank Transfer,UK,False
-385ca812-26f2-4ff8-903b-74850dc81c80,1293,2024-04-09,4192.43,GBP,Home Office,Office rent for remote work,0.3,5000,Uber,Cash,Australia,True
-6679a6c7-81b4-4ad2-b187-f6d8327064d9,1403,2024-05-19,5736.06,EUR,Education & Training,Subscription to educational platforms,0.6,4000,Zoom,Cash,Canada,False
-23520d6f-d7f7-4205-a514-8fe3dedf10ad,1323,2024-09-17,1136.96,USD,Internet & Phone,VoIP phone service for international clients,0.4,2500,Microsoft,Crypto,France,True
-36d6dd0d-4225-4e37-9e73-52bdf0febaaf,1975,2024-05-16,2282.95,USD,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Airbnb,Bank Transfer,Germany,False
-625b0893-1b8d-49ba-ad39-9f7bf9d5d93b,1767,2024-09-14,13847.5,GBP,Marketing & Advertising,Social media promotions,1.0,10000,Amazon,PayPal,USA,False
-1b8e5739-7f81-4b04-bb2a-8ba56a2f1c1c,1086,2024-04-06,14652.29,EUR,Marketing & Advertising,Social media promotions,1.0,10000,Apple,Crypto,Australia,False
-45dea048-3f8f-4a16-a85d-ad871a74b5c5,1128,2024-03-26,2897.2,GBP,Freelancer Platform Fees,Upwork service fee,0.25,2000,Amazon,Cash,UK,False
-8005d610-9f07-468d-b84b-e68f0d687c6b,1167,2024-11-29,2092.33,USD,Marketing & Advertising,Google Ads campaign,1.0,10000,Amazon,Credit Card,Germany,True
-b1c52fe2-db87-4659-af15-e44e20efb1de,1568,2024-05-01,751.1,EUR,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Airbnb,PayPal,Australia,True
-fbe74b53-ed50-4746-b22e-79228031e6b1,1508,2024-07-19,5768.72,GBP,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Uber,PayPal,Australia,False
-443ee6ff-7f77-4712-b455-a7ec925c01f8,1336,2024-04-08,2905.85,GBP,Internet & Phone,VoIP phone service for international clients,0.4,2500,Netflix,Cash,Canada,False
-68cfa06b-4a74-46b1-a7f9-1232191c0efd,1225,2024-03-11,1821.19,GBP,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Google,Crypto,Australia,True
-ea357c4a-6186-4665-bca4-15c15c33e457,1233,2024-07-28,810.93,EUR,Client Entertainment,Dinner with potential client,0.2,1500,Airbnb,Bank Transfer,USA,True
-3b0bbddc-f62e-438e-9d9d-2eba93dfd291,1239,2024-04-11,12630.84,USD,Marketing & Advertising,SEO service for website optimization,1.0,10000,Uber,Credit Card,UK,False
-d57c3810-d4ca-4dc0-aac3-7791e53fc1f8,1839,2025-02-16,8171.38,GBP,Marketing & Advertising,SEO service for website optimization,1.0,10000,Microsoft,Credit Card,Germany,True
-503f5635-393f-4f55-8891-6ad6adc942a3,1617,2025-02-05,14152.04,EUR,Marketing & Advertising,Google Ads campaign,1.0,10000,Zoom,Bank Transfer,USA,False
-9b2c56ba-7dc2-42ec-82ce-339a5e1d553f,1734,2024-11-18,2185.41,EUR,Client Entertainment,Dinner with potential client,0.2,1500,Airbnb,Cash,USA,False
-4e063e66-3fdc-4a2e-aa38-52810ae774d2,1338,2024-09-12,3817.58,EUR,Home Office,Lighting and furniture for workspace,0.3,5000,Zoom,Crypto,USA,True
-6243ab54-b6f2-4f08-a965-02a08348717c,1952,2024-05-13,3961.98,USD,Software & Subscriptions,Project management software renewal,0.5,3000,Amazon,Bank Transfer,Canada,False
-fe56c46f-6087-45f6-b68c-018756ec2e0e,1672,2024-05-02,606.68,GBP,Internet & Phone,VoIP phone service for international clients,0.4,2500,Uber,PayPal,UK,True
-abc7df5c-4d30-40d4-833e-ee7ec48faa12,1200,2024-05-05,2305.39,USD,Freelancer Platform Fees,Upwork service fee,0.25,2000,Apple,Cash,UK,False
-0bf69459-69d0-444a-8220-8773982bb456,1424,2024-04-06,6765.12,EUR,Transportation,Taxi fare for client visit,1.0,5000,Apple,Credit Card,USA,False
-559a1cef-3451-4ef1-b0fb-bc19a1014d8b,1176,2024-09-28,326.38,USD,Business Travel,Car rental for on-site project,0.35,3500,Uber,PayPal,Australia,True
-e3af5b0f-6789-4711-8fdd-623bf8b73d80,1342,2024-06-12,140.39,GBP,Business Travel,Flight to client meeting,0.35,3500,Microsoft,Crypto,Australia,True
-dd013aa8-840b-42c5-8357-e14a4e201e48,1772,2024-04-04,2608.29,EUR,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Apple,PayPal,USA,False
-14e8449f-c415-4952-833b-b0ca7434c369,1244,2024-06-14,15240.1,EUR,Rent & Utilities,Electricity bill for workspace,1.0,15000,Google,Credit Card,Australia,False
-553603c4-6013-486e-aace-11c437105957,1923,2024-09-21,1831.04,GBP,Work Equipment,Professional camera for photography business,0.5,5000,Walmart,PayPal,Germany,True
-de036bcb-f8a8-4a10-8d48-d6bf50c8d560,1461,2024-05-27,1741.55,GBP,Client Entertainment,Drinks at networking event,0.2,1500,Netflix,Bank Transfer,France,False
-5593256b-917a-4afa-8493-9b8c132a4020,1393,2024-06-15,2316.42,GBP,Work Equipment,Professional camera for photography business,0.5,5000,Amazon,Credit Card,Australia,True
-cf3f09c2-86b7-4657-ac6b-3ab5cc419da0,1554,2024-10-13,5944.57,USD,Education & Training,Subscription to educational platforms,0.6,4000,Microsoft,Bank Transfer,France,False
-24702d49-9299-47b7-b260-0cee8da0c432,1091,2024-11-02,6517.78,GBP,Work Equipment,New laptop for development,0.5,5000,Uber,Cash,Germany,False
-a5797b14-feaa-4795-8e02-401a0c5ce51a,1317,2024-05-13,1844.8,EUR,Home Office,Desk and chair for home office,0.3,5000,Airbnb,Credit Card,Australia,True
-4e224b22-1327-4b40-837f-ec0dd8428be5,1694,2025-02-23,446.14,EUR,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Apple,PayPal,Germany,True
-c6989428-ca75-46d5-971c-ea5d9c35815c,1738,2024-05-08,1861.2,USD,Client Entertainment,Dinner with potential client,0.2,1500,Google,Crypto,Canada,False
-50202d91-6cc2-4cea-82fd-53a2cf81e2c2,1825,2024-10-03,16.92,GBP,Home Office,Coworking space membership,0.3,5000,Netflix,Bank Transfer,UK,True
-8c8be641-562f-4468-8be7-46bcea235a92,1551,2024-09-12,103.57,GBP,Education & Training,Subscription to educational platforms,0.6,4000,Netflix,PayPal,France,True
-6869022e-4af4-4940-acb4-0dfa2ea7e01d,1573,2024-03-06,1608.22,GBP,Internet & Phone,Mobile data plan for work calls,0.4,2500,Netflix,PayPal,Germany,True
-2aa01cc3-2270-40c8-b9eb-4edb83c24fb2,1911,2024-07-06,7648.12,USD,Marketing & Advertising,SEO service for website optimization,1.0,10000,Netflix,Cash,France,True
-1f24b7a1-8362-45ba-8722-d9bdd81c8a3a,1847,2024-04-18,2758.73,EUR,Internet & Phone,Mobile data plan for work calls,0.4,2500,Amazon,PayPal,France,False
-98843920-a192-4f88-b9ed-3ea8a4f599b2,1762,2024-04-13,1230.97,USD,Business Travel,Hotel stay for business conference,0.35,3500,Uber,PayPal,Canada,True
-a0566418-6090-432e-9a65-0ea701fd9f3f,1597,2024-04-23,305.16,GBP,Rent & Utilities,Office rent payment,1.0,15000,Netflix,Cash,UK,True
-ff9ef9c7-7db3-4c7c-bba0-e53a06c5b61d,1615,2024-05-20,5809.91,EUR,Rent & Utilities,Office rent payment,1.0,15000,Airbnb,Credit Card,Germany,True
-286c18d9-4575-403f-8ff2-5431084522a4,1886,2024-08-28,3589.92,GBP,Home Office,Lighting and furniture for workspace,0.3,5000,Uber,PayPal,Germany,True
-5d730347-b248-499b-9895-faad96135d7f,1414,2025-02-03,2491.31,EUR,Internet & Phone,Mobile data plan for work calls,0.4,2500,Walmart,Credit Card,UK,True
-7f56ea57-6f79-4436-8c3e-9b0cd17c256b,1967,2024-11-24,412.78,EUR,Freelancer Platform Fees,Upwork service fee,0.25,2000,Amazon,Crypto,Germany,True
-243e6d0a-656a-4a9c-bcbc-daab77366810,1552,2024-09-22,2204.9,USD,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Airbnb,Crypto,USA,False
-d5d1efe3-5d1b-47c8-8394-4c215ddc0c2c,1116,2024-04-29,4257.92,EUR,Transportation,Fuel cost for business trips,1.0,5000,Airbnb,Credit Card,UK,True
-98a5fd16-43bd-4853-9f03-52459106fdda,1630,2024-08-18,7212.08,USD,Work Equipment,New laptop for development,0.5,5000,Uber,Bank Transfer,Canada,False
-0a0d8a06-be35-47bc-a747-1968c961cb7f,1613,2024-10-10,947.51,USD,Business Travel,Car rental for on-site project,0.35,3500,Netflix,Crypto,Canada,True
-b92f1285-8c13-4c98-be7f-293040e78d9a,1831,2024-10-24,643.36,EUR,Client Entertainment,Drinks at networking event,0.2,1500,Uber,Cash,USA,True
-1eb90cd0-39ca-4817-a221-670bc9621c86,1615,2024-10-10,1796.78,EUR,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Zoom,PayPal,Australia,True
-1a7fe15d-7486-46da-8b24-7813f159adf0,1767,2024-03-13,4067.1,GBP,Education & Training,Conference registration for industry insights,0.6,4000,Google,Crypto,USA,False
-27dab996-c2ad-41d2-a4eb-b33c7d686773,1825,2024-09-01,370.79,EUR,Client Entertainment,Drinks at networking event,0.2,1500,Uber,Bank Transfer,Germany,True
-098bb3e5-e224-4370-92e4-dd28b7846c6c,1438,2025-02-23,13093.3,EUR,Rent & Utilities,Water and cleaning service charges,1.0,15000,Microsoft,Credit Card,France,True
-690bf137-9cb3-4d69-92ed-77ba23fb92f9,1356,2024-11-15,5126.04,GBP,Business Travel,Hotel stay for business conference,0.35,3500,Airbnb,Cash,UK,False
-dbd1192d-7149-4aeb-b01b-4ba4f0fe7ebc,1095,2025-01-15,131.77,USD,Client Entertainment,Event tickets for client meeting,0.2,1500,Amazon,Cash,Germany,True
-b9ada9b9-9a0f-4610-9f02-2788ce76c698,1804,2024-04-18,900.37,USD,Education & Training,Subscription to educational platforms,0.6,4000,Walmart,Credit Card,Australia,True
-e6195aca-4da3-4c0b-92cb-aad00c5ffa16,1479,2024-08-22,1174.7,GBP,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Zoom,Crypto,France,True
-82ad8b5e-11a2-4ed6-bdc9-5c0f7da8be0a,1536,2024-11-08,2424.3,GBP,Work Equipment,New laptop for development,0.5,5000,Netflix,Crypto,France,True
-0f128271-3e49-47ca-b465-01e6ee396abb,1413,2024-06-04,1481.48,GBP,Freelancer Platform Fees,Upwork service fee,0.25,2000,Walmart,Bank Transfer,USA,True
-62f8a389-224f-4f5c-b118-c1920d5ab55a,1872,2024-08-11,5096.06,EUR,Education & Training,Subscription to educational platforms,0.6,4000,Walmart,Bank Transfer,Australia,False
-3e39f12f-8108-4e65-8902-a58b7dafe20a,1403,2025-02-08,708.01,EUR,Software & Subscriptions,Subscription to design tools,0.5,3000,Microsoft,Credit Card,Germany,True
-d7c482ca-81c7-4976-971a-6ea646ae70f2,1609,2024-10-11,10834.21,USD,Rent & Utilities,Water and cleaning service charges,1.0,15000,Microsoft,Credit Card,France,True
-040fc9fa-3f2b-496a-b32f-f530342a98e0,1391,2024-10-27,2913.87,GBP,Education & Training,Subscription to educational platforms,0.6,4000,Netflix,Cash,Germany,True
-eeff7cbb-dbe6-4823-8995-d0a52093e08b,1095,2025-01-12,4173.48,USD,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Microsoft,PayPal,Australia,False
-61e2c595-161e-4f61-bd95-af44cd327816,1617,2024-07-29,4143.55,EUR,Business Travel,Flight to client meeting,0.35,3500,Walmart,Crypto,USA,False
-67b50afd-cbd1-40af-994e-95cb91843467,1084,2024-04-27,497.59,GBP,Client Entertainment,Event tickets for client meeting,0.2,1500,Walmart,Credit Card,UK,True
-831a45b2-4b6c-4a66-b7e5-f84618d911f7,1271,2024-09-15,3459.29,EUR,Business Travel,Car rental for on-site project,0.35,3500,Microsoft,Cash,UK,True
-80e942ef-c0e8-4874-92ea-7ec290e4854e,1654,2024-12-14,1592.96,GBP,Business Travel,Hotel stay for business conference,0.35,3500,Amazon,Credit Card,UK,True
-d0528bf3-eaf4-4fc2-ad8d-82ea65277468,1514,2025-01-21,4992.37,GBP,Education & Training,Conference registration for industry insights,0.6,4000,Walmart,Credit Card,Canada,False
-81c1845a-009f-44bf-b3e3-2b7b76286284,1865,2024-11-11,831.67,GBP,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Netflix,PayPal,UK,True
-b471b41f-4f04-4ee8-8ef7-c01b9e4d2ae9,1691,2024-11-26,2038.28,EUR,Marketing & Advertising,SEO service for website optimization,1.0,10000,Netflix,PayPal,Germany,True
-a6345a86-fe8f-469c-9824-6a5a2b712e8c,1601,2024-07-18,1493.22,EUR,Transportation,Taxi fare for client visit,1.0,5000,Microsoft,PayPal,Canada,True
-d6e4a4d9-8c40-404c-b4c7-88fb95a906d8,1941,2024-11-12,6012.78,USD,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Amazon,Bank Transfer,Australia,False
-36702e96-7d0f-4965-adac-f404aa7cde1f,1398,2024-05-11,8060.49,GBP,Rent & Utilities,Office rent payment,1.0,15000,Microsoft,Cash,Germany,True
-d3ed5769-95d2-4a42-b701-13f7413d9e19,1387,2024-11-15,2626.24,USD,Transportation,Monthly public transport pass,1.0,5000,Amazon,Cash,USA,True
-18f9466a-7b71-4058-8405-e1ff241626f4,1909,2024-05-25,8249.62,USD,Rent & Utilities,Office rent payment,1.0,15000,Amazon,Crypto,France,True
-43756a20-f7f7-4229-9db8-a7e91c6b6282,1509,2025-02-07,16576.31,GBP,Rent & Utilities,Water and cleaning service charges,1.0,15000,Apple,Bank Transfer,Germany,False
-92dc79eb-046e-4e6e-b725-e07cbf66fd1a,1895,2024-03-14,1285.71,GBP,Education & Training,Conference registration for industry insights,0.6,4000,Walmart,Cash,France,True
-3c950394-0f9d-4dda-be7a-05b780f6097f,1175,2024-07-29,4328.42,USD,Home Office,Office rent for remote work,0.3,5000,Google,Cash,USA,True
-32db14ef-acc3-4289-95c4-f51b1741be84,1063,2025-02-09,2361.03,USD,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Amazon,Bank Transfer,USA,True
-726e3e11-6b17-4822-815f-3726d41e9084,1848,2025-01-09,6114.04,EUR,Home Office,Office rent for remote work,0.3,5000,Zoom,Credit Card,Australia,False
-ae10b349-05ba-438f-8fbf-e19c90d6d820,1906,2024-05-25,2113.54,EUR,Work Equipment,External monitor for work,0.5,5000,Netflix,PayPal,UK,True
-d6449a2e-3258-4488-a0de-95b0fe304ef4,1837,2024-09-15,936.73,USD,Home Office,Office rent for remote work,0.3,5000,Airbnb,Bank Transfer,USA,True
-e1eaa8e9-6617-418a-9bd0-6c939739f3a2,1446,2024-09-12,6405.66,GBP,Transportation,Taxi fare for client visit,1.0,5000,Netflix,PayPal,Germany,False
-9f6878ef-bc01-4adb-96bb-ab289fab8a55,1680,2024-10-31,9737.49,USD,Marketing & Advertising,SEO service for website optimization,1.0,10000,Uber,Bank Transfer,Germany,True
-ebaf07a7-984b-40ed-aba7-329296a79dd2,1240,2024-06-20,3953.54,USD,Home Office,Office rent for remote work,0.3,5000,Amazon,PayPal,Canada,True
-c6ed360e-570c-411c-b31b-7dac06d52964,1126,2024-06-28,1882.59,USD,Software & Subscriptions,Subscription to design tools,0.5,3000,Google,Cash,USA,True
-c14d0091-99b7-4b94-88bf-97960b1fceec,1172,2024-03-14,2558.49,GBP,Rent & Utilities,Electricity bill for workspace,1.0,15000,Airbnb,Cash,USA,True
-04e06514-b451-4de9-a360-eab901625ded,1881,2024-08-20,4245.27,GBP,Transportation,Fuel cost for business trips,1.0,5000,Walmart,Crypto,Australia,True
-eb5afcd7-08c4-475d-98e4-c8d93fed9cb7,1056,2024-05-26,4021.99,USD,Work Equipment,External monitor for work,0.5,5000,Amazon,Crypto,UK,True
-5c70a9c7-386b-4793-9374-f2a0279822c3,1832,2024-04-30,2091.81,GBP,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Microsoft,Credit Card,USA,False
-ce8a6171-e534-4918-ad43-72853d44219d,1678,2024-05-31,14939.78,USD,Marketing & Advertising,SEO service for website optimization,1.0,10000,Apple,Bank Transfer,Germany,False
-1a93a46d-fd51-4162-b4ba-46c593087142,1565,2024-09-02,1361.69,GBP,Work Equipment,New laptop for development,0.5,5000,Uber,PayPal,France,True
-d5ad54de-be45-4e0c-a9e8-62cbe464a088,1120,2024-12-23,805.86,GBP,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Airbnb,Cash,France,True
-ad161a32-f560-48b9-a6bb-d1a22e86592f,1933,2024-08-24,488.96,USD,Education & Training,Subscription to educational platforms,0.6,4000,Apple,PayPal,Canada,True
-188ad490-a690-4395-8389-6ac62852ae8a,1903,2024-07-19,2931.62,EUR,Internet & Phone,VoIP phone service for international clients,0.4,2500,Airbnb,Bank Transfer,UK,False
-f6c974a8-a4f1-4bab-8d33-6d52883688d4,1132,2024-10-01,561.78,EUR,Home Office,Office rent for remote work,0.3,5000,Netflix,Bank Transfer,France,True
-84e5ff68-7e90-479d-8c61-a7e26605a3d0,1678,2024-10-29,11155.89,GBP,Rent & Utilities,Office rent payment,1.0,15000,Apple,Credit Card,UK,True
-b6c39e66-700d-4cd6-a42e-ab656e1cacb9,1658,2025-01-19,2767.15,EUR,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Uber,Cash,USA,True
-130e805f-1854-41b5-a899-6eb6fff3db5c,1176,2024-06-03,1145.9,GBP,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Amazon,PayPal,USA,True
-6ed3c1c4-1132-4b07-9ae1-bcb7586a228b,1906,2024-08-10,2930.0,EUR,Business Travel,Flight to client meeting,0.35,3500,Google,PayPal,Germany,True
-25004935-c501-4d78-abe8-b1e6b0d1f3a1,1285,2024-10-13,1749.02,GBP,Rent & Utilities,Electricity bill for workspace,1.0,15000,Airbnb,Bank Transfer,Australia,True
-ceb49e80-0188-4a97-80f3-f734e7fe1b10,1774,2024-10-09,1509.49,EUR,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Uber,Cash,USA,True
-835789ab-ca7b-4357-8c82-e5db2f6269ed,1608,2024-07-09,6857.47,EUR,Home Office,Lighting and furniture for workspace,0.3,5000,Walmart,Credit Card,USA,False
-65f2ab0a-e792-4574-b7b9-8448c10e9b1b,1928,2025-02-16,477.28,GBP,Client Entertainment,Dinner with potential client,0.2,1500,Airbnb,Cash,USA,True
-e9ebd7c6-3805-4f95-8724-9268384a31ae,1859,2025-02-26,1374.72,GBP,Internet & Phone,Mobile data plan for work calls,0.4,2500,Uber,Crypto,USA,True
-cb82f692-e05f-408f-ba2d-2c6fdc925753,1288,2024-04-09,5312.34,USD,Work Equipment,New laptop for development,0.5,5000,Amazon,Bank Transfer,France,False
-39508e1a-dfae-4e95-ad3a-d4c267d72626,1536,2024-11-16,697.18,USD,Education & Training,Subscription to educational platforms,0.6,4000,Walmart,Crypto,Australia,True
-de6aeb8a-999d-41fb-8999-81a99d67e4cf,1258,2024-10-13,7910.01,GBP,Marketing & Advertising,Google Ads campaign,1.0,10000,Walmart,Credit Card,France,True
-4fd72634-7aff-4f84-85db-e13b28d824c1,1494,2025-02-08,443.18,GBP,Client Entertainment,Drinks at networking event,0.2,1500,Microsoft,Crypto,Australia,True
-72c7fd3b-e195-4915-b52a-0ae3a89a6c20,1340,2024-08-26,1014.15,EUR,Software & Subscriptions,Subscription to design tools,0.5,3000,Zoom,Crypto,France,True
-9b2b7313-179e-4ef4-a209-8be52270aa5e,1473,2024-05-07,7875.26,USD,Rent & Utilities,Office rent payment,1.0,15000,Netflix,Bank Transfer,Germany,True
-c91fa0bb-9914-4a3c-a414-bc81c316b37c,1809,2024-03-24,10457.84,GBP,Rent & Utilities,Office rent payment,1.0,15000,Airbnb,Crypto,Australia,True
-dfd4f1f5-b48d-4758-8ebd-e91d5be83d71,1284,2024-06-30,737.74,EUR,Client Entertainment,Event tickets for client meeting,0.2,1500,Amazon,Credit Card,Australia,True
-6c51915f-bde0-4383-8b1a-aea82daeeef2,1932,2024-12-16,2490.7,USD,Freelancer Platform Fees,Upwork service fee,0.25,2000,Walmart,Bank Transfer,Canada,False
-0625e42a-fe71-4d70-a392-a242e2405716,1115,2024-09-11,7222.02,EUR,Work Equipment,Professional camera for photography business,0.5,5000,Airbnb,PayPal,Germany,False
-6df223ff-c258-48c6-90ad-738b998be218,1370,2024-11-01,7942.24,GBP,Rent & Utilities,Electricity bill for workspace,1.0,15000,Walmart,Crypto,UK,True
-a67ba518-1544-44bf-a20d-71ea31c18254,1748,2024-08-06,233.4,GBP,Work Equipment,External monitor for work,0.5,5000,Zoom,Bank Transfer,USA,True
-5964f045-f370-4e10-9833-98ffa4cbcb80,1297,2024-09-10,4785.02,GBP,Home Office,Office rent for remote work,0.3,5000,Google,PayPal,UK,True
-eff01d2f-d3ba-44d0-aeb1-5f1d69311eda,1472,2024-12-14,1076.68,GBP,Freelancer Platform Fees,Upwork service fee,0.25,2000,Microsoft,Bank Transfer,UK,True
-f8453ff0-750f-4d76-94a5-23e34c0cc6e1,1579,2024-11-19,1324.01,GBP,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Airbnb,PayPal,Canada,True
-105caffd-40f0-462b-b87f-404a7d3f83ed,1436,2024-09-07,7390.34,GBP,Transportation,Fuel cost for business trips,1.0,5000,Microsoft,Bank Transfer,UK,False
-7139f197-1563-4c1d-98d7-cee599479c66,1026,2024-12-20,4962.98,USD,Business Travel,Flight to client meeting,0.35,3500,Apple,Credit Card,France,False
-0c455d12-5157-4cb1-ad31-b55a77ea9697,1933,2024-11-09,2509.78,USD,Education & Training,Online course on data science,0.6,4000,Airbnb,Cash,USA,True
-72fefda7-ef9f-4424-85f7-1a808b7a4d3b,1208,2025-01-23,2978.87,USD,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Zoom,Bank Transfer,Germany,False
-21cee0cb-dddf-472d-96f4-2012b58a799b,1772,2025-01-27,4259.54,USD,Home Office,Office rent for remote work,0.3,5000,Netflix,Crypto,USA,True
-16ae4b53-602e-4ad5-a7be-cc602cfee8a2,1632,2024-07-20,13240.75,GBP,Marketing & Advertising,Social media promotions,1.0,10000,Zoom,Bank Transfer,Germany,False
-8ff89b54-32bf-452e-92a2-4a3d53f23da5,1363,2024-03-13,469.66,GBP,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Walmart,Bank Transfer,UK,True
-b69e56bd-54d0-426f-a19e-488daade1f3e,1813,2024-09-16,1296.26,EUR,Business Travel,Flight to client meeting,0.35,3500,Netflix,Credit Card,Australia,True
-0e466bc9-dfda-49cd-a92c-c9015057cb95,1876,2025-02-26,1688.28,GBP,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Microsoft,Crypto,UK,True
-d4ca01df-05e8-467a-aabf-c9e22bf1c21e,1589,2024-09-13,2394.22,GBP,Freelancer Platform Fees,Upwork service fee,0.25,2000,Google,Credit Card,USA,False
-b9b72411-754a-4873-9201-8e4115e07a2f,1546,2024-12-29,17599.12,USD,Rent & Utilities,Electricity bill for workspace,1.0,15000,Google,Credit Card,Canada,False
-fee9691f-9e69-4e64-a4c0-6fbefee2103b,1491,2024-05-12,1825.44,USD,Client Entertainment,Drinks at networking event,0.2,1500,Zoom,Crypto,Australia,False
-98247c69-3075-422a-85b0-7cefefa983ca,1467,2024-07-28,154.92,USD,Internet & Phone,VoIP phone service for international clients,0.4,2500,Microsoft,Crypto,UK,True
-dbf3af7a-7fe7-45ad-863a-cafb2dae3623,1940,2025-01-20,2265.56,USD,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Apple,Bank Transfer,USA,True
-cf24810a-5e7b-48e8-990e-bc7fcce23d4b,1387,2024-05-15,11708.62,EUR,Rent & Utilities,Water and cleaning service charges,1.0,15000,Google,PayPal,USA,True
-787ae9b0-7d10-4a58-aefe-72f525e30dff,1642,2024-07-22,2338.0,EUR,Home Office,Desk and chair for home office,0.3,5000,Netflix,Credit Card,UK,True
-5aaf22a7-c275-4231-b9b5-2c5dda8b683c,1206,2024-12-29,410.36,EUR,Business Travel,Car rental for on-site project,0.35,3500,Airbnb,Cash,Australia,True
-0c83809f-e523-4413-a652-39f5edf0b2f4,1235,2024-10-04,1064.47,USD,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Walmart,Credit Card,UK,True
-83251e2d-e5f1-4b19-a849-06a274db6b22,1896,2025-01-09,5023.56,USD,Business Travel,Car rental for on-site project,0.35,3500,Zoom,Crypto,France,False
-5b8e14d8-d953-4147-8516-4bcb945d0e71,1940,2024-07-03,1089.54,USD,Client Entertainment,Drinks at networking event,0.2,1500,Microsoft,Crypto,UK,True
-d0775a78-f3bf-4486-9313-b785a3a8aae7,1159,2024-12-02,16519.66,EUR,Rent & Utilities,Electricity bill for workspace,1.0,15000,Walmart,Cash,Australia,False
-0323daf7-fdf9-4e9f-8492-b8b1d37b4cde,1842,2024-08-26,10416.25,GBP,Rent & Utilities,Water and cleaning service charges,1.0,15000,Apple,Credit Card,France,True
-19b61d31-bb91-4816-a370-6dc6c6978d4e,1494,2025-02-21,5750.92,EUR,Education & Training,Subscription to educational platforms,0.6,4000,Microsoft,PayPal,USA,False
-a0f4ae7f-7a9a-4bfa-9e13-1227198a632d,1136,2024-07-21,6410.34,GBP,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Apple,Cash,UK,False
-93983382-de30-45a2-b118-c6b975141ed3,1393,2025-01-24,3582.28,GBP,Transportation,Monthly public transport pass,1.0,5000,Microsoft,PayPal,France,True
-bf11e3d7-774c-41c8-bdcb-c1060ee13b8b,1376,2025-01-21,52.58,GBP,Business Travel,Flight to client meeting,0.35,3500,Uber,Bank Transfer,France,True
-9a5f9e96-2fb0-4502-a0e7-fdda078075cf,1808,2025-01-15,1055.33,EUR,Client Entertainment,Drinks at networking event,0.2,1500,Netflix,Credit Card,Canada,True
-2bf114df-fd3d-4f13-a7f4-4b92ba703ad0,1731,2024-04-05,4632.86,USD,Business Travel,Car rental for on-site project,0.35,3500,Zoom,Cash,Canada,False
-a54dd0b3-8d89-423b-813d-828eaed06f3d,1901,2024-03-08,2744.84,EUR,Home Office,Office rent for remote work,0.3,5000,Google,Bank Transfer,UK,True
-53687d7c-071d-4d3e-973f-954e37381526,1742,2024-05-07,3509.87,EUR,Rent & Utilities,Water and cleaning service charges,1.0,15000,Airbnb,Crypto,Germany,True
-2a0244d3-8eb7-47f3-89d3-a1e14b0ef90c,1595,2024-10-27,1377.55,USD,Marketing & Advertising,Social media promotions,1.0,10000,Amazon,Cash,France,True
-5cc97e04-05b1-461c-adfd-cceeaa42e8b1,1248,2025-01-09,1590.94,USD,Internet & Phone,Mobile data plan for work calls,0.4,2500,Microsoft,Bank Transfer,Australia,True
-a2beb944-c9ab-4071-a4d6-871e08185e12,1296,2024-04-15,794.23,USD,Work Equipment,External monitor for work,0.5,5000,Netflix,PayPal,Australia,True
-d62cf6da-5aba-4149-8f61-610bb7d7d885,1014,2024-04-03,272.44,EUR,Freelancer Platform Fees,Upwork service fee,0.25,2000,Airbnb,Cash,Germany,True
-c0265b0b-ecc8-4c19-84f2-55f0ba2281f1,1296,2024-10-18,347.22,EUR,Freelancer Platform Fees,Upwork service fee,0.25,2000,Microsoft,Bank Transfer,USA,True
-b7d98502-2a73-4876-adbf-05136fe17594,1492,2024-12-16,3211.11,USD,Education & Training,Online course on data science,0.6,4000,Google,Cash,USA,True
-0b598077-d123-4d65-9bd2-52474db6856b,1781,2025-01-30,3219.27,GBP,Business Travel,Car rental for on-site project,0.35,3500,Amazon,Cash,USA,True
-1ddb0cac-f4b2-4377-8c9d-57a41db3c5fa,1461,2024-09-02,4876.46,USD,Education & Training,Online course on data science,0.6,4000,Zoom,Bank Transfer,France,False
-9b483760-20b0-4793-84d7-980f99273c8e,1624,2024-10-23,21798.71,GBP,Rent & Utilities,Electricity bill for workspace,1.0,15000,Airbnb,Credit Card,Australia,False
-a4fc6da1-ad9a-42bf-9231-90c28817a6c5,1632,2024-09-21,4437.63,USD,Home Office,Lighting and furniture for workspace,0.3,5000,Netflix,Bank Transfer,UK,True
-e990d42a-4ca9-4164-9b99-d702e1ee6e1a,1509,2024-12-05,3321.15,GBP,Business Travel,Car rental for on-site project,0.35,3500,Apple,Bank Transfer,USA,True
-1803661a-cbf2-4e8c-8bf4-124082d927ad,1276,2024-09-29,782.07,USD,Transportation,Taxi fare for client visit,1.0,5000,Airbnb,Cash,UK,True
-a02a9067-349a-4acf-834e-5f550be91f65,1150,2024-05-05,358.17,GBP,Business Travel,Flight to client meeting,0.35,3500,Walmart,Cash,Germany,True
-e7c56acf-8f5b-42d0-a693-7d6859c9817f,1598,2025-01-08,3719.0,USD,Business Travel,Flight to client meeting,0.35,3500,Microsoft,Cash,Germany,False
-1f5bc950-568a-4abf-901d-6464824123b5,1240,2024-11-08,4328.0,EUR,Business Travel,Hotel stay for business conference,0.35,3500,Walmart,Crypto,France,False
-83f1b782-5864-4f32-bffd-64e6ab75d38a,1067,2024-10-15,4491.97,USD,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Amazon,Credit Card,France,False
-9cc50078-be02-4702-8ce7-2ab67345f96b,1110,2024-08-04,5293.21,USD,Home Office,Desk and chair for home office,0.3,5000,Walmart,Cash,France,False
-9cb8b58f-c2fe-4cd0-b3f2-8a749c9c234d,1943,2024-09-30,2398.27,USD,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Microsoft,Bank Transfer,Germany,True
-82c63452-05e9-4cf6-8dc3-52379d5e61ca,1839,2025-01-24,2573.99,EUR,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Uber,Bank Transfer,France,True
-2c476e9d-ab0e-4dcf-885c-dae442fb18bc,1411,2024-06-19,5783.61,EUR,Education & Training,Subscription to educational platforms,0.6,4000,Amazon,Bank Transfer,France,False
-77fa0a37-206b-4fb5-9bc2-c7ef98b0363c,1309,2024-06-25,19078.55,USD,Rent & Utilities,Electricity bill for workspace,1.0,15000,Netflix,Crypto,UK,False
-2feee144-9101-467e-9994-bcbdfc4a54db,1166,2024-12-07,1641.83,GBP,Software & Subscriptions,Subscription to design tools,0.5,3000,Google,Crypto,Australia,True
-1912c4fe-7f4e-4452-919c-ab09fe2c193d,1188,2024-08-01,682.95,GBP,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Zoom,Bank Transfer,UK,True
-5a746629-0acc-45b0-bd93-4689d04c46ab,1838,2024-10-04,2322.15,USD,Rent & Utilities,Electricity bill for workspace,1.0,15000,Netflix,Bank Transfer,Australia,True
-1ddd2801-ffc8-4e60-b479-bd06da845129,1631,2024-04-28,3571.7,USD,Education & Training,Conference registration for industry insights,0.6,4000,Amazon,Bank Transfer,Canada,True
-bd562cbc-c92e-44cf-a665-a787dd3c8bae,1546,2024-05-12,171.01,EUR,Work Equipment,Professional camera for photography business,0.5,5000,Google,PayPal,Germany,True
-37355e5a-f3a8-4042-b3fe-200f5013e3e2,1647,2025-02-11,112.03,EUR,Client Entertainment,Event tickets for client meeting,0.2,1500,Airbnb,Bank Transfer,USA,True
-fbe14557-c739-498e-a89e-d099adb16ecb,1929,2024-05-30,1869.02,EUR,Internet & Phone,VoIP phone service for international clients,0.4,2500,Apple,Cash,UK,True
-9104782c-9be6-4fd9-b0ec-b11e7cbd33eb,1317,2025-01-10,3046.73,GBP,Education & Training,Conference registration for industry insights,0.6,4000,Uber,Bank Transfer,Canada,True
-b33dfcc5-46ea-4e8a-8a75-f534cce745fb,1837,2024-10-21,2593.61,USD,Business Travel,Car rental for on-site project,0.35,3500,Zoom,PayPal,USA,True
-6a2f8110-8b76-48e9-a802-1730b1a3fe9d,1674,2024-03-04,229.41,USD,Software & Subscriptions,Project management software renewal,0.5,3000,Walmart,Cash,Australia,True
-a1852719-f2bf-4b56-a83b-fb10010c1d81,1938,2024-12-09,3362.81,EUR,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Microsoft,PayPal,France,True
-9d9fc0d6-cddb-45f3-a212-8962e8fc19b7,1851,2024-06-13,2834.69,EUR,Business Travel,Hotel stay for business conference,0.35,3500,Walmart,Credit Card,Germany,True
-4b07de9b-2004-4ead-96bb-3c177d4ee53c,1615,2024-12-26,1379.25,EUR,Client Entertainment,Dinner with potential client,0.2,1500,Amazon,PayPal,USA,True
-07a5ab3a-95ec-4205-a888-356ca2c189ba,1923,2024-08-12,6398.88,EUR,Transportation,Fuel cost for business trips,1.0,5000,Netflix,Crypto,USA,False
-dab93b2b-8359-48c8-be06-462fa92d2c86,1685,2024-06-30,55.05,GBP,Internet & Phone,VoIP phone service for international clients,0.4,2500,Microsoft,Cash,Canada,True
-f836eb75-ee30-4c46-b19b-ea31d946eb37,1678,2024-03-14,6750.57,GBP,Home Office,Coworking space membership,0.3,5000,Amazon,Bank Transfer,France,False
-f77f16b3-8c1a-424c-ad47-502b41fc8088,1240,2024-03-08,3047.01,GBP,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Netflix,PayPal,Germany,False
-a6c7a317-355f-4369-8d8a-d98432a25815,1268,2024-08-22,924.4,EUR,Education & Training,Subscription to educational platforms,0.6,4000,Amazon,PayPal,Germany,True
-d73ad1c6-bfcd-47a1-b0ee-8f76173fda97,1010,2024-05-29,8657.89,GBP,Rent & Utilities,Electricity bill for workspace,1.0,15000,Microsoft,Crypto,Canada,True
-2a0e70e4-a4ee-4bfb-aa1b-94eafaaee483,1949,2025-01-14,4823.7,USD,Education & Training,Conference registration for industry insights,0.6,4000,Google,Credit Card,USA,False
-8e18edf7-672f-4e51-b7c7-1b2f0aa7d39b,1515,2024-08-22,3529.53,EUR,Internet & Phone,VoIP phone service for international clients,0.4,2500,Walmart,PayPal,UK,False
-17f31214-d5cc-40e7-b824-5922f1ade2e3,1819,2024-12-10,6941.66,EUR,Home Office,Desk and chair for home office,0.3,5000,Uber,PayPal,USA,False
-bd071fb9-c232-4d7c-b288-494e4f0163c6,1151,2025-02-15,834.07,EUR,Client Entertainment,Event tickets for client meeting,0.2,1500,Amazon,PayPal,USA,True
-62ff8ad3-c713-4322-bbad-b2b41cb7ba33,1015,2024-05-01,6247.08,GBP,Transportation,Monthly public transport pass,1.0,5000,Netflix,PayPal,UK,False
-36dc4ae9-860e-41a7-9250-648638bd5f29,1035,2024-08-30,1725.05,EUR,Transportation,Fuel cost for business trips,1.0,5000,Walmart,Credit Card,Australia,True
-7766637a-a6cc-49f1-9123-b6711adbab3c,1910,2024-10-08,2030.83,EUR,Marketing & Advertising,Google Ads campaign,1.0,10000,Amazon,PayPal,Germany,True
-1c11a56d-9840-4798-89b7-0b7d7e0e911e,1918,2024-03-27,3594.98,USD,Transportation,Fuel cost for business trips,1.0,5000,Amazon,PayPal,Australia,True
-81a520a8-2c3f-4cd6-be8a-02d20d42bfa3,1464,2024-11-06,1787.98,EUR,Client Entertainment,Dinner with potential client,0.2,1500,Microsoft,Crypto,Canada,False
-75921e98-0ab9-4e2b-98f5-95429930ffe6,1327,2024-05-02,13963.57,GBP,Marketing & Advertising,Google Ads campaign,1.0,10000,Walmart,PayPal,Canada,False
-ade91324-1a80-4b1b-bb7e-a2fd96d9a3c7,1895,2024-10-14,3158.38,GBP,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Microsoft,Cash,Australia,False
-8b24f063-68ba-4efd-a847-9e192715bdea,1688,2024-08-03,3291.17,GBP,Software & Subscriptions,Project management software renewal,0.5,3000,Walmart,Cash,Australia,False
-06d070a5-855c-4737-8375-0f4330efd80b,1405,2024-07-17,3300.13,USD,Business Travel,Hotel stay for business conference,0.35,3500,Netflix,Crypto,USA,True
-1217d4e0-acdc-490f-9724-d2199a8af6a8,1772,2024-07-01,1683.07,USD,Internet & Phone,VoIP phone service for international clients,0.4,2500,Netflix,Crypto,Germany,True
-1c5a9443-ef23-405e-abf7-893b0b6ae71b,1435,2024-07-06,2591.28,USD,Marketing & Advertising,SEO service for website optimization,1.0,10000,Zoom,Bank Transfer,Australia,True
-758b562d-bff2-4be2-800f-8b8d6b6116fb,1034,2024-10-18,867.86,USD,Home Office,Desk and chair for home office,0.3,5000,Netflix,Cash,Canada,True
-815f3fdf-2bf0-4799-9fd6-6c163080d2b0,1609,2024-03-31,1009.95,GBP,Business Travel,Car rental for on-site project,0.35,3500,Amazon,Cash,UK,True
-e863330c-6715-4354-9e51-5a92e0092472,1065,2024-09-01,581.55,GBP,Client Entertainment,Drinks at networking event,0.2,1500,Zoom,Cash,Canada,True
-042a99ae-12ce-46b7-b59f-b7b20d687039,1742,2024-11-29,8322.69,GBP,Marketing & Advertising,SEO service for website optimization,1.0,10000,Walmart,Crypto,USA,True
-1b132788-41ee-4eb5-b35c-cb2b1ff7486b,1947,2024-07-13,654.25,USD,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Google,Credit Card,Canada,True
-01ebda5b-2237-43c7-ab9a-fd92904f6f7d,1443,2024-05-24,1087.26,EUR,Home Office,Office rent for remote work,0.3,5000,Walmart,PayPal,Australia,True
-5207e127-4cbb-4c61-8d07-b883100bb372,1656,2024-08-16,1693.13,USD,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Airbnb,Crypto,France,True
-6bc931a2-5d75-4d2f-a880-cde243657ad5,1833,2024-11-23,3682.81,GBP,Software & Subscriptions,Project management software renewal,0.5,3000,Walmart,Credit Card,USA,False
-4857e166-c8f3-4b89-a858-da33c2d3a1d0,1039,2024-03-14,1719.63,USD,Internet & Phone,Business internet subscription,0.4,2500,Uber,Cash,Germany,True
-5cc3a5e9-ae4d-4c46-b7cf-abdbed93110c,1722,2025-01-12,6582.58,GBP,Marketing & Advertising,SEO service for website optimization,1.0,10000,Amazon,Bank Transfer,UK,True
-65467dec-729e-4f80-a188-42574a628b40,1167,2024-09-28,21241.59,USD,Rent & Utilities,Electricity bill for workspace,1.0,15000,Uber,Crypto,Australia,False
-249f9f51-a696-4fda-9ec0-f5bc29ab574b,1942,2024-08-18,1424.09,GBP,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Walmart,Crypto,France,True
-4e07b5b3-59eb-4924-8958-89475bd280c2,1563,2024-10-21,5708.41,USD,Transportation,Taxi fare for client visit,1.0,5000,Google,Credit Card,Canada,False
-2678723d-42d4-4fc4-91fe-f37101297065,1412,2024-05-15,2426.4,USD,Freelancer Platform Fees,Upwork service fee,0.25,2000,Microsoft,Credit Card,Australia,False
-f7fb98aa-3f0d-4c3d-8f03-9c730f27bb8d,1598,2025-02-03,5994.17,USD,Home Office,Desk and chair for home office,0.3,5000,Walmart,Bank Transfer,France,False
-d0a97c3c-b806-436a-b69a-374947460ae5,1019,2024-08-25,1316.39,EUR,Education & Training,Conference registration for industry insights,0.6,4000,Airbnb,PayPal,Canada,True
-7f3d776c-eae6-4c4b-942d-eba408d41515,1216,2024-06-09,5.69,USD,Client Entertainment,Drinks at networking event,0.2,1500,Netflix,Cash,Canada,True
-10cbda79-c60c-4deb-bfe6-f68110cd89e8,1314,2024-08-23,127.67,USD,Transportation,Fuel cost for business trips,1.0,5000,Apple,Credit Card,Canada,True
-9f9ffcda-3fd9-4839-affc-9aec38eddc4b,1789,2024-05-27,2323.88,USD,Work Equipment,New laptop for development,0.5,5000,Netflix,PayPal,France,True
-07590998-b2f0-4eb2-8a83-f24679315c96,1064,2024-10-02,2693.69,GBP,Software & Subscriptions,Project management software renewal,0.5,3000,Netflix,Crypto,UK,True
-80ae251f-5177-462b-bf32-7cc74e101359,1076,2024-07-25,2664.56,EUR,Education & Training,Subscription to educational platforms,0.6,4000,Uber,Crypto,Australia,True
-af88830d-ec11-4a9a-b6b0-4d40bf43685a,1128,2024-08-11,3781.08,EUR,Business Travel,Car rental for on-site project,0.35,3500,Airbnb,Credit Card,Australia,False
-198c3960-1c6a-40d2-92f7-cbccf97c6d54,1650,2024-10-06,6599.31,USD,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Apple,Cash,France,False
-dc0a3071-275a-420e-af8e-7ce32a78f5f4,1757,2024-08-17,1577.48,GBP,Freelancer Platform Fees,Upwork service fee,0.25,2000,Apple,Credit Card,Australia,True
-f28a3785-1eb1-4ccb-93d6-af55c45e2c6b,1561,2024-03-27,833.9,GBP,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Uber,Bank Transfer,Canada,True
-899fd051-6bd2-48e2-b462-57315aa09042,1465,2024-06-04,495.06,GBP,Client Entertainment,Drinks at networking event,0.2,1500,Walmart,Crypto,Canada,True
-13008a6f-d0ec-4c18-a620-338294022900,1131,2024-12-26,3678.62,EUR,Education & Training,Subscription to educational platforms,0.6,4000,Google,PayPal,UK,True
-1705d3a7-89b9-4361-aeb9-e46c44c1d253,1828,2024-10-08,5434.7,USD,Work Equipment,Professional camera for photography business,0.5,5000,Microsoft,Credit Card,UK,False
-f77816f1-9776-454f-b2ab-d705fd4016d7,1364,2024-07-24,21213.54,USD,Rent & Utilities,Water and cleaning service charges,1.0,15000,Walmart,Cash,Germany,False
-8bdb6025-3940-4735-b77a-8cefe6b3007f,1783,2024-08-21,103.29,USD,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Apple,Cash,France,True
-49bfa5bb-ba56-46b0-adbe-50baf9fc76ad,1136,2024-06-27,3758.8,EUR,Business Travel,Flight to client meeting,0.35,3500,Netflix,Credit Card,USA,False
-e282078c-270a-4fb0-8421-ca872f4a7fca,1587,2024-11-25,5365.6,EUR,Work Equipment,External monitor for work,0.5,5000,Google,Crypto,Australia,False
-44c2f865-0b99-43e7-9066-f923ddb46193,1759,2024-11-08,2349.06,USD,Education & Training,Online course on data science,0.6,4000,Zoom,Cash,UK,True
-b6ccd359-3e71-4b03-8b93-6b89a73b69e0,1766,2024-04-30,757.24,EUR,Work Equipment,New laptop for development,0.5,5000,Apple,Cash,USA,True
-ae566420-a6d5-4471-95d4-aba0e674c5f4,1883,2024-10-02,5071.91,GBP,Home Office,Desk and chair for home office,0.3,5000,Airbnb,PayPal,France,False
-eea60e75-a322-406e-8e40-f0c51a040fe1,1489,2024-08-02,506.37,GBP,Home Office,Office rent for remote work,0.3,5000,Microsoft,Credit Card,USA,True
-3f1c7bfb-d5a9-4552-9e28-5753aefbf3ab,1024,2025-02-06,9263.05,EUR,Rent & Utilities,Electricity bill for workspace,1.0,15000,Google,Credit Card,UK,True
-6b75332a-35d5-4104-8a12-13875ab3ee9d,1657,2024-09-08,2826.37,EUR,Transportation,Taxi fare for client visit,1.0,5000,Walmart,PayPal,France,True
-c2f24cd1-fbd4-4110-86af-32104165e389,1030,2024-03-13,1388.72,EUR,Transportation,Taxi fare for client visit,1.0,5000,Airbnb,Crypto,Australia,True
-827df0e8-2cac-404b-8358-ab029f4ae359,1090,2024-11-17,2508.23,EUR,Education & Training,Online course on data science,0.6,4000,Walmart,Cash,Australia,True
-971e4711-ce0f-4603-b41e-96e7ef08540c,1698,2024-11-13,4024.85,USD,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Netflix,PayPal,USA,False
-c7eef4ed-17dd-4397-8649-7503e7b56ca5,1787,2024-07-27,6008.08,USD,Marketing & Advertising,SEO service for website optimization,1.0,10000,Zoom,Credit Card,Germany,True
-f4a2d65d-d7f9-4b84-896b-50343ff11cae,1932,2024-08-09,4400.3,GBP,Home Office,Lighting and furniture for workspace,0.3,5000,Walmart,Cash,Germany,True
-6c25224d-4d71-452a-8584-da6ccdfec8cf,1889,2024-06-30,3464.35,GBP,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Amazon,Cash,Australia,False
-9812bc0e-a885-402e-bb13-2c46f34b1ab4,1060,2024-10-21,1052.27,USD,Internet & Phone,VoIP phone service for international clients,0.4,2500,Microsoft,PayPal,Australia,True
-21f40027-df33-432f-89d9-c3e9168a05b4,1667,2024-08-06,1810.64,USD,Business Travel,Car rental for on-site project,0.35,3500,Google,Cash,UK,True
-2b456798-945a-4061-b46e-eaae7e69a4cb,1655,2024-08-28,1362.58,GBP,Client Entertainment,Event tickets for client meeting,0.2,1500,Microsoft,Cash,USA,True
-304620ff-c42a-4ac5-9f60-760721c9aca8,1196,2024-04-24,20330.73,EUR,Rent & Utilities,Water and cleaning service charges,1.0,15000,Amazon,Bank Transfer,UK,False
-bd058032-a1b2-4069-a7f5-6af7aabcd2b5,1617,2024-07-04,4942.96,USD,Marketing & Advertising,SEO service for website optimization,1.0,10000,Microsoft,Credit Card,UK,True
-1234ed18-b2b8-4f64-90f6-496c6009caba,1014,2024-10-13,1483.24,EUR,Client Entertainment,Dinner with potential client,0.2,1500,Netflix,Credit Card,France,True
-84d535ed-d2af-4097-922e-6ebc19bd06f3,1973,2024-11-13,1832.86,GBP,Software & Subscriptions,Project management software renewal,0.5,3000,Netflix,Credit Card,USA,True
-bfd76890-f9b5-4d55-99c1-1aedd6a8c4e4,1356,2024-04-19,2864.09,USD,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Apple,Cash,USA,False
-0faf6ba2-f137-46d8-8655-b5292a624be7,1165,2025-01-24,5130.75,GBP,Marketing & Advertising,Google Ads campaign,1.0,10000,Airbnb,Cash,Canada,True
-c74e27e8-56f5-49bd-aa5c-ed392bde773f,1298,2025-01-07,2910.23,GBP,Internet & Phone,VoIP phone service for international clients,0.4,2500,Apple,Cash,Canada,False
-9f5e7054-a619-42b6-8231-902ba2a03898,1775,2024-05-29,476.93,USD,Transportation,Monthly public transport pass,1.0,5000,Uber,Bank Transfer,Australia,True
-28d9c37c-8c31-4149-a21f-40d2ed2784ac,1048,2024-04-01,51.33,EUR,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Amazon,Cash,Germany,True
-564f5b9e-594d-434e-a3c4-2e939c1719a9,1387,2024-11-21,2504.81,EUR,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Netflix,Credit Card,Canada,True
-03bed8f8-0a30-4d5a-a5b7-736822320322,1945,2025-01-25,4475.33,EUR,Work Equipment,New laptop for development,0.5,5000,Microsoft,Crypto,Australia,True
-6aa9f9af-4858-49b1-a953-ef742239ab1f,1930,2024-05-13,1548.71,USD,Rent & Utilities,Electricity bill for workspace,1.0,15000,Airbnb,Bank Transfer,USA,True
-fa5c31aa-af24-487a-b41d-29f3ef92cf82,1760,2024-06-23,2399.98,USD,Marketing & Advertising,Google Ads campaign,1.0,10000,Uber,PayPal,USA,True
-127562b2-3a84-47b2-8b51-1e1476bc3126,1698,2024-08-14,1174.66,USD,Business Travel,Flight to client meeting,0.35,3500,Walmart,PayPal,Australia,True
-7707d122-55b6-4dec-8327-446bad271249,1799,2024-07-27,9300.89,EUR,Marketing & Advertising,Google Ads campaign,1.0,10000,Walmart,Crypto,USA,True
-c040098e-c88e-4a59-a6bf-479333a0e629,1607,2024-05-04,27.91,USD,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Apple,Cash,Australia,True
-a28bd557-c945-46d2-81ca-6b6e96ab4b52,1369,2024-07-18,93.9,USD,Freelancer Platform Fees,Upwork service fee,0.25,2000,Walmart,PayPal,Canada,True
-0bccbf85-ea9d-4cdf-ba49-110f375fdf11,1667,2024-10-15,6802.05,EUR,Home Office,Lighting and furniture for workspace,0.3,5000,Apple,Bank Transfer,USA,False
-44c46bb0-0394-4d81-aada-10827b3c828e,1318,2024-09-05,7122.32,EUR,Home Office,Coworking space membership,0.3,5000,Amazon,PayPal,Canada,False
-f78fcd5d-ca77-453c-89f7-b70fd88cd832,1676,2024-08-25,3518.11,USD,Business Travel,Flight to client meeting,0.35,3500,Apple,Bank Transfer,France,False
-0a75cd55-5759-4ed3-bf99-e3f9b7ba6e83,1424,2024-12-07,8274.37,USD,Marketing & Advertising,SEO service for website optimization,1.0,10000,Zoom,PayPal,France,True
-5f913d52-7cd9-4520-be80-768778397f66,1491,2024-06-10,4812.4,GBP,Business Travel,Hotel stay for business conference,0.35,3500,Uber,Bank Transfer,Australia,False
-4d30e17b-fcb5-4c9a-8a99-1c332c78cd8d,1995,2024-09-17,2714.09,GBP,Transportation,Fuel cost for business trips,1.0,5000,Apple,Crypto,Australia,True
-c25ebcc2-47d8-40fb-9f93-4815e9fccee4,1572,2024-03-29,1206.79,GBP,Work Equipment,Professional camera for photography business,0.5,5000,Google,Bank Transfer,Australia,True
-787bda04-b823-404b-bf95-23d04e930482,1857,2024-03-24,1548.89,USD,Work Equipment,External monitor for work,0.5,5000,Netflix,Crypto,Germany,True
-c6679035-0614-4ee6-8145-e901eb63e19c,1080,2024-11-11,3992.89,GBP,Education & Training,Conference registration for industry insights,0.6,4000,Walmart,PayPal,Canada,True
-ee234651-10fd-4fd8-b47c-47cd6c026e9e,1715,2024-03-07,7060.08,GBP,Transportation,Fuel cost for business trips,1.0,5000,Airbnb,Crypto,Germany,False
-fb8792cb-d116-4947-ac6a-9b3c423760cc,1939,2024-05-08,4150.92,GBP,Home Office,Desk and chair for home office,0.3,5000,Amazon,PayPal,Australia,True
-7e640a60-9285-432d-adc6-e6753faed0c0,1799,2024-12-06,9497.25,USD,Marketing & Advertising,Social media promotions,1.0,10000,Amazon,Credit Card,USA,True
-982e5e39-98a5-4982-99cd-4986f973c036,1183,2024-03-19,4788.08,EUR,Home Office,Lighting and furniture for workspace,0.3,5000,Netflix,Cash,UK,True
-48ef012d-7464-4fbe-b3e4-35402b41cfb6,1580,2025-02-13,327.34,EUR,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Apple,Bank Transfer,Australia,True
-ec289a16-e128-4fab-bc5c-6443e0b302de,1522,2024-06-10,1842.75,EUR,Rent & Utilities,Water and cleaning service charges,1.0,15000,Microsoft,Bank Transfer,UK,True
-94d40865-7858-4191-8095-7e92019ea236,1618,2025-01-11,9292.79,USD,Rent & Utilities,Office rent payment,1.0,15000,Zoom,Credit Card,UK,True
-15893184-89d1-4f99-a5bc-901f1b168927,1060,2024-03-05,2699.76,USD,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Microsoft,PayPal,France,False
-9587396f-bc5d-4274-9e04-a2d74b7da409,1691,2024-09-21,19927.95,EUR,Rent & Utilities,Office rent payment,1.0,15000,Uber,Cash,USA,False
-6bb98c95-b193-4503-ac20-6a9f99631c4b,1841,2024-06-07,3630.96,USD,Education & Training,Online course on data science,0.6,4000,Uber,Crypto,Australia,True
-215b6a4f-a39c-48bd-a827-5abbc0ac5464,1669,2024-08-15,177.32,GBP,Client Entertainment,Event tickets for client meeting,0.2,1500,Airbnb,Bank Transfer,France,True
-884bd6e8-9b48-412f-a7c7-fb50c29d584f,1230,2024-05-05,2440.85,EUR,Freelancer Platform Fees,Upwork service fee,0.25,2000,Netflix,Cash,Australia,False
-ff55bd8f-157a-4974-b8c4-4246e5ed2c0b,1145,2024-03-16,2270.62,EUR,Education & Training,Conference registration for industry insights,0.6,4000,Google,Crypto,Australia,True
-325e7cb0-bbe1-4aa0-a810-da7f617701cf,1268,2024-08-19,3824.92,USD,Transportation,Fuel cost for business trips,1.0,5000,Zoom,Credit Card,France,True
-cd24be93-09ed-46d1-a045-ba9fc1c63404,1178,2024-11-03,475.47,USD,Client Entertainment,Event tickets for client meeting,0.2,1500,Apple,Cash,Australia,True
-0cd2d418-6374-40ab-8b68-fd29e0dab3fa,1482,2024-02-28,22370.76,EUR,Rent & Utilities,Electricity bill for workspace,1.0,15000,Walmart,Bank Transfer,USA,False
-194b71c0-9b89-4e69-9b5b-24398e210f83,1557,2024-04-15,3061.7,EUR,Work Equipment,New laptop for development,0.5,5000,Walmart,Crypto,Australia,True
-95678d13-daaa-4e23-8740-0cf7e3cec395,1156,2024-09-16,5261.03,EUR,Marketing & Advertising,SEO service for website optimization,1.0,10000,Netflix,Crypto,Germany,True
-bc2ea11c-49b3-41a9-b14c-eeecbec6ec95,1376,2024-10-27,1164.05,EUR,Business Travel,Car rental for on-site project,0.35,3500,Uber,Bank Transfer,USA,True
-6111d577-53de-4577-8302-39b4a5a86cdc,1387,2024-09-01,2541.01,USD,Home Office,Coworking space membership,0.3,5000,Microsoft,Cash,Canada,True
-aa5aa5b0-d21d-46a6-b21f-09d287c91459,1596,2024-11-01,4923.15,GBP,Business Travel,Car rental for on-site project,0.35,3500,Walmart,Bank Transfer,Canada,False
-2ae4da02-6a9d-44e2-9b69-e6837d5072a8,1934,2024-12-21,2452.5,EUR,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Google,Bank Transfer,France,False
-2df03d73-6352-4443-ae7d-12055de219dc,1936,2025-02-10,3679.03,USD,Marketing & Advertising,SEO service for website optimization,1.0,10000,Microsoft,Cash,USA,True
-06270734-d723-4091-b775-5eecb35570d2,1587,2025-01-10,4424.5,USD,Transportation,Fuel cost for business trips,1.0,5000,Uber,Cash,France,True
-36be9ab2-7fe3-49f1-83d3-e9c84105bdbf,1125,2024-12-15,1418.26,USD,Education & Training,Subscription to educational platforms,0.6,4000,Airbnb,Cash,Canada,True
-4bfc8f12-e638-4cc3-97d0-4c9daa1a2c12,1160,2024-06-10,1331.29,EUR,Education & Training,Conference registration for industry insights,0.6,4000,Google,Crypto,Germany,True
-11a59866-5ae6-4acd-80a7-8117205691ff,1543,2025-02-22,2014.03,USD,Transportation,Taxi fare for client visit,1.0,5000,Zoom,Bank Transfer,Canada,True
-a14c4ef3-28dc-426e-9ef5-836d67aa3008,1692,2024-03-06,14966.0,EUR,Marketing & Advertising,SEO service for website optimization,1.0,10000,Uber,Crypto,France,False
-069f885d-d2d4-4d52-8b8d-067b369fb529,1006,2024-10-21,4113.13,USD,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Uber,PayPal,Canada,False
-a15d55b6-9e9e-4316-9652-2845d59cead4,1138,2024-11-24,2660.92,USD,Education & Training,Subscription to educational platforms,0.6,4000,Walmart,PayPal,Canada,True
-8250f154-e235-486a-b31b-c10e51298911,1471,2024-09-18,875.07,EUR,Work Equipment,Professional camera for photography business,0.5,5000,Google,Credit Card,France,True
-50fd3200-bc79-42f7-acbf-5ee020167926,1420,2024-08-26,7203.82,USD,Transportation,Taxi fare for client visit,1.0,5000,Walmart,Crypto,Canada,False
-89fe2803-ca63-483d-bf37-ccc23e04378f,1203,2024-04-15,738.13,EUR,Business Travel,Hotel stay for business conference,0.35,3500,Zoom,Cash,Germany,True
-cd13bb50-12da-4593-b4d7-b6ae0551e789,1784,2024-03-13,1121.99,USD,Client Entertainment,Event tickets for client meeting,0.2,1500,Airbnb,PayPal,USA,True
-0d9864c0-f2e8-4ce4-88db-21c869e3f185,1732,2024-09-02,3986.4,USD,Transportation,Monthly public transport pass,1.0,5000,Microsoft,Crypto,UK,True
-b1ef2563-4d1b-4d17-a464-97238af675c6,1862,2025-02-21,416.6,EUR,Business Travel,Flight to client meeting,0.35,3500,Zoom,Bank Transfer,UK,True
-b5b66b90-d66e-4422-8dba-d78a8e8dfe13,1174,2024-04-29,7069.57,EUR,Marketing & Advertising,Google Ads campaign,1.0,10000,Amazon,Credit Card,USA,True
-853e017f-2022-4aa6-ae65-d139a65e5a12,1523,2024-04-09,7261.55,USD,Marketing & Advertising,SEO service for website optimization,1.0,10000,Walmart,Cash,Australia,True
-040c9bbb-a441-491d-87c9-2eac8e49f044,1059,2024-08-03,1492.28,GBP,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Apple,Cash,USA,True
-e91ee4a0-9348-4100-8b3e-7206bb15126f,1102,2024-07-24,4889.49,USD,Transportation,Taxi fare for client visit,1.0,5000,Walmart,Crypto,Canada,True
-b9670ac4-c490-43a3-a698-17965f153d36,1139,2024-08-11,7590.53,EUR,Rent & Utilities,Electricity bill for workspace,1.0,15000,Uber,Bank Transfer,France,True
-9427528e-5d9b-4035-a9fe-95cca64699fb,1448,2024-06-22,345.4,GBP,Software & Subscriptions,Subscription to design tools,0.5,3000,Airbnb,Crypto,Canada,True
-a091feb8-e10a-425b-9c46-f39fd8df34dd,1126,2024-09-12,4257.59,GBP,Education & Training,Online course on data science,0.6,4000,Netflix,Bank Transfer,Australia,False
-4b8c709d-ccb5-47dc-b859-14f1c086e7cc,1118,2024-03-23,14367.13,GBP,Marketing & Advertising,Social media promotions,1.0,10000,Walmart,Cash,UK,False
-2d4af160-1fe6-48ba-b7e6-0305833f7c7a,1624,2024-12-24,5503.45,GBP,Rent & Utilities,Office rent payment,1.0,15000,Uber,Crypto,Australia,True
-e3b13767-e916-4815-888c-2aba9a05e760,1999,2024-07-09,777.13,USD,Home Office,Lighting and furniture for workspace,0.3,5000,Google,Credit Card,UK,True
-71d1b9c4-15ad-41c6-add3-2c068b6a1c0a,1926,2024-07-09,1174.36,EUR,Client Entertainment,Drinks at networking event,0.2,1500,Airbnb,Crypto,Canada,True
-4121912d-b23c-4daa-91da-c63f5ecaee07,1331,2025-02-13,1458.57,EUR,Client Entertainment,Dinner with potential client,0.2,1500,Microsoft,PayPal,France,True
-7742392a-a184-49b3-8997-6a961e2fcab0,1459,2024-08-04,17.51,USD,Education & Training,Subscription to educational platforms,0.6,4000,Netflix,PayPal,Australia,True
-66da0e9b-c699-4b54-a3e5-dbe173fcb11c,1960,2025-02-20,2930.67,GBP,Internet & Phone,Mobile data plan for work calls,0.4,2500,Uber,PayPal,Canada,False
-0725250b-dcb8-4ad8-ab4e-a579267eeaa8,1713,2025-01-22,4771.96,USD,Work Equipment,External monitor for work,0.5,5000,Walmart,Crypto,UK,True
-ed429535-d0da-4d01-82db-edf79141c6a0,1180,2024-12-17,1878.59,USD,Business Travel,Flight to client meeting,0.35,3500,Uber,PayPal,Germany,True
-f8299392-8e0b-4de9-8dbd-043910adf06a,1070,2024-03-17,4297.54,USD,Education & Training,Conference registration for industry insights,0.6,4000,Netflix,Cash,UK,False
-8bae2789-9639-480a-b95e-af75dc7f654a,1177,2024-12-04,2499.77,EUR,Home Office,Desk and chair for home office,0.3,5000,Walmart,Credit Card,USA,True
-ec292135-3a37-4da4-89d2-5e5852ff484b,1565,2024-06-13,1894.81,GBP,Home Office,Lighting and furniture for workspace,0.3,5000,Google,Cash,UK,True
-ff08dc9f-cd5b-40e9-b027-67fd8f8c7daf,1909,2024-10-31,1814.42,GBP,Freelancer Platform Fees,Upwork service fee,0.25,2000,Microsoft,Cash,Germany,True
-1f6fd1e7-f583-4983-8d16-b4d4acbfd734,1947,2024-12-28,2516.43,USD,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Apple,Cash,UK,True
-db843c97-4100-4400-83cc-32be2a95c3b3,1752,2024-06-24,2023.1,EUR,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Airbnb,Cash,France,True
-6994c850-b6b4-4c22-9325-d1280c8f0d70,1515,2024-11-05,4279.16,EUR,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Walmart,Credit Card,USA,False
-cb5db0da-0aeb-4a19-8633-04bc1440decc,1318,2024-11-17,2589.8,USD,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Apple,Bank Transfer,Australia,True
-721a42fc-19a0-4921-b5d8-4ee37ab8ff00,1021,2024-05-29,5104.32,USD,Marketing & Advertising,Google Ads campaign,1.0,10000,Zoom,PayPal,Germany,True
-fcf5e59c-09c2-4fb5-b780-307190980e93,1707,2024-09-15,2334.3,GBP,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Zoom,Cash,France,False
-fe53871a-4acd-4c42-bb83-dddfdb868e89,1758,2024-09-01,2459.17,GBP,Education & Training,Conference registration for industry insights,0.6,4000,Microsoft,PayPal,USA,True
-7fcee1ae-16c1-443e-8391-e90eba4128ae,1492,2024-12-21,6369.64,GBP,Work Equipment,Professional camera for photography business,0.5,5000,Microsoft,Bank Transfer,UK,False
-18126ebc-8d57-4b77-b83d-313e779bc3dc,1236,2024-12-08,989.8,USD,Client Entertainment,Event tickets for client meeting,0.2,1500,Netflix,Bank Transfer,USA,True
-56ab2d7d-1b95-4b20-9941-7d4792cf4fb6,1476,2025-02-13,6099.01,USD,Work Equipment,New laptop for development,0.5,5000,Uber,Credit Card,France,False
-c64f6399-2978-4e27-8f74-4bed6c502ab3,1978,2024-06-30,329.21,GBP,Client Entertainment,Drinks at networking event,0.2,1500,Apple,Crypto,Canada,True
-1d1a063d-648b-46f5-9bd5-f59b35a7072d,1501,2024-03-26,4268.91,EUR,Transportation,Taxi fare for client visit,1.0,5000,Airbnb,Bank Transfer,UK,True
-bead2554-f837-421c-8790-9fc0a53072c1,1495,2025-02-23,1111.71,GBP,Business Travel,Car rental for on-site project,0.35,3500,Netflix,Crypto,Canada,True
-64b2b4d6-ccd6-44f6-b7f9-4499ef51fea1,1695,2024-07-26,2917.77,GBP,Transportation,Monthly public transport pass,1.0,5000,Airbnb,Cash,France,True
-2806489f-5213-4cce-84ae-21a824cf54e0,1277,2024-04-04,1455.04,EUR,Freelancer Platform Fees,Upwork service fee,0.25,2000,Uber,Cash,UK,True
-31acbd32-f677-4e08-8b17-1f43da612baa,1562,2024-12-29,2215.86,GBP,Home Office,Coworking space membership,0.3,5000,Airbnb,Bank Transfer,USA,True
-51c226fd-1c54-494b-9b3e-5e90b41b65e9,1850,2024-05-07,5434.9,GBP,Home Office,Coworking space membership,0.3,5000,Amazon,Bank Transfer,Germany,False
-70ca1a3b-a203-4e3b-b551-0f571cc74d18,1442,2025-02-05,2685.23,GBP,Marketing & Advertising,SEO service for website optimization,1.0,10000,Google,Crypto,Canada,True
-0bccbbc6-1f1b-4017-8922-3a5cf80d6852,1038,2024-09-30,301.03,GBP,Freelancer Platform Fees,Upwork service fee,0.25,2000,Airbnb,Bank Transfer,France,True
-2a1bd3c4-5ace-4b20-8816-e691aafd0fee,1038,2025-02-13,2101.7,GBP,Education & Training,Online course on data science,0.6,4000,Netflix,Credit Card,Germany,True
-48dc5d50-09cf-40d7-bbd2-badfc49394f6,1476,2024-10-01,5799.03,EUR,Work Equipment,New laptop for development,0.5,5000,Walmart,Bank Transfer,USA,False
-c6ae0939-a8aa-4b88-82f8-6b831cf21cff,1077,2024-03-18,1159.38,GBP,Work Equipment,Professional camera for photography business,0.5,5000,Uber,Credit Card,UK,True
-95adf013-1be0-4c5f-9bd0-13dfc0c12cca,1301,2024-05-09,327.87,EUR,Transportation,Taxi fare for client visit,1.0,5000,Uber,Bank Transfer,Germany,True
-76d657ae-77b6-4659-b0e0-e280ecbf07b8,1480,2024-06-23,11748.7,EUR,Marketing & Advertising,SEO service for website optimization,1.0,10000,Zoom,PayPal,UK,False
-54820d30-059c-4b6f-9669-6c62002f46e1,1765,2024-07-23,1283.98,USD,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Google,Bank Transfer,France,True
-80f8b8fe-9c05-4b3f-9c63-0a46eb490370,1120,2024-10-15,2176.44,GBP,Client Entertainment,Event tickets for client meeting,0.2,1500,Airbnb,PayPal,USA,False
-5ca89a4b-7001-4528-a26b-ab75bb6b0bcd,1766,2024-07-12,1174.98,USD,Client Entertainment,Drinks at networking event,0.2,1500,Walmart,Credit Card,UK,True
-c4c09bcb-976f-452d-956f-fa6a8b8460f1,1449,2024-09-22,321.4,USD,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Zoom,Bank Transfer,Canada,True
-26709d2e-934a-4c5e-83dc-acd624021124,1774,2024-08-05,5783.15,GBP,Transportation,Fuel cost for business trips,1.0,5000,Google,PayPal,Australia,False
-c70d2c0d-0a04-4772-a891-4c12a275f030,1873,2024-11-20,5149.06,EUR,Home Office,Coworking space membership,0.3,5000,Airbnb,PayPal,Germany,False
-633560bf-0860-486e-8a5d-68c35896259c,1292,2024-11-30,3438.58,USD,Business Travel,Hotel stay for business conference,0.35,3500,Zoom,PayPal,USA,True
-2215fe05-670a-4840-9ae2-28bd7a66ee3b,1013,2024-12-25,1701.3,EUR,Internet & Phone,VoIP phone service for international clients,0.4,2500,Walmart,Bank Transfer,UK,True
-45192349-27da-4f8d-9e51-acd1aaee397b,1952,2024-10-24,1030.74,USD,Client Entertainment,Event tickets for client meeting,0.2,1500,Google,Cash,France,True
-a09a6625-bcf6-48d8-808b-5d5ea20720cf,1203,2024-04-30,2004.47,EUR,Education & Training,Subscription to educational platforms,0.6,4000,Google,Crypto,UK,True
-c22c0c8d-6c41-4540-a54d-2ef8c24f88f3,1029,2024-05-09,3330.29,USD,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Zoom,PayPal,Germany,False
-5e040408-6769-4c48-a158-ed595be32603,1473,2024-12-04,6881.19,EUR,Marketing & Advertising,Google Ads campaign,1.0,10000,Microsoft,Crypto,Germany,True
-b116c944-271d-44e2-8aa1-81cfe993d654,1672,2025-02-18,2106.79,EUR,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Uber,Cash,Canada,True
-0d9101c8-035d-429e-ae7a-02b63a25f5c7,1921,2025-02-13,449.19,USD,Client Entertainment,Event tickets for client meeting,0.2,1500,Uber,PayPal,UK,True
-68f75ace-61fa-41cb-ac17-d91c379f950d,1710,2024-08-28,1949.54,USD,Education & Training,Conference registration for industry insights,0.6,4000,Uber,Bank Transfer,Australia,True
-8ca50260-ebe0-47d2-9f3a-20a8bf4f3823,1658,2025-01-17,2823.27,EUR,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Airbnb,Cash,Australia,True
-9bd7f431-a512-4765-8d6f-feb73e080fc3,1819,2024-12-13,1061.65,GBP,Client Entertainment,Event tickets for client meeting,0.2,1500,Microsoft,Crypto,Canada,True
-6d995013-209e-4616-838a-2419fc6dc421,1575,2025-02-04,5038.62,GBP,Home Office,Desk and chair for home office,0.3,5000,Netflix,Cash,France,False
-ff119762-e46f-4911-9811-4d986c26a032,1084,2025-01-29,2101.93,USD,Freelancer Platform Fees,Upwork service fee,0.25,2000,Uber,Credit Card,Australia,False
-23b602c7-bd11-4744-b32e-cb9e178d1c55,1496,2024-12-10,5159.41,USD,Business Travel,Flight to client meeting,0.35,3500,Microsoft,PayPal,France,False
-d97ca505-0dfc-47ee-a9bd-b558951f9727,1904,2024-08-28,1589.35,EUR,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Walmart,Credit Card,France,True
-414aef49-753f-4080-8748-382fd9757d58,1667,2024-11-19,430.56,USD,Education & Training,Conference registration for industry insights,0.6,4000,Amazon,Cash,Australia,True
-63704fd5-64ce-42a5-b3a6-f4567a634a12,1418,2024-11-18,6009.02,GBP,Transportation,Taxi fare for client visit,1.0,5000,Walmart,Crypto,Canada,False
-774e544b-9d85-4bd6-8370-4159ce3c409f,1770,2024-03-04,4633.09,EUR,Marketing & Advertising,Social media promotions,1.0,10000,Airbnb,Crypto,Australia,True
-1c098117-d58f-4452-b548-1fbf25100c98,1143,2024-10-04,10899.66,GBP,Marketing & Advertising,Social media promotions,1.0,10000,Google,Credit Card,Canada,False
-0a9d0f26-0eda-4899-b118-f19b3225f9f6,1878,2024-11-23,605.02,GBP,Client Entertainment,Dinner with potential client,0.2,1500,Apple,Credit Card,USA,True
-1aa4ede7-6f45-4726-a3fe-3ca28d969ad1,1178,2024-09-12,14430.31,GBP,Rent & Utilities,Electricity bill for workspace,1.0,15000,Zoom,Credit Card,Australia,True
-7f0dc377-5db1-43b5-99df-7184e9b8ba5e,1448,2024-03-04,2730.24,USD,Internet & Phone,Mobile data plan for work calls,0.4,2500,Netflix,Credit Card,Germany,False
-486c6cea-96de-4e62-baeb-d9e714a18509,1588,2024-06-24,680.18,USD,Software & Subscriptions,Project management software renewal,0.5,3000,Uber,Bank Transfer,UK,True
-36312390-2dc2-4483-bb22-05c39ac82adc,1419,2024-05-06,3030.62,GBP,Internet & Phone,Business internet subscription,0.4,2500,Amazon,Cash,Germany,False
-9f44663f-5479-4351-8848-d988fc488bc1,1450,2025-01-01,4149.69,GBP,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Amazon,Cash,UK,False
-2d59e05b-6ef3-4c59-84c1-6af32adf6354,1337,2024-10-08,1418.33,EUR,Rent & Utilities,Electricity bill for workspace,1.0,15000,Microsoft,Bank Transfer,Australia,True
-ea3e94f6-8a2a-4bf7-bb47-afc304f15d64,1445,2024-05-11,106.11,EUR,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Zoom,PayPal,France,True
-e23cc232-e4aa-4c2b-b75e-8c54876096ee,1914,2024-12-04,1902.26,USD,Client Entertainment,Dinner with potential client,0.2,1500,Airbnb,Credit Card,UK,False
-1d85cd8e-dc72-4ba2-a6dc-4cae8d9dcff1,1039,2025-02-26,1968.03,EUR,Home Office,Lighting and furniture for workspace,0.3,5000,Apple,Cash,Australia,True
-8117ef8c-d499-49f8-9daa-2b944ec838e4,1739,2024-12-01,1348.06,EUR,Education & Training,Online course on data science,0.6,4000,Airbnb,Cash,Australia,True
-c6373fbb-4063-49cf-81cc-d262590d215b,1845,2024-07-07,1291.27,GBP,Client Entertainment,Event tickets for client meeting,0.2,1500,Zoom,Crypto,France,True
-ecd72897-8bca-48f6-8d01-bc7208dd404c,1620,2024-08-27,16578.19,EUR,Rent & Utilities,Electricity bill for workspace,1.0,15000,Amazon,Credit Card,Germany,False
-110e9a99-aed9-4e63-b9ce-f0ce6d0f4843,1504,2024-06-02,3709.81,EUR,Software & Subscriptions,Project management software renewal,0.5,3000,Amazon,PayPal,Canada,False
+5280833a-4da9-416e-92f3-713ae32f63b2,101,2024-10-21,7923.67,EUR,Marketing & Advertising,Google Ads campaign,1.0,10000,Uber,Bank Transfer,Germany,True
+23d051ef-6839-40f6-bf22-e3b381043aa3,101,2024-09-09,6105.9,EUR,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Microsoft,Bank Transfer,USA,False
+7f48d640-6680-4b2f-bae5-a5c827644d72,101,2024-08-17,686.59,USD,Internet & Phone,Mobile data plan for work calls,0.4,2500,Amazon,PayPal,Australia,True
+1ebba401-ff6a-4112-9703-a06e6a98d851,101,2024-10-10,1095.94,USD,Client Entertainment,Dinner with potential client,0.2,1500,Netflix,Bank Transfer,Canada,True
+dbcff318-0298-4ed3-9b6f-2d73adbecf50,101,2025-02-15,3664.11,EUR,Internet & Phone,Business internet subscription,0.4,2500,Microsoft,Cash,France,False
+4fdca04d-b6d1-4997-bddb-8f4c9bb4c98e,101,2025-02-22,214.81,USD,Education & Training,Online course on data science,0.6,4000,Zoom,Bank Transfer,UK,True
+4c243b65-4b6a-43aa-afa1-c10dd5ee4d88,101,2024-04-28,1763.72,EUR,Home Office,Coworking space membership,0.3,5000,Netflix,Credit Card,USA,True
+9b520c8d-2b34-4510-a5e1-4d4370b08e23,101,2024-03-21,3850.87,GBP,Marketing & Advertising,SEO service for website optimization,1.0,10000,Zoom,Credit Card,Canada,True
+7ba90091-406c-475f-af90-767cc1019b8e,101,2024-04-01,1681.22,USD,Client Entertainment,Dinner with potential client,0.2,1500,Airbnb,Credit Card,Canada,False
+82de0e0e-5b51-465b-bea5-c9fc363ccf9c,101,2024-09-27,1999.36,EUR,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Walmart,PayPal,UK,True
+477a001c-fcb4-4863-8051-363e3f8fd332,101,2024-03-04,1012.9,USD,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Netflix,Bank Transfer,Germany,True
+efdd7d88-25c7-438b-a78f-bc175d9991e4,101,2025-01-21,4008.37,GBP,Business Travel,Flight to client meeting,0.35,3500,Walmart,Credit Card,UK,False
+1f8ea794-5a12-4c22-b6db-ac23bd033c57,101,2024-11-08,2589.65,EUR,Marketing & Advertising,SEO service for website optimization,1.0,10000,Google,PayPal,Germany,True
+8b958bfe-9e72-4363-90e1-91b9afd340d8,101,2024-05-12,3056.62,USD,Business Travel,Flight to client meeting,0.35,3500,Netflix,PayPal,Canada,True
+8e92c77e-dbfa-4bf2-a190-c22c825361e9,101,2024-05-19,3319.18,GBP,Transportation,Fuel cost for business trips,1.0,5000,Apple,Bank Transfer,Germany,True
+1ec86662-92bc-4d56-918b-aadd668e2762,101,2024-12-08,5685.64,USD,Home Office,Desk and chair for home office,0.3,5000,Microsoft,Credit Card,Australia,False
+8fdc71df-40aa-490b-9284-0c30fab87b5d,101,2024-12-17,2096.97,GBP,Client Entertainment,Drinks at networking event,0.2,1500,Microsoft,PayPal,UK,False
+db24d9fd-eab0-4565-9244-a0f3700b10b9,101,2024-04-21,2084.5,EUR,Client Entertainment,Dinner with potential client,0.2,1500,Amazon,PayPal,France,False
+3c505668-a501-40c0-9918-8d06496f0069,101,2024-09-14,5584.81,EUR,Work Equipment,New laptop for development,0.5,5000,Airbnb,Crypto,France,False
+ceba1b45-2c09-46ee-916d-1057a70bb07d,101,2024-08-14,2534.15,USD,Education & Training,Subscription to educational platforms,0.6,4000,Microsoft,PayPal,Australia,True
+641f0ca2-f184-4e32-bccd-1a50ff8776a3,101,2024-08-14,2317.23,GBP,Business Travel,Flight to client meeting,0.35,3500,Apple,PayPal,France,True
+aaca64e6-9c16-4490-938f-dec93bcb45c3,101,2024-04-29,1562.22,USD,Home Office,Lighting and furniture for workspace,0.3,5000,Google,Cash,Germany,True
+8830ef23-a903-43c1-8115-3742ccbd4f6b,101,2024-08-16,1582.31,GBP,Freelancer Platform Fees,Upwork service fee,0.25,2000,Netflix,Credit Card,USA,True
+648bb50c-aa59-4586-92b2-9606216ca96e,101,2025-02-09,2455.57,USD,Business Travel,Hotel stay for business conference,0.35,3500,Netflix,Credit Card,Germany,True
+26e0c00f-8bea-4088-86d7-7dad0908b6a1,101,2024-11-18,1656.84,USD,Home Office,Office rent for remote work,0.3,5000,Walmart,Credit Card,USA,True
+0ce201ef-c8d7-4835-b9b5-c30e1b805216,101,2024-07-06,3151.41,USD,Software & Subscriptions,Project management software renewal,0.5,3000,Zoom,PayPal,Canada,False
+0882787e-13bc-40fa-9645-db70ea2c5f29,101,2024-12-23,42.91,EUR,Internet & Phone,Business internet subscription,0.4,2500,Zoom,Crypto,USA,True
+c594e99d-7b28-4c7e-b05a-eea079d3194b,101,2024-03-15,615.12,EUR,Software & Subscriptions,Project management software renewal,0.5,3000,Walmart,Crypto,Australia,True
+ee5cd2a4-2136-4979-a6ef-db8ca85d7212,101,2024-07-25,6635.59,GBP,Home Office,Office rent for remote work,0.3,5000,Amazon,Credit Card,USA,False
+68f5e269-c518-4ce7-94ed-8b714816b777,101,2024-09-25,2058.13,GBP,Internet & Phone,VoIP phone service for international clients,0.4,2500,Netflix,Bank Transfer,Canada,True
+adad55cb-7032-4aff-b2b2-ee05a34df01a,101,2024-05-06,10029.87,USD,Rent & Utilities,Water and cleaning service charges,1.0,15000,Microsoft,PayPal,UK,True
+699b7441-72b2-46dd-8fe2-c509bb74ca50,101,2024-09-06,6167.78,EUR,Home Office,Lighting and furniture for workspace,0.3,5000,Uber,Crypto,France,False
+360ac6ea-910b-4b61-b963-4bef5bdaeaa0,101,2024-06-24,6095.34,GBP,Rent & Utilities,Water and cleaning service charges,1.0,15000,Airbnb,Credit Card,Canada,True
+ac1775eb-fe8f-4e6d-b1f6-f2a8a064fc9d,101,2024-06-06,2602.44,USD,Transportation,Monthly public transport pass,1.0,5000,Netflix,Bank Transfer,Germany,True
+6afc6fa3-f599-476f-9388-8c955637610c,101,2025-02-09,3565.02,GBP,Education & Training,Subscription to educational platforms,0.6,4000,Zoom,Cash,Australia,True
+8193ff57-2ee6-4485-a213-fcb85f1964f2,101,2024-05-30,2160.26,EUR,Home Office,Office rent for remote work,0.3,5000,Walmart,Cash,Australia,True
+79a667ce-c8b3-47c2-bbb2-5b124da0c3b2,101,2024-03-11,3388.45,EUR,Transportation,Taxi fare for client visit,1.0,5000,Google,Bank Transfer,France,True
+41da3ff5-b447-4a56-a300-ab756fdcea37,101,2024-04-15,3528.92,GBP,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Microsoft,PayPal,Germany,False
+a06bcb5b-719b-4bd1-a60e-d7c07a3459a8,101,2024-08-10,680.51,EUR,Work Equipment,External monitor for work,0.5,5000,Zoom,Credit Card,Australia,True
+0e884147-9da7-4d5a-93d6-6cef23227430,101,2024-03-22,352.08,EUR,Client Entertainment,Drinks at networking event,0.2,1500,Airbnb,PayPal,Germany,True
+9189ad0e-3da3-4cd7-a5ff-50a4799e6f7f,101,2024-09-29,726.64,GBP,Client Entertainment,Dinner with potential client,0.2,1500,Netflix,Cash,USA,True
+1f0c6d07-f8c8-4323-81fc-fab7bf50ccc5,101,2024-12-18,6464.03,GBP,Transportation,Fuel cost for business trips,1.0,5000,Walmart,Crypto,France,False
+8d255a9a-c042-4e19-947f-2639f7c2a5ea,101,2024-11-08,855.25,GBP,Education & Training,Online course on data science,0.6,4000,Walmart,Cash,USA,True
+1f697fb9-6dfa-416c-99ad-d4b327123394,101,2025-02-20,6449.77,EUR,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Netflix,Credit Card,Germany,False
+69930b58-03df-4f6c-8322-9dc438e17766,101,2024-04-02,493.36,EUR,Business Travel,Flight to client meeting,0.35,3500,Apple,Crypto,Canada,True
+5013e54c-8ccd-4a53-aa2e-f156363d431e,101,2024-12-27,14869.63,EUR,Marketing & Advertising,SEO service for website optimization,1.0,10000,Amazon,Crypto,Germany,False
+54ccd41a-ae30-4e92-b05f-842742c58678,101,2024-04-28,2908.26,GBP,Business Travel,Flight to client meeting,0.35,3500,Google,Cash,Australia,True
+5fe0c807-80d5-4a0c-994a-33467d1277ce,101,2025-02-02,983.21,EUR,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Zoom,Credit Card,France,True
+8a767a32-e889-4983-92af-94e21efb144b,101,2024-06-10,2144.15,GBP,Freelancer Platform Fees,Upwork service fee,0.25,2000,Airbnb,Bank Transfer,France,False
+54fcfecc-74f0-47f6-8514-58a382388310,101,2024-04-19,2785.08,USD,Marketing & Advertising,SEO service for website optimization,1.0,10000,Amazon,PayPal,USA,True
+212108da-ee3f-4bbf-9020-d476cfa0b7b7,101,2025-02-22,4274.64,USD,Education & Training,Online course on data science,0.6,4000,Microsoft,PayPal,Canada,False
+0ada3379-38e3-43cd-9c4b-6db5cdc09cd7,101,2024-11-07,1236.91,GBP,Client Entertainment,Dinner with potential client,0.2,1500,Zoom,Credit Card,UK,True
+c2713fa2-f26d-4159-bcf2-ee7e56ed3308,101,2024-03-14,333.35,EUR,Client Entertainment,Drinks at networking event,0.2,1500,Zoom,PayPal,USA,True
+60f667ae-7ddf-4e81-b104-910974d8a495,101,2024-06-08,286.93,EUR,Client Entertainment,Drinks at networking event,0.2,1500,Airbnb,Cash,UK,True
+b8349701-97b1-4ddd-9bdb-1b46a0ceb41a,101,2024-12-15,1453.09,USD,Rent & Utilities,Office rent payment,1.0,15000,Uber,Bank Transfer,Australia,True
+14ec0dd7-96f5-4d91-b58f-8fd92229766f,101,2024-12-02,2221.95,GBP,Business Travel,Car rental for on-site project,0.35,3500,Netflix,Cash,USA,True
+74013892-d710-42eb-9b0e-52e35c582bc0,101,2024-09-28,14861.14,USD,Marketing & Advertising,Google Ads campaign,1.0,10000,Uber,PayPal,USA,False
+38081931-46d4-4483-9dc6-d1385b04a4de,101,2024-07-19,2120.93,GBP,Education & Training,Subscription to educational platforms,0.6,4000,Uber,Cash,UK,True
+3410798b-6ed1-4ea0-a48b-b0e1ea44970c,101,2025-01-24,1972.08,EUR,Client Entertainment,Event tickets for client meeting,0.2,1500,Netflix,Bank Transfer,France,False
+f0eed511-2e0e-4a97-9968-15edafaedd55,101,2024-06-17,2158.18,GBP,Education & Training,Online course on data science,0.6,4000,Microsoft,Crypto,USA,True
+2210cb98-ffff-41aa-a5ff-7742855934c8,101,2024-03-25,862.37,USD,Rent & Utilities,Electricity bill for workspace,1.0,15000,Uber,PayPal,Germany,True
+52868470-0e7e-42ed-9d9c-caf6a4793def,101,2024-11-13,548.15,USD,Internet & Phone,Business internet subscription,0.4,2500,Netflix,Crypto,Australia,True
+e1ab92a7-0f06-4c67-996d-845fddaf7cdc,101,2024-05-16,4651.51,EUR,Marketing & Advertising,SEO service for website optimization,1.0,10000,Apple,Credit Card,UK,True
+b3819558-4fdb-457c-9ec3-8c6e1aeaeaa5,101,2024-12-26,2705.59,USD,Business Travel,Hotel stay for business conference,0.35,3500,Amazon,Cash,UK,True
+46129512-4cb9-424d-a2be-2ab9d9591e81,101,2024-11-19,7257.84,USD,Home Office,Office rent for remote work,0.3,5000,Netflix,Cash,Germany,False
+657654ce-deb0-4939-9025-b28b54987145,101,2024-06-18,1898.43,GBP,Internet & Phone,Mobile data plan for work calls,0.4,2500,Google,Cash,France,True
+f3b738ce-482d-4dd3-9a4c-26bb1ec98e66,101,2024-09-20,12974.51,USD,Marketing & Advertising,Social media promotions,1.0,10000,Airbnb,Cash,Germany,False
+d9f99357-4086-4259-9875-ba7d3a464f9f,101,2024-10-05,5097.87,EUR,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Microsoft,Bank Transfer,UK,False
+9ef4f5f5-02d3-47c6-b8b7-352dea6b3848,101,2024-12-01,11361.02,EUR,Marketing & Advertising,Social media promotions,1.0,10000,Uber,Crypto,UK,False
+4548a8b7-3dc1-4bc9-aaed-efa97b597fb7,101,2024-07-02,1318.43,USD,Transportation,Taxi fare for client visit,1.0,5000,Zoom,Credit Card,Germany,True
+d33fdb1f-2cc8-499a-86c2-ee6833a587f6,101,2024-10-04,4433.25,EUR,Business Travel,Flight to client meeting,0.35,3500,Microsoft,PayPal,USA,False
+8ee38468-95d7-4c2f-9c88-e4539200caba,101,2025-01-03,12190.43,GBP,Marketing & Advertising,SEO service for website optimization,1.0,10000,Apple,Bank Transfer,UK,False
+323f34f3-a47c-485f-8353-a02d1f76f0e6,101,2024-04-23,956.0,GBP,Client Entertainment,Dinner with potential client,0.2,1500,Zoom,Credit Card,USA,True
+ecc0139a-1c39-43ee-9e23-947208c5972e,101,2024-12-25,1207.57,USD,Education & Training,Online course on data science,0.6,4000,Amazon,Credit Card,USA,True
+3ff59db8-6f81-4e81-bc0d-52eb5ad45677,101,2024-07-22,5518.57,GBP,Work Equipment,Professional camera for photography business,0.5,5000,Walmart,PayPal,Canada,False
+0e70c120-44ae-42e5-a20f-921158bd24c2,101,2024-05-19,7817.89,EUR,Marketing & Advertising,SEO service for website optimization,1.0,10000,Uber,Credit Card,Germany,True
+b29b0f75-de5d-4a0f-b3df-09a7da681193,101,2024-06-07,7462.08,EUR,Transportation,Monthly public transport pass,1.0,5000,Apple,Crypto,Canada,False
+8f7440bb-f3fb-426b-8da6-d687583b4b77,101,2024-09-18,2867.03,USD,Rent & Utilities,Water and cleaning service charges,1.0,15000,Amazon,Cash,UK,True
+c62d5bcf-af2b-41ff-a38d-207adfb53681,101,2024-03-07,20088.21,GBP,Rent & Utilities,Water and cleaning service charges,1.0,15000,Apple,Cash,France,False
+f652bb51-35e8-4ca5-bdb2-941ad7158c82,101,2024-09-01,106.85,EUR,Work Equipment,New laptop for development,0.5,5000,Zoom,Bank Transfer,Germany,True
+8e33f235-3086-49af-928c-8c54cf50101b,101,2024-05-20,1534.1,EUR,Business Travel,Car rental for on-site project,0.35,3500,Apple,Cash,Australia,True
+5b447d0d-00f0-4dcd-a8e3-aa2586391e89,101,2024-12-02,1291.29,USD,Client Entertainment,Dinner with potential client,0.2,1500,Uber,Crypto,UK,True
+9abb449a-8dcd-4d37-8783-a2b519194627,101,2025-02-18,7946.29,GBP,Rent & Utilities,Electricity bill for workspace,1.0,15000,Airbnb,Crypto,Canada,True
+df978c54-4b23-4fbd-8238-0f6952efcbb1,101,2024-11-30,2551.63,EUR,Home Office,Lighting and furniture for workspace,0.3,5000,Apple,Cash,France,True
+606b69e6-7cd7-4560-9596-0a5c4ac5ad69,101,2024-08-20,15124.13,EUR,Rent & Utilities,Office rent payment,1.0,15000,Airbnb,Cash,Canada,False
+2c83a58d-81d0-47d3-abed-90a493b4face,101,2024-03-24,5961.81,USD,Education & Training,Conference registration for industry insights,0.6,4000,Airbnb,Crypto,Australia,False
+1aca8a1e-597f-48d4-a80d-05a3e20eef86,101,2024-11-17,7118.96,EUR,Transportation,Fuel cost for business trips,1.0,5000,Walmart,Cash,Canada,False
+28963930-a199-46d4-a474-ce9caf08f872,101,2024-06-11,14285.3,EUR,Marketing & Advertising,Social media promotions,1.0,10000,Walmart,Credit Card,USA,False
+4cc8a5f0-f30c-4a72-ad26-bb8157283e89,101,2024-04-14,77.95,EUR,Client Entertainment,Event tickets for client meeting,0.2,1500,Uber,Bank Transfer,USA,True
+83561aab-6445-4070-a996-8b0d23e6ca46,101,2024-03-17,918.8,USD,Business Travel,Hotel stay for business conference,0.35,3500,Apple,Crypto,Canada,True
+32dc2ba2-21d6-4ab3-80f6-d307f731dbde,101,2024-03-01,3121.54,GBP,Internet & Phone,Business internet subscription,0.4,2500,Netflix,PayPal,France,False
+9b419059-c829-4a4d-970b-9334dfff2d67,101,2024-07-21,6360.36,EUR,Transportation,Fuel cost for business trips,1.0,5000,Uber,Bank Transfer,France,False
+a0e083b0-c9f9-4ba8-97c9-074faa90110e,101,2024-05-06,7040.88,GBP,Transportation,Monthly public transport pass,1.0,5000,Google,Crypto,Germany,False
+06c8cdbb-15e1-459d-b447-c2813b245d9d,101,2024-06-21,7185.62,GBP,Work Equipment,Professional camera for photography business,0.5,5000,Google,Cash,Germany,False
+3668ecd9-a229-413a-b82d-640d215e98e4,101,2024-05-18,1782.12,EUR,Education & Training,Subscription to educational platforms,0.6,4000,Amazon,Cash,France,True
+521c3dd5-ea79-49c2-b6ef-ec6015dc47a3,101,2024-06-10,4512.3,EUR,Transportation,Taxi fare for client visit,1.0,5000,Microsoft,Bank Transfer,USA,True
+692b6cf3-35d4-4efe-97c7-0512206f8dab,101,2024-12-15,5445.33,GBP,Education & Training,Online course on data science,0.6,4000,Netflix,Crypto,Australia,False
+4f6e42ea-874a-473a-86f1-349530f17c07,101,2024-07-01,2077.23,EUR,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Netflix,Credit Card,UK,True
+6acc2d41-d636-4037-a742-74a77710c2f1,101,2024-11-03,2984.69,EUR,Internet & Phone,Mobile data plan for work calls,0.4,2500,Netflix,Credit Card,Germany,False
+dd698a83-8963-4888-ba6c-f17faae08af9,101,2024-08-24,5442.25,GBP,Home Office,Coworking space membership,0.3,5000,Microsoft,Bank Transfer,UK,False
+8f60b898-2e50-4ddb-845d-13d9a7a04bc1,101,2024-04-30,10525.71,EUR,Marketing & Advertising,Social media promotions,1.0,10000,Airbnb,Cash,Canada,False
+07fcf6c1-ad0e-4709-a7dd-ae1eeaab296a,101,2024-07-01,166.01,EUR,Marketing & Advertising,SEO service for website optimization,1.0,10000,Microsoft,Bank Transfer,Canada,True
+849fb753-2f6f-4b50-9466-52a0d510238d,101,2024-12-16,2617.35,GBP,Work Equipment,External monitor for work,0.5,5000,Microsoft,Crypto,Canada,True
+69180d55-6dd3-4d8b-a4de-1dbf2c3d42fa,101,2024-10-02,1706.55,GBP,Transportation,Monthly public transport pass,1.0,5000,Airbnb,Crypto,France,True
+98d56b3b-26bb-46ea-b715-e30b053a3876,101,2024-10-30,4972.68,EUR,Business Travel,Car rental for on-site project,0.35,3500,Zoom,Cash,USA,False
+9d8f7473-fac9-43d9-bdd3-faf47a83f1b8,101,2024-04-28,723.65,USD,Home Office,Coworking space membership,0.3,5000,Amazon,Cash,Australia,True
+d1b2b1fe-b1c4-48ed-a571-ad1e355bc743,101,2024-08-08,3482.72,GBP,Work Equipment,Ergonomic keyboard and mouse,0.5,5000,Zoom,Cash,Germany,True
+d218f483-a1ec-48de-a377-3bb2054a3a51,101,2024-07-24,6684.76,EUR,Transportation,Fuel cost for business trips,1.0,5000,Walmart,Crypto,Australia,False
+5cf68ac6-a614-429f-ac8c-aae7a7cf369b,101,2024-05-27,22002.24,USD,Rent & Utilities,Electricity bill for workspace,1.0,15000,Microsoft,Cash,France,False
+da26927f-7e4d-4124-99e5-c53bfca0d5ca,101,2024-10-07,12963.9,GBP,Marketing & Advertising,SEO service for website optimization,1.0,10000,Airbnb,Bank Transfer,France,False
+ec0e07ba-91bb-44b6-bf0f-7ca9e4894b01,101,2024-11-11,24.52,GBP,Freelancer Platform Fees,Upwork service fee,0.25,2000,Apple,Credit Card,USA,True
+98e8b26b-57be-430d-9b36-77f45040e28a,101,2025-02-08,5724.24,GBP,Transportation,Monthly public transport pass,1.0,5000,Microsoft,Credit Card,Canada,False
+1e8ab314-7a39-4ee0-9a9d-974f8d23057e,101,2024-03-22,5851.18,EUR,Home Office,Office rent for remote work,0.3,5000,Microsoft,Bank Transfer,Canada,False
+2b9377e3-1100-4621-b639-993256bb033d,101,2024-04-22,93.66,GBP,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Netflix,PayPal,UK,True
+e537a86c-d528-4ed5-ab22-c4ba8cb3ef67,101,2024-05-14,3014.49,USD,Software & Subscriptions,Project management software renewal,0.5,3000,Airbnb,Credit Card,USA,False
+96eaffc2-4608-470d-8b61-34e9809cbece,101,2024-12-21,3602.24,GBP,Business Travel,Hotel stay for business conference,0.35,3500,Apple,Credit Card,Australia,False
+43c60c77-01e3-41b0-b54d-0ecfd2c810e3,101,2025-02-19,3442.11,USD,Home Office,Office rent for remote work,0.3,5000,Microsoft,Credit Card,UK,True
+fa8a55f7-f525-476f-b90f-6c2d44e58007,101,2024-11-12,1730.35,USD,Client Entertainment,Event tickets for client meeting,0.2,1500,Airbnb,Crypto,UK,False
+08faa242-6d55-409f-9776-5b13f80c6b4a,101,2024-08-31,3857.96,GBP,Marketing & Advertising,SEO service for website optimization,1.0,10000,Microsoft,Credit Card,Canada,True
+75bd1081-f9a2-48bf-9339-bd3884aa82d6,101,2024-08-29,2669.32,GBP,Freelancer Platform Fees,Fiverr transaction charges,0.25,2000,Uber,Credit Card,Canada,False
+434e954c-65a7-46d4-9504-e50caf9f72d8,101,2024-03-04,3714.42,EUR,Internet & Phone,Mobile data plan for work calls,0.4,2500,Zoom,PayPal,UK,False
+6a93a2a5-c56e-4b75-bbc4-fe473b092f6e,101,2024-11-23,5531.28,EUR,Education & Training,Conference registration for industry insights,0.6,4000,Airbnb,PayPal,UK,False
+d3a4e479-494d-4d71-96af-2458a60c27ec,101,2024-05-31,422.96,GBP,Client Entertainment,Event tickets for client meeting,0.2,1500,Uber,Cash,France,True
+8be5ae4f-e871-4684-a4a6-996941d6f242,101,2024-08-19,494.22,GBP,Education & Training,Subscription to educational platforms,0.6,4000,Zoom,Crypto,Germany,True
+7405c112-f5df-42b3-bd63-349945fa91dd,101,2024-07-26,2125.05,USD,Software & Subscriptions,Cloud storage upgrade for work,0.5,3000,Netflix,Credit Card,Australia,True
+f9287df6-8f10-46f6-ba4e-3a2a1287e1a8,101,2024-10-30,878.25,EUR,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Walmart,Cash,UK,True
+6fbcd118-81b8-4633-a9d0-d9bf4b607d04,101,2024-05-20,632.62,EUR,Internet & Phone,Business internet subscription,0.4,2500,Apple,Cash,Australia,True
+295fda2c-7887-468b-b51b-200e45bedd51,101,2025-01-19,219.15,EUR,Home Office,Coworking space membership,0.3,5000,Airbnb,Bank Transfer,UK,True
+b4ccb252-5ed2-47dd-9425-9be54233a728,101,2024-03-31,1557.4,EUR,Freelancer Platform Fees,Upwork service fee,0.25,2000,Zoom,Credit Card,Australia,True
+d60a562f-120a-4d4b-bbed-a7789b713d78,101,2025-02-25,4067.59,GBP,Business Travel,Flight to client meeting,0.35,3500,Uber,Cash,Australia,False
+72d56fd7-adff-42b4-892b-78c29bf22ebc,101,2024-10-14,6788.1,USD,Transportation,Taxi fare for client visit,1.0,5000,Apple,Bank Transfer,Germany,False
+9be565c9-6d39-40bc-af40-2481fad70fd5,101,2024-12-09,1794.04,EUR,Client Entertainment,Drinks at networking event,0.2,1500,Netflix,Crypto,UK,False
+3cee0b19-e1d5-4ad2-a657-119c63f74281,101,2024-03-08,4348.42,EUR,Home Office,Desk and chair for home office,0.3,5000,Microsoft,Bank Transfer,Canada,True
+25e5fd4e-cddd-48ad-838d-ce40a7179553,101,2024-07-14,5217.23,EUR,Education & Training,Subscription to educational platforms,0.6,4000,Zoom,Crypto,Germany,False
+33fad3ee-e2f9-4c88-bef5-bb3c11ff21aa,101,2025-02-12,7244.14,USD,Transportation,Monthly public transport pass,1.0,5000,Apple,Credit Card,Germany,False
+c0d45146-c8fb-4a80-8471-9ebb853cc75a,101,2024-08-12,5133.06,USD,Business Travel,Car rental for on-site project,0.35,3500,Microsoft,PayPal,Canada,False
+c3090a5d-f145-4e88-a122-2c37d4c662bf,101,2024-12-13,678.7,EUR,Transportation,Taxi fare for client visit,1.0,5000,Apple,Cash,USA,True
+4e8097b7-57f3-47b5-b39e-c0e93394255e,101,2024-11-15,189.89,EUR,Internet & Phone,VoIP phone service for international clients,0.4,2500,Amazon,Credit Card,Germany,True
+e2e1559e-b751-47fc-8c27-4af51b7471ee,101,2024-08-07,2148.0,GBP,Client Entertainment,Event tickets for client meeting,0.2,1500,Zoom,Bank Transfer,Canada,False
+155bee9f-0a07-4f10-a5b7-8cfe83d23c05,101,2024-04-19,5025.31,USD,Home Office,Coworking space membership,0.3,5000,Zoom,Cash,Canada,False
+6fc4036b-2bf1-42e1-a7f9-9a4124a47d8d,101,2024-07-09,8963.69,EUR,Marketing & Advertising,SEO service for website optimization,1.0,10000,Airbnb,Crypto,Australia,True
+a5caef9d-30c8-48a4-8a99-80dfc2edabd9,101,2024-07-01,657.62,GBP,Client Entertainment,Event tickets for client meeting,0.2,1500,Google,PayPal,Canada,True
+ba302845-7491-40ef-8b4e-25ad9a97a41b,101,2025-02-16,1360.22,USD,Client Entertainment,Event tickets for client meeting,0.2,1500,Amazon,Bank Transfer,Canada,True
+2f4e6800-767e-4145-a1f2-f5ff6fb01f3e,101,2024-06-18,19827.0,EUR,Rent & Utilities,Office rent payment,1.0,15000,Microsoft,Cash,Canada,False
+bb527ed7-1722-49db-b1cb-81770d975524,101,2024-08-09,7349.4,GBP,Transportation,Monthly public transport pass,1.0,5000,Uber,PayPal,Australia,False
+d8d02aa3-2bbc-4b84-bc2c-a341e6822584,101,2024-10-21,3771.75,GBP,Business Travel,Flight to client meeting,0.35,3500,Zoom,Crypto,Canada,False
+9529395d-38fc-46fe-a5e2-7ada0285d131,101,2025-02-26,3615.15,USD,Work Equipment,External monitor for work,0.5,5000,Apple,Credit Card,Canada,True
+0e12636a-6842-472c-a462-3d60b9abcc50,101,2024-08-09,7240.31,USD,Transportation,Fuel cost for business trips,1.0,5000,Uber,Crypto,Canada,False
+f331c416-2f36-49e1-a5a0-b80a10e1a075,101,2024-06-06,2907.18,USD,Work Equipment,Professional camera for photography business,0.5,5000,Zoom,Crypto,Canada,True
+948237de-dc5e-4e8d-8bed-98c580525048,101,2024-09-17,2217.04,GBP,Client Entertainment,Dinner with potential client,0.2,1500,Walmart,Credit Card,Canada,False
+5c9f8d4e-eb47-4548-b56f-2a9037fdeecb,101,2024-12-18,1328.69,GBP,Internet & Phone,Business internet subscription,0.4,2500,Zoom,Crypto,Australia,True
+229dfeb4-0e88-45a0-8f28-42839f761b4a,101,2024-11-01,5842.95,USD,Education & Training,Conference registration for industry insights,0.6,4000,Netflix,PayPal,USA,False
+c16f2341-538a-42a0-830c-eac0650406e1,101,2024-05-07,14821.37,GBP,Rent & Utilities,Electricity bill for workspace,1.0,15000,Microsoft,Bank Transfer,UK,True
+533b8b36-245c-44a5-8359-0005203ff4e0,101,2024-07-21,1434.85,USD,Education & Training,Conference registration for industry insights,0.6,4000,Uber,Credit Card,Australia,True
+5201d939-847e-4a44-94ff-9c37a51a2bff,101,2025-01-06,19046.93,USD,Rent & Utilities,Electricity bill for workspace,1.0,15000,Microsoft,PayPal,France,False
+861eb843-773f-4c04-b44a-81f6821c7795,101,2024-08-22,20704.53,EUR,Rent & Utilities,Office rent payment,1.0,15000,Amazon,Bank Transfer,Germany,False
+c57d3640-a412-431c-ad30-0e559bdbf9e5,101,2024-06-19,3873.11,EUR,Education & Training,Subscription to educational platforms,0.6,4000,Amazon,Cash,Australia,True
+53c52a8a-3e75-4c4a-b4e3-51eeba21203e,101,2024-11-08,12940.12,GBP,Marketing & Advertising,Google Ads campaign,1.0,10000,Amazon,Cash,UK,False
+9c0d4a28-a86f-44ce-8074-5c5f7802979d,101,2024-07-16,463.13,USD,Client Entertainment,Drinks at networking event,0.2,1500,Airbnb,Credit Card,Canada,True
+6a2b2439-0e23-4115-9d8f-ffb6303c148a,101,2025-01-12,985.0,USD,Education & Training,Online course on data science,0.6,4000,Walmart,Bank Transfer,Australia,True
+b4140c00-1137-4b10-9567-ebbbc4e6ff56,101,2024-04-19,1931.97,USD,Education & Training,Online course on data science,0.6,4000,Amazon,Cash,France,True
+b7763df5-7f6d-425c-bb2d-6d7bf40c178e,101,2024-07-08,945.97,GBP,Business Travel,Car rental for on-site project,0.35,3500,Netflix,Bank Transfer,France,True
+ba587c82-a13a-4bf9-8ad0-a3073f798635,101,2024-11-10,707.47,USD,Freelancer Platform Fees,Upwork service fee,0.25,2000,Apple,Bank Transfer,USA,True
+332ddffe-b062-4ec9-bb0d-bba72d06f9b6,101,2024-09-30,19140.33,GBP,Rent & Utilities,Electricity bill for workspace,1.0,15000,Google,Credit Card,USA,False
+9b793f36-b40f-4fb6-a4d4-17422fc13021,101,2024-07-07,5289.24,GBP,Home Office,Lighting and furniture for workspace,0.3,5000,Microsoft,Credit Card,USA,False
+3d3df5c7-bddc-4daa-9d08-6d0262f64cd8,101,2025-02-20,5563.96,EUR,Education & Training,Conference registration for industry insights,0.6,4000,Google,Crypto,Canada,False
+234765a5-b70f-4655-90df-8508cf4c0a5a,101,2024-06-24,7925.04,EUR,Rent & Utilities,Water and cleaning service charges,1.0,15000,Apple,Credit Card,Canada,True
+4e15edd6-1a01-4c3c-a0be-e2d15da1cbc8,101,2025-01-31,2037.11,EUR,Home Office,Office rent for remote work,0.3,5000,Zoom,Bank Transfer,France,True
+33e6d4c8-33c0-48cc-90e2-10c82fc11c20,101,2024-10-31,2757.25,USD,Education & Training,Subscription to educational platforms,0.6,4000,Google,Bank Transfer,France,True
+6cacd17c-fb99-49f6-990e-3a8d8b736a67,101,2025-01-15,5513.34,USD,Transportation,Taxi fare for client visit,1.0,5000,Airbnb,PayPal,USA,False
+d7b6c64b-5eb7-40a0-899d-0acb7c3078c6,101,2024-12-13,4028.17,GBP,Education & Training,Online course on data science,0.6,4000,Amazon,Credit Card,USA,False
+8df5c9f8-5170-4796-bdac-2530d6107f75,101,2024-11-19,7302.35,EUR,Transportation,Taxi fare for client visit,1.0,5000,Amazon,Cash,Canada,False
+819cbcf2-a92c-4deb-a4a7-d8ba6dbe968b,101,2024-10-16,1084.88,EUR,Software & Subscriptions,Project management software renewal,0.5,3000,Google,Crypto,France,True
+5869164b-ba61-49f8-a6a9-f8432abe105b,101,2024-12-27,10195.16,GBP,Marketing & Advertising,Google Ads campaign,1.0,10000,Microsoft,Bank Transfer,Canada,False
+6ad454e7-8403-47fd-8c11-a6a3d40b3f3b,101,2025-01-13,2406.84,EUR,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Apple,Bank Transfer,Canada,False
+82cd51ce-e677-4ac1-b880-adf42ef06a1c,101,2024-10-23,4433.3,GBP,Transportation,Monthly public transport pass,1.0,5000,Amazon,PayPal,Canada,True
+45d65eca-44ef-4b1c-a5bc-49943e7a8db4,101,2024-07-02,4126.8,GBP,Transportation,Monthly public transport pass,1.0,5000,Microsoft,Crypto,Canada,True
+2a698ff5-9948-4c83-ac7b-d17662b1c0fd,101,2024-03-21,1174.08,GBP,Freelancer Platform Fees,Freelancer.com membership renewal,0.25,2000,Microsoft,PayPal,USA,True
+cfe0343d-8c9f-465e-8db2-e9e1f40f4ee6,101,2024-04-10,1535.44,EUR,Marketing & Advertising,Social media promotions,1.0,10000,Netflix,Bank Transfer,France,True
+1e544806-ecd7-4c6f-91a8-9c3ed81a4130,101,2024-07-24,4641.83,EUR,Business Travel,Car rental for on-site project,0.35,3500,Apple,Bank Transfer,Germany,False
+4aeb56ba-8fe1-403b-8613-e2e7e243227c,101,2024-07-18,604.6,GBP,Software & Subscriptions,Online meeting software premium plan,0.5,3000,Airbnb,PayPal,UK,True
+62ee0b6f-4d03-4525-9670-3484d2a794b3,101,2025-01-15,1785.7,EUR,Software & Subscriptions,Subscription to design tools,0.5,3000,Google,Bank Transfer,Canada,True
+8ef96898-1b97-4696-b6c6-10f4f27e4d40,101,2024-10-07,1080.6,EUR,Work Equipment,Professional camera for photography business,0.5,5000,Google,Cash,UK,True
+a1ef1004-b6f2-4ea0-870e-1bf2d68850c5,101,2024-05-01,2807.95,USD,Software & Subscriptions,Project management software renewal,0.5,3000,Microsoft,Crypto,Germany,True
+a0ee8be4-5463-4d94-acd7-7c4a631c0ccf,101,2024-10-22,1288.08,GBP,Transportation,Monthly public transport pass,1.0,5000,Amazon,Cash,Canada,True
+59fb946b-5e24-4d84-b743-1bb060c40de0,101,2024-10-02,10204.05,EUR,Marketing & Advertising,SEO service for website optimization,1.0,10000,Walmart,Cash,Canada,False
+ba64e8b7-7941-4c32-a8ec-872090eb9ff3,101,2025-01-27,5953.36,USD,Work Equipment,Professional camera for photography business,0.5,5000,Uber,PayPal,France,False
+54fa618e-e4f3-4f6c-84f6-0cca26aa1be8,101,2024-08-19,19170.17,USD,Rent & Utilities,Electricity bill for workspace,1.0,15000,Amazon,Credit Card,France,False
+ca33b4b5-49d2-463c-9cb7-d4ea20934d7f,101,2024-10-02,10279.35,GBP,Marketing & Advertising,Google Ads campaign,1.0,10000,Uber,Crypto,Germany,False
+faa8c592-e61e-4a3b-a1a8-55f6f6eba8e4,101,2024-05-04,1375.64,USD,Business Travel,Hotel stay for business conference,0.35,3500,Zoom,Cash,Canada,True
+af0e6da4-d749-4e96-b620-e22104c8db95,101,2024-06-11,3676.49,EUR,Business Travel,Hotel stay for business conference,0.35,3500,Zoom,Credit Card,Australia,False
+8b48531c-867e-4fc8-a79d-d8f195672187,101,2024-11-22,7026.74,EUR,Transportation,Taxi fare for client visit,1.0,5000,Uber,Crypto,Germany,False
+e05b1d0b-954e-44ac-8f31-e64b8887218f,101,2024-07-05,7731.92,GBP,Marketing & Advertising,Google Ads campaign,1.0,10000,Netflix,Bank Transfer,UK,True
+ea8afb00-0943-41e4-8548-59e8bc49016d,101,2024-08-20,16460.84,USD,Rent & Utilities,Water and cleaning service charges,1.0,15000,Zoom,Cash,Australia,False
+05a1b402-d210-4058-af29-b60f7875cc52,101,2024-06-24,561.28,GBP,Software & Subscriptions,Subscription to design tools,0.5,3000,Microsoft,Bank Transfer,UK,True
+88a83461-fd71-47bc-8c8d-364c842daa17,101,2024-05-31,2763.05,GBP,Freelancer Platform Fees,Upwork service fee,0.25,2000,Google,Bank Transfer,Canada,False
+4db1f80b-228e-4fa3-804c-60db8ac7bc96,101,2024-11-05,1882.98,USD,Home Office,Coworking space membership,0.3,5000,Walmart,Crypto,UK,True
+f92eaeae-1e95-4704-aa6b-e5c620007ca3,101,2024-04-27,6882.17,GBP,Rent & Utilities,Electricity bill for workspace,1.0,15000,Apple,Bank Transfer,UK,True
+c6dbfb7a-63cc-4634-89f2-1c19f52a479c,101,2024-12-09,2006.52,EUR,Client Entertainment,Event tickets for client meeting,0.2,1500,Walmart,Crypto,Australia,False
+a4d1472c-e486-44c0-a6b1-a9c1aeae8197,101,2024-03-06,2816.24,EUR,Education & Training,Subscription to educational platforms,0.6,4000,Google,Bank Transfer,Germany,True
