@@ -134,6 +134,15 @@ export default function ProfilePage() {
         await axios.delete("/api/chat/reset");
     };
 
+    const handleDeleteTransaction = (transactionId: number) => {
+        // Add your delete logic here
+        // For example:
+        // deleteTransaction(transactionId);
+        // or
+        // dispatch(deleteTransactionAction(transactionId));
+        console.log("Deleting transaction:", transactionId);
+    };
+
     // Helper function to calculate total taxes and savings
     const calculateTaxSavings = (transactions: any[]) => {
         const taxDeductibleTransactions = transactions.filter((t: { tax_deductible: any; }) => t.tax_deductible);
@@ -161,6 +170,102 @@ export default function ProfilePage() {
     // Then use the function
     const { percentage, savedAmount, totalTax } = calculateTaxSavings(transactions);
 
+    // manual form
+    const ManualForm = ({ onClose }) => {
+        const [formData, setFormData] = useState({
+            description: "",
+            merchant: "",
+            amount: "",
+            category: "",
+            paymentMethod: "",
+            date: "",
+        });
+
+        const handleChange = (e: { target: { name: any; value: any; }; }) => {
+            const { name, value } = e.target;
+            setFormData((prev) => ({
+                ...prev,
+                [name]: value,
+            }));
+        };
+
+        const handleSubmit = (e: { preventDefault: () => void; }) => {
+            e.preventDefault();
+            onClose(); // Close the form after submission
+        };
+
+        return (
+            <div className={styles.overlay} onClick={(e) => e.target === e.currentTarget && onClose()}>
+                <div className={styles.modal}>
+                    <button className={styles.closeButton} onClick={onClose}>×</button>
+                    <h2>Enter Transaction</h2>
+                    <form onSubmit={handleSubmit}>
+                        <div className={styles.formGroup}>
+                            <label>Description</label>
+                            <input
+                                type="text"
+                                name="description"
+                                value={formData.description}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
+                        <div className={styles.formGroup}>
+                            <label>Merchant</label>
+                            <input
+                                type="text"
+                                name="merchant"
+                                value={formData.merchant}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
+                        <div className={styles.formGroup}>
+                            <label>Amount</label>
+                            <input
+                                type="number"
+                                name="amount"
+                                value={formData.amount}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
+                        <div className={styles.formGroup}>
+                            <label>Category</label>
+                            <select name="category" value={formData.category} onChange={handleChange} required>
+                                <option value="">Select a category</option>
+                                <option value="food">Food</option>
+                                <option value="transport">Transport</option>
+                                <option value="entertainment">Entertainment</option>
+                                <option value="utilities">Utilities</option>
+                            </select>
+                        </div>
+                        <div className={styles.formGroup}>
+                            <label>Payment Method</label>
+                            <select name="paymentMethod" value={formData.paymentMethod} onChange={handleChange} required>
+                                <option value="">Select a payment method</option>
+                                <option value="credit_card">Credit Card</option>
+                                <option value="paypal">PayPal</option>
+                                <option value="bank_transfer">Bank Transfer</option>
+                                <option value="cash">Cash</option>
+                            </select>
+                        </div>
+                        <div className={styles.formGroup}>
+                            <label>Date</label>
+                            <input type="date" name="date" value={formData.date} onChange={handleChange} required />
+                        </div>
+                        <div className={styles.formActions}>
+                            <button type="button" onClick={onClose} className={styles.cancelButton}>
+                                Cancel
+                            </button>
+                            <button type="submit" className={styles.submitButton}>Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        );
+    };
+
     return (
         <div className={styles.profileContainer}>
             <div className={styles.gridLayout}>
@@ -179,6 +284,9 @@ export default function ProfilePage() {
                                 <span className={styles.btnIcon}>✍️</span>
                                 Manual Entry
                             </button>
+                            {showManualForm && (
+                                <ManualForm onClose={() => setShowManualForm(false)} />
+                            )}
                         </div>
                     </div>
 
@@ -202,7 +310,6 @@ export default function ProfilePage() {
                             };
                             return (
                                 <div key={transaction.transaction_id} className={styles.transactionItem}>
-                                    
                                     <div className={styles.transactionDetails}>
                                         <div className={styles.transactionTitle}>
                                             <span className={styles.transactionIcon}>{getPaymentIcon(transaction.payment_method)} </span>
@@ -225,6 +332,13 @@ export default function ProfilePage() {
                                             {transaction.deduction_rate * 100}% Deduction
                                         </div>
                                     </div>
+                                    <button
+                                        className={styles.deleteButton}
+                                        onClick={() => handleDeleteTransaction(transaction.transaction_id)}
+                                        aria-label="Delete transaction"
+                                    >
+                                        <span className={styles.deleteIcon}>×</span>
+                                    </button>
                                 </div>
                             );
                         })}
@@ -237,19 +351,29 @@ export default function ProfilePage() {
                                 <h4 className={styles.sectionTitle}>Tax Calculation</h4>
                             </div>
                             <div className={styles.taxRow}>
-                                <span>Total Income:</span>
-                                <span className={styles.taxValue}>$515.49</span>
+                                <span>Total Transactions:</span>
+                                <span className={styles.taxValue}>
+                                    ${transactions.reduce((sum, t) => sum + t.amount, 0).toFixed(2)}
+                                </span>
                             </div>
                             <div className={styles.taxRow}>
-                                <span>Estimated Tax:</span>
-                                <span className={styles.taxValue}>$103.10</span>
+                                <span>Deductible Amount:</span>
+                                <span className={styles.taxValue}>
+                                    ${totalTax.toFixed(2)}
+                                </span>
                             </div>
                             <div className={styles.taxRow}>
                                 <span>Savings:</span>
-                                <span className={styles.taxSavings}>$42.75</span>
+                                <span className={styles.taxSavings}>
+                                    ${savedAmount.toFixed(2)}
+                                </span>
                             </div>
                         </div>
-                        <button className={styles.downloadBtn} onClick={handleTaxCalculation}>
+                        <button
+                            className={styles.downloadBtn}
+                            onClick={handleTaxCalculation}
+                            disabled={calculating}
+                        >
                             <span className={styles.btnIcon}>📥</span>
                             {calculating ? "Processing..." : "Download Report"}
                         </button>
