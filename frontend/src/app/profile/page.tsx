@@ -121,11 +121,6 @@ export default function ProfilePage() {
     };
 
     const handleDeleteTransaction = async (transactionId: string) => {
-        // Add your delete logic here
-        // For example:
-        // deleteTransaction(transactionId);
-        // or
-        // dispatch(deleteTransactionAction(transactionId));
         try {
             await axios.delete(`/transaction/${transactionId}`);
             // refresh page after deleting transaction
