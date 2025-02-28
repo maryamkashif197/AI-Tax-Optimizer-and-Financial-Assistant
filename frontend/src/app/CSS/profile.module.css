@@ -131,7 +131,8 @@ scrollbar-color: #3d1a66 #13052a;
 
 .downloadBtn {
     width: 100%;
-    padding: 1rem;
+    padding: .5rem 0;
+    margin-top: 1rem;
     background: linear-gradient(to right, #8a2be2, #ff1493); /* Purple to pink gradient */
     color: white;
     border: none;
@@ -472,4 +473,252 @@ scrollbar-color: #3d1a66 #13052a;
 
 .btnIcon {
     font-size: 1rem;
+}
+
+/* Modern Variables */
+/* Removed the :root block */
+
+/* Overlay styles */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal styles */
+.modal {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    z-index: 1001;
+    border: 1px solid rgba(157, 78, 221, 0.2);
+    animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #9d4edd, #ff5c8d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 0.5px;
+}
+
+/* Close button styles */
+.closeButton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #9d4edd;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+    .closeButton:hover {
+        color: #ff5c8d;
+        background-color: rgba(255, 255, 255, 0.05);
+        transform: rotate(90deg);
+    }
+
+/* Form group styles */
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+    .formGroup label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: #e2e2e2;
+        font-size: 0.95rem;
+        letter-spacing: 0.5px;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    .formGroup:focus-within label {
+        color: #ff5c8d;
+    }
+
+    .formGroup input,
+    .formGroup select {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 12px 15px;
+        border: 2px solid rgba(157, 78, 221, 0.3);
+        border-radius: 12px;
+        background-color: rgba(0, 0, 0, 0.2);
+        color: #ffffff;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        font-size: 1rem;
+        outline: none;
+    }
+
+
+        .formGroup input:focus,
+        .formGroup select:focus {
+            border-color: #ff5c8d;
+            box-shadow: 0 0 0 3px rgba(255, 92, 141, 0.2);
+        }
+
+        .formGroup input::placeholder,
+        .formGroup select::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+    .formGroup select {
+        appearance: none;
+        background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='none' stroke='%239d4edd' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 3 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 15px center;
+        background-size: 12px;
+        padding-right: 40px;
+    }
+
+/* Form actions */
+.formActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Common action button styles */
+.actionButton {
+    padding: 12px 22px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    font-size: 0.95rem;
+    border: none;
+    letter-spacing: 0.5px;
+}
+
+/* Cancel button */
+.cancelButton {
+    composes: actionButton;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #e2e2e2;
+}
+
+    .cancelButton:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+        transform: translateY(-2px);
+    }
+
+/* Submit button */
+.submitButton {
+    composes: actionButton;
+    background: linear-gradient(135deg, #9d4edd, #ff5c8d);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+    .submitButton::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0));
+        transform: translateX(-100%);
+        transition: 0.5s;
+    }
+
+    .submitButton:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 7px 14px rgba(157, 78, 221, 0.4);
+    }
+
+        .submitButton:hover::before {
+            transform: translateX(100%);
+        }
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 480px) {
+    .modal {
+        padding: 20px;
+    }
+
+    .formActions {
+        flex-direction: column-reverse;
+    }
+
+    .actionButton {
+        width: 100%;
+    }
+}
+
+.deleteButton {
+    position: absolute;
+    display: block;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transform: translateX(40rem) translateY(-3.5rem);
+    transition: all 0.2s ease;
+    background-color: rgba(157, 78, 221, 0.1);
+}
+
+    .deleteButton:hover {
+        background-color: rgba(255, 92, 141, 0.2);
+        transform: translateX(40rem) translateY(-3.5rem) scale(1.2);
+    }
+
+.deleteIcon {
+    font-size: 18px;
+    color: var(--accent-purple, #9d4edd);
+    font-weight: bold;
+}
+
+.deleteButton:hover .deleteIcon {
+    color: var(--accent-pink, #ff5c8d);
 }

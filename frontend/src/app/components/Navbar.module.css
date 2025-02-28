@@ -1,11 +1,13 @@
 /* components/Navbar.module.css */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.1); /* semi-transparent white */
     padding: 0.5rem 0rem; /* reduced vertical padding */
     position: fixed;
     width: 100%;
     z-index: 50;
     font-family: sans-serif; /* matching landing page font */
+    backdrop-filter: blur(10px); /* adds a blur effect for a modern look */
+    border-bottom: 1px solid rgba(236, 72, 153, 0.1); /* subtle pink border */
 }
 
 .container {
@@ -36,12 +38,12 @@
 
 .logoPiggy {
     margin-left: 0.5rem;
-    color: white;
+    color: #9333ea; /* purple text */
 }
 
 .logoBank {
     margin-left: 0.5rem;
-    background: linear-gradient(to right, #a855f7, #ec4899);
+    background: linear-gradient(to right, #ec4899, #9333ea);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -57,7 +59,7 @@
 }
 
     .navItem a {
-        color: #9ca3af;
+        color: #6b7280; /* gray text */
         text-decoration: none;
         transition: color 0.3s;
         font-family: sans-serif;
@@ -65,5 +67,190 @@
     }
 
         .navItem a:hover {
-            color: white;
+            color: #ec4899; /* pink on hover */
         }
+
+.navLink:hover {
+    color: #9333ea; /* purple text */
+    background: rgba(236, 72, 153, 0.1); /* light pink background */
+    border: 1px solid rgba(236, 72, 153, 0.2); /* light pink border */
+}
+
+/* User section styles */
+.userSection {
+    position: relative;
+}
+
+.userProfile {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background-color: rgba(236, 72, 153, 0.1); /* light pink background */
+    border: 1px solid rgba(236, 72, 153, 0.2); /* light pink border */
+    transition: all 0.3s ease;
+}
+
+    .userProfile:hover {
+        background-color: rgba(236, 72, 153, 0.15); /* slightly darker pink on hover */
+        border-color: rgba(236, 72, 153, 0.3); /* slightly darker pink border */
+    }
+
+.userAvatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #ec4899, #9333ea); /* pink to purple gradient */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* soft shadow */
+}
+
+.userName {
+    color: #9333ea; /* purple text */
+    font-weight: 500;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dropdownIcon {
+    color: #ec4899; /* pink icon */
+    font-size: 0.7rem;
+    transition: all 0.3s ease;
+}
+
+.userProfile:hover .dropdownIcon {
+    transform: rotate(180deg);
+}
+
+/* Dropdown menu */
+.dropdownMenu {
+    position: absolute;
+    top: 115%;
+    right: 0;
+    min-width: 180px;
+    background-color: rgba(255, 255, 255, 0.95); /* semi-transparent white */
+    backdrop-filter: blur(10px); /* blur effect */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* soft shadow */
+    border: 1px solid rgba(236, 72, 153, 0.2); /* light pink border */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    animation: dropdownFadeIn 0.2s ease;
+    z-index: 200;
+}
+
+@keyframes dropdownFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdownItem {
+    padding: 0.75rem 1rem;
+    color: #6b7280; /* gray text */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+    .dropdownItem:hover {
+        background-color: rgba(236, 72, 153, 0.1); /* light pink background */
+        color: #9333ea; /* purple text */
+    }
+
+.logoutButton {
+    padding: 0.75rem 1rem;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    color: #ec4899; /* pink text */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+    .logoutButton:hover {
+        background-color: rgba(236, 72, 153, 0.1); /* light pink background */
+    }
+
+/* Loading indicator */
+.loadingIndicator {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.loadingDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #ec4899, #9333ea); /* pink to purple gradient */
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+    .loadingDot:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    .loadingDot:nth-child(3) {
+        animation-delay: 0.4s;
+    }
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .userName {
+        max-width: 80px;
+    }
+
+    .navLink {
+        padding: 0.5rem 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .userName {
+        display: none;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .navLinks {
+        gap: 0.5rem;
+    }
+}

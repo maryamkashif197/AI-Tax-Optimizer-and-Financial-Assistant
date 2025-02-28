@@ -2,6 +2,7 @@
 import React, { useRef } from 'react';
 import { ArrowDownCircle, ChevronDown, DollarSign, Brain, Shield, Globe } from 'lucide-react';
 import styles from './CSS/NPBLanding.module.css';
+import Link from 'next/link';
 
 // Landing page component for Neural Piggy Bank
 const NeuralPiggyBankLanding = () => {
@@ -17,7 +18,6 @@ const NeuralPiggyBankLanding = () => {
             });
         }
     };
-
 
     return (
         <div className={styles.container}>
@@ -40,9 +40,11 @@ const NeuralPiggyBankLanding = () => {
                     </h2>
 
                     <div className={styles.buttonContainer}>
-                        <button className={styles.primaryButton}>
-                            Get Started
-                        </button>
+                        <Link href="/register">
+                            <button className={styles.primaryButton}>
+                                Get Started
+                            </button>
+                        </Link>
                     </div>
                 </div>
                 <div className={styles.scrollIndicator} onClick={scrollToFeatures}>
@@ -125,12 +127,16 @@ const NeuralPiggyBankLanding = () => {
                         </p>
 
                         <div className={styles.partnerLogos}>
-                            <div className={styles.logoBox}>
-                                <img src="/api/placeholder/120/40" alt="Google Cloud Partner" className={styles.partnerLogo} />
-                            </div>
-                            <div className={styles.logoBox}>
-                                <img src="/api/placeholder/120/40" alt="TLS Certified" className={styles.partnerLogo} />
-                            </div>
+                            <img
+                                src="https://placehold.co/120x40/ec4899/ffffff?text=Google+Cloud+Partner"
+                                alt="Google Cloud Partner"
+                                className={styles.partnerLogo}
+                            />
+                            <img
+                                src="https://placehold.co/120x40/9333ea/ffffff?text=TLS+Certified"
+                                alt="TLS Certified"
+                                className={styles.partnerLogo}
+                            />
                         </div>
                     </div>
                 </div>
@@ -145,9 +151,11 @@ const NeuralPiggyBankLanding = () => {
                     <p className={styles.ctaDescription}>
                         Join thousands of users who are already optimizing their finances with Neural Piggy Bank.
                     </p>
-                    <button className={styles.ctaButton}>
-                        Get Started for Free
-                    </button>
+                    <Link href="/register">
+                        <button className={styles.ctaButton}>
+                            Get Started for Free
+                        </button>
+                    </Link>
                     <p className={styles.ctaFootnote}>No credit card required</p>
                 </div>
             </div>
@@ -162,9 +170,8 @@ const NeuralPiggyBankLanding = () => {
                         </div>
 
                         <div className={styles.footerLinks}>
-                            <a href="#" className={styles.footerLink}>Privacy</a>
-                            <a href="#" className={styles.footerLink}>Terms</a>
-                            <a href="#" className={styles.footerLink}>Contact</a>
+                            <a href="/login" className={styles.footerLink}>Login</a>
+                            <a href="/register" className={styles.footerLink}>Register</a>
                         </div>
                     </div>
                 </div>
