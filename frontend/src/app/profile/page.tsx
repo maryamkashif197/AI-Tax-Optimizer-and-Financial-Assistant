@@ -8,56 +8,28 @@ interface ChatMessage {
     role: 'user' | 'bot';
     content: string;
 }
+interface Transaction {
+    _id: string;
+    transaction_id: string;
+    user_id: string;
+    date: Date;
+    amount: number;
+    currency: string;
+    category: string;
+    description: string;
+    deduction_rate: number;
+    max_limit: number;
+    merchant: string;
+    payment_method: string;
+    country: string;
+    tax_deductible: boolean;
+}
+
+
 
 export default function ProfilePage() {
     const [showManualForm, setShowManualForm] = useState(false);
-    const [transactions, setTransactions] = useState([
-        {
-            transaction_id: 1,
-            user_id: "user_123",
-            date: "2023-01-01",
-            amount: 150.00,
-            currency: "USD",
-            category: "Office Supplies",
-            description: "Printer paper purchase",
-            deduction_rate: 0.3,
-            max_limit: 1000,
-            merchant: "Office Depot",
-            payment_method: "Credit Card",
-            country: "US",
-            tax_deductible: true
-        },
-        {
-            transaction_id: 2,
-            user_id: "user_123",
-            date: "2023-01-15",
-            amount: 275.50,
-            currency: "USD",
-            category: "Software",
-            description: "Design software license",
-            deduction_rate: 0.2,
-            max_limit: 500,
-            merchant: "Adobe",
-            payment_method: "PayPal",
-            country: "US",
-            tax_deductible: true
-        },
-        {
-            transaction_id: 3,
-            user_id: "user_123",
-            date: "2023-02-03",
-            amount: 89.99,
-            currency: "USD",
-            category: "Education",
-            description: "Online course subscription",
-            deduction_rate: 0.15,
-            max_limit: 300,
-            merchant: "Udemy",
-            payment_method: "Credit Card",
-            country: "US",
-            tax_deductible: false
-        }
-    ]);
+    const [transactions, setTransactions] = useState<Transaction | [] >([]);
 
     const [files, setFiles] = useState<File[]>([]);
     const [messageInput, setMessageInput] = useState("");
@@ -134,13 +106,18 @@ export default function ProfilePage() {
         await axios.delete("/api/chat/reset");
     };
 
-    const handleDeleteTransaction = (transactionId: number) => {
+    const handleDeleteTransaction = async (transactionId: string) => {
         // Add your delete logic here
         // For example:
         // deleteTransaction(transactionId);
         // or
         // dispatch(deleteTransactionAction(transactionId));
-        console.log("Deleting transaction:", transactionId);
+        try {
+            await axios.delete(`/transaction/${transactionId}`);
+            console.log("Deleting transaction:", transactionId);
+        } catch (error) { 
+            console.error("Error deleting transaction:", error)
+        }
     };
 
     // Helper function to calculate total taxes and savings
@@ -177,7 +154,7 @@ export default function ProfilePage() {
             merchant: "",
             amount: "",
             category: "",
-            paymentMethod: "",
+            payment_method: "",
             date: "",
         });
 
@@ -189,8 +166,13 @@ export default function ProfilePage() {
             }));
         };
 
-        const handleSubmit = (e: { preventDefault: () => void; }) => {
+        const handleSubmit = async (e: { preventDefault: () => void; }) => {
             e.preventDefault();
+            try {
+                await axios.post("/transaction", formData);
+            }catch (error) {
+                console.error("Error creating transaction:", error);
+            }
             onClose(); // Close the form after submission
         };
 
@@ -242,7 +224,7 @@ export default function ProfilePage() {
                         </div>
                         <div className={styles.formGroup}>
                             <label>Payment Method</label>
-                            <select name="paymentMethod" value={formData.paymentMethod} onChange={handleChange} required>
+                            <select name="payment_method" value={formData.payment_method} onChange={handleChange} required>
                                 <option value="">Select a payment method</option>
                                 <option value="credit_card">Credit Card</option>
                                 <option value="paypal">PayPal</option>
@@ -334,7 +316,7 @@ export default function ProfilePage() {
                                     </div>
                                     <button
                                         className={styles.deleteButton}
-                                        onClick={() => handleDeleteTransaction(transaction.transaction_id)}
+                                        onClick={() => handleDeleteTransaction(transaction._id)}
                                         aria-label="Delete transaction"
                                     >
                                         <span className={styles.deleteIcon}>×</span>

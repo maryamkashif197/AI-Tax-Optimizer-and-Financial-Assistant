@@ -7,6 +7,7 @@ import { AuthModule } from "./Auth/auth.module";
 import { APP_FILTER } from "@nestjs/core";
 import { ChatModule } from './chat/chat.module';
 import { UnauthorizedExceptionFilter } from "./Auth/middleware/UnauthorizedExceptionFilter";
+import { TransactionModule } from "./transaction/transaction.module";
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { UnauthorizedExceptionFilter } from "./Auth/middleware/UnauthorizedExcep
       isGlobal: true,
     }),
     ChatModule,
+    TransactionModule
   ],
   providers: [
     {

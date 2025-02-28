@@ -24,7 +24,7 @@ export class UserService {
 
   // Find A Specific User by ID
   async findOne(id: string, req: Request): Promise<User> {
-    if (req["user"].userid !== id && req["user"].role === "student") {
+    if (req["user"].userid !== id) {
       throw new UnauthorizedException("You are not authorized to perform this action");
     }
 
@@ -42,7 +42,7 @@ export class UserService {
 
   // Update A User Based On New-Data
   async update(id: string, updateData: updateUserDto, req: Request): Promise<User> {
-    if (req["user"].userid !== id && req["user"].role === "student") {
+    if (req["user"].userid !== id) {
       throw new UnauthorizedException("You are not authorized to perform this action");
     }
     const updatedUser = await this.userModel.findByIdAndUpdate({ _id: id }, updateData, { new: true }).exec();
@@ -54,7 +54,7 @@ export class UserService {
 
   // Delete A User
   async delete(id: string, req: Request): Promise<void> {
-    if (req["user"].userid !== id && req["user"].role !== "admin") {
+    if (req["user"].userid !== id) {
       throw new UnauthorizedException("You are not authorized to perform this action");
     }
     const result = await this.userModel.findByIdAndDelete(id).exec();
