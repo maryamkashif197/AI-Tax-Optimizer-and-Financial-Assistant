@@ -76,14 +76,15 @@ export class TransactionService {
   }
 
   // Delete A Transaction
-  async delete(id: string, req: Request): Promise<void> {
-    if (req["transaction"].transactionid !== id) {
-      throw new UnauthorizedException("You are not authorized to perform this action");
-    }
-    const result = await this.transactionModel.findByIdAndDelete(id).exec();
+  async delete(id: string, user_id: string): Promise<void> {
+    const result = await this.transactionModel.findById(id).exec();
     if (!result) {
       throw new NotFoundException(`Transaction with ID ${id} not found`);
     }
+    if(result.user_id != user_id) {
+      throw new UnauthorizedException("You are not authorized to perform this action");
+    }
+    await this.transactionModel.findByIdAndDelete(id).exec();
   }
 
   // Get All Transactions
