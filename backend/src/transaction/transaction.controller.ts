@@ -27,7 +27,7 @@ export class TransactionController {
 
   @Patch(":id")
   async update(@Param("id") id: string, @Body() updateTransactionDto: UpdateTransactionDto, @Req() req: Request): Promise<Transaction> {
-    return this.transactionService.update(id, updateTransactionDto, req);
+    return this.transactionService.update(id, updateTransactionDto, req["user"].userid);
   }
 
   @Delete(":id")

@@ -117,6 +117,7 @@ export default function ProfilePage() {
         setMessageInput("");
 
         await axios.delete("/api/chat/reset");
+        window.location.reload();
     };
 
     const handleDeleteTransaction = async (transactionId: string) => {

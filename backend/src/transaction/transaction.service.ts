@@ -3,32 +3,28 @@ import { InjectModel } from "@nestjs/mongoose";
 import { Model } from "mongoose";
 import { Transaction, TransactionDocument } from "./model/transaction.schema";
 import { CreateTransactionDto } from "./dtos/transaction.dto";
-import { Request } from "express";
 import { UpdateTransactionDto } from "./dtos/transaction.dto";
 import { v4 as uuidv4 } from 'uuid'; // For generating unique transaction IDs
 import * as fs from 'fs'; // For reading deduction_policy.json
 import * as tf from '@tensorflow/tfjs-node'; // For loading the tax_classifier.h5 model
-// Define the tokenizer type
-interface TokenizerConfig {
-  word_index: Record<string, number>;
-  num_words?: number;
-}
 
 @Injectable()
 export class TransactionService {
   private deductionPolicy: { deductions: Array<{ category: string; rate: number; max_limit: number }> };
-  private tokenizer: TokenizerConfig;
-  private maxSequenceLength = 10; // Ensure this matches the model’s expected input size
-  private taxClassifierModel: tf.LayersModel;
+  private deductibleKeywords: string[] = [
+    'business', 'office', 'supplies', 'equipment', 'software', 'training', 
+    'education', 'travel', 'conference', 'insurance', 'utilities', 'rent', 
+    'advertising', 'marketing', 'legal', 'accounting', 'consulting', 'professional',
+    'subscription', 'domain', 'hosting', 'repair', 'maintenance'
+  ];
   
   constructor(@InjectModel(Transaction.name) private transactionModel: Model<TransactionDocument>) {
     this.loadDeductionPolicy();
   }
 
-
   private loadDeductionPolicy() {
     try {
-      const policyData = fs.readFileSync('./deduction_policy.json', 'utf-8');
+      const policyData = fs.readFileSync('./src/transaction/deduction_policy.json', 'utf-8');
       this.deductionPolicy = JSON.parse(policyData);
     } catch (error) {
       console.error('Failed to load deduction policy:', error);
@@ -37,6 +33,24 @@ export class TransactionService {
     }
   }
 
+  private predictDeductibleFromDescription(description: string): boolean {
+    // Convert description to lowercase for case-insensitive matching
+    const lowerDesc = description.toLowerCase();
+    
+    // Check if any keywords appear in the description
+    for (const keyword of this.deductibleKeywords) {
+      if (lowerDesc.includes(keyword)) {
+        return true;
+      }
+    }
+    
+    // If no keywords matched, also check if the category is typically deductible
+    const categoryDeductible = this.deductionPolicy.deductions.some(policy => 
+      policy.rate > 0 && lowerDesc.includes(policy.category.toLowerCase())
+    );
+    
+    return categoryDeductible;
+  }
 
   async create(transaction: CreateTransactionDto, user_id: string): Promise<Transaction> {
     // Step 1: Add user_id to the transaction object
@@ -46,6 +60,7 @@ export class TransactionService {
     transaction.transaction_id = uuidv4();
 
     // Step 3: Use deduction_policy.json to get deduction_rate and max_limit
+
     const categoryPolicy = this.deductionPolicy.deductions.find(
       policy => policy.category === transaction.category
     );
@@ -58,16 +73,47 @@ export class TransactionService {
       transaction.deduction_rate = 0;
       transaction.max_limit = 0;
     }
+    
+    // Step 4: Determine if transaction is tax-deductible using rule-based system
+    if (transaction.description) {
+      transaction.tax_deductible = this.predictDeductibleFromDescription(transaction.description);
+    } else {
+      transaction.tax_deductible = false;
+    }
+    
     // Create and save the transaction
     const newTransaction = new this.transactionModel(transaction);
     return newTransaction.save();
   }
 
   // Update A Transaction Based On New-Data
-  async update(id: string, updateData: UpdateTransactionDto, req: Request): Promise<Transaction> {
-    if (req["transaction"].transactionid !== id) {
+  async update(id: string, updateData: UpdateTransactionDto, user_id:string): Promise<Transaction> {
+    const transaction = await this.transactionModel.findById(id).exec();
+    if (!transaction) {
+      throw new NotFoundException(`Transaction with ID ${id} not found`);
+    }
+    if(transaction.user_id != user_id) {
       throw new UnauthorizedException("You are not authorized to perform this action");
     }
+    
+    // If description is updated, re-evaluate tax_deductible status
+    if (updateData.description) {
+      updateData.tax_deductible = this.predictDeductibleFromDescription(updateData.description);
+    }
+    
+    // If category is updated, re-evaluate deduction_rate and max_limit
+    if (updateData.category) {
+      console.log(this.deductionPolicy.deductions + '\n');
+      const categoryPolicy = this.deductionPolicy.deductions.find(
+        policy => policy.category === updateData.category
+      );
+      
+      if (categoryPolicy) {
+        updateData.deduction_rate = categoryPolicy.rate;
+        updateData.max_limit = categoryPolicy.max_limit;
+      }
+    }
+    
     const updatedTransaction = await this.transactionModel.findByIdAndUpdate({ _id: id }, updateData, { new: true }).exec();
     if (!updatedTransaction) {
       throw new NotFoundException(`Transaction with ID ${id} not found`);
