@@ -232,10 +232,26 @@ export default function ProfilePage() {
                             <label>Category</label>
                             <select name="category" value={formData.category} onChange={handleChange} required>
                                 <option value="">Select a category</option>
-                                <option value="food">Food</option>
-                                <option value="transport">Transport</option>
-                                <option value="entertainment">Entertainment</option>
-                                <option value="utilities">Utilities</option>
+                                <option value="Home Office">Home Office</option>
+                                <option value="Software & Subscriptions">Software & Subscriptions</option>
+                                <option value="Freelancer Platform Fees">Freelancer Platform Fees</option>
+                                <option value="Work Equipment">Work Equipment</option>
+                                <option value="Internet & Phone">Internet & Phone</option>
+                                <option value="Education & Training">Education & Training</option>
+                                <option value="Business Travel">Business Travel</option>
+                                <option value="Client Entertainment">Client Entertainment</option>
+                                <option value="Business Travel">Business Travel</option>
+                                <option value="Office Supplies">Office Supplies</option>
+                                <option value="Software & Tools">Software & Tools</option>
+                                <option value="Meals & Entertainment">Meals & Entertainment</option>
+                                <option value="Healthcare">Healthcare</option>
+                                <option value="Personal Shopping">Personal Shopping</option>
+                                <option value="Education & Training">Education & Training</option>
+                                <option value="Meals & Entertainment">Meals & Entertainment</option>
+                                <option value="Rent & Utilities">Rent & Utilities</option>
+                                <option value="Marketing & Advertising">Marketing & Advertising</option>
+                                <option value="Transportation">Transportation</option>
+                                <option value="Groceries">Groceries</option>
                             </select>
                         </div>
                         <div className={styles.formGroup}>
