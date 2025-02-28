@@ -32,6 +32,6 @@ export class TransactionController {
 
   @Delete(":id")
   async delete(@Param("id") id: string, @Req() req: Request): Promise<void> {
-    return this.transactionService.delete(id, req);
+    return this.transactionService.delete(id, req["user"].userid);
   }
 }

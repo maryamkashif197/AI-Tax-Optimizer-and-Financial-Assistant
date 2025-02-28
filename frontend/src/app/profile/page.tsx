@@ -1,5 +1,5 @@
 ﻿"use client";
-import React, { useState, FormEvent } from "react";
+import React, { useState, FormEvent, useEffect } from "react";
 import styles from "../CSS/profile.module.css";
 import axios from '../api/axios';
 
@@ -93,6 +93,19 @@ export default function ProfilePage() {
         }
     };
 
+    useEffect(() => {
+        const fetchTransactions = async () => {
+            try {
+                const response = await axios.get('/transaction');
+                setTransactions(response.data);
+            } catch (error) {
+                console.error('Error fetching transactions:', error);
+            }
+        };
+
+        fetchTransactions();
+    }, []); 
+
     const handleExampleQuestion = (question: string) => {
         setMessageInput(question);
     };
@@ -114,6 +127,8 @@ export default function ProfilePage() {
         // dispatch(deleteTransactionAction(transactionId));
         try {
             await axios.delete(`/transaction/${transactionId}`);
+            // refresh page after deleting transaction
+            window.location.reload();
             console.log("Deleting transaction:", transactionId);
         } catch (error) { 
             console.error("Error deleting transaction:", error)
@@ -174,6 +189,7 @@ export default function ProfilePage() {
                 console.error("Error creating transaction:", error);
             }
             onClose(); // Close the form after submission
+            window.location.reload();
         };
 
         return (
