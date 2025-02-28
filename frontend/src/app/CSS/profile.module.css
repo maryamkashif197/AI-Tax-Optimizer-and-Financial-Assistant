@@ -1,150 +1,284 @@
+/* profile.module.css */
 .profileContainer {
-    padding: 2rem;
-    background-color: #000;
+    padding: 7.5rem 4rem 0 4rem;
+    background-color: #0f172a;
     color: #fff;
     min-height: 100vh;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', system-ui, sans-serif;
 }
 
 .title {
     text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    background: linear-gradient(to right, #ec4899, #9333ea);
+    background: linear-gradient(to right, #3b82f6, #8b5cf6);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    letter-spacing: -0.05em;
 }
 
-/* Sections */
-.uploadSection {
-    margin-bottom: 2rem;
-    padding: 1rem;
-    border: 1px solid #5b21b6;
-    border-radius: 8px;
-    background-color: rgba(0, 0, 0, 0.7);
+.gridLayout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
-.uploadSection h2{
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
+
+.card {
+    background: #1e293b;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #334155;
+}
+
+.cardTitle {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0 0 1.5rem 0;
+    font-size: 1.25rem;
+    color: #e2e8f0;
+}
+
+.icon {
+    font-size: 1.5em;
+}
+
+/* Upload Section */
+.uploadContent {
+    border: 2px dashed #334155;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: border-color 0.3s ease;
+}
+
+    .uploadContent:hover {
+        border-color: #3b82f6;
+    }
 
 .fileInput {
-    color: #fff;
-    background: #111;
-    border: 1px solid #5b21b6;
-    padding: 0.5rem;
-    border-radius: 4px;
+    width: 100%;
+    padding: 0.75rem;
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    color: #e2e8f0;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
+    .fileInput:hover {
+        background: #1e293b;
+    }
 
-/* Files list */
+.uploadHint {
+    color: #94a3b8;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+}
+
+/* Files List */
+.filesContent {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
 .filesList {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .fileItem {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #5b21b6;
+    padding: 1rem;
+    background: #0f172a;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
 }
 
-.fileActions button {
-    margin-left: 0.5rem;
-    background: linear-gradient(to right, #ec4899, #9333ea);
+.fileInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.fileName {
+    font-weight: 500;
+    color: #e2e8f0;
+}
+
+.fileSize {
+    font-size: 0.875rem;
+    color: #94a3b8;
+}
+
+.iconButton {
+    background: none;
     border: none;
-    padding: 0.3rem 0.7rem;
-    border-radius: 4px;
-    color: #fff;
+    color: #94a3b8;
+    font-size: 1.2rem;
+    padding: 0.5rem;
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: color 0.3s ease;
 }
 
-    .fileActions button:hover {
-        transform: scale(1.05);
+    .iconButton:hover {
+        color: #3b82f6;
     }
 
-/* Tax calculation button and report */
+.emptyState {
+    text-align: center;
+    color: #64748b;
+    padding: 2rem;
+}
+
+/* Tax Section */
+.taxContent {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
 .calcButton {
-    background: linear-gradient(to right, #ec4899, #9333ea);
+    background: linear-gradient(to right, #3b82f6, #6366f1);
     border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 9999px;
-    font-size: 1rem;
-    font-weight: 700;
+    padding: 1.25rem 2rem;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
     cursor: pointer;
-    transition: transform 0.3s;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    transition: transform 0.2s, opacity 0.2s;
 }
 
     .calcButton:disabled {
-        opacity: 0.6;
+        opacity: 0.7;
         cursor: not-allowed;
     }
 
+    .calcButton:hover:not(:disabled) {
+        transform: translateY(-2px);
+    }
+
+.buttonIcon {
+    font-size: 1.2em;
+}
+
 .report {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #0f172a;
+    border-radius: 8px;
+}
+
+.reportText {
+    color: #86efac;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
 }
 
 .downloadLink {
-    display: inline-block;
-    margin-top: 0.5rem;
-    color: #fff;
-    background: #a855f7;
-    padding: 0.5rem 1rem;
-    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #3b82f6;
     text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-/* Chat bot */
-.chatSection {
-    margin-top: 2rem;
+    .downloadLink:hover {
+        color: #60a5fa;
+    }
+
+/* Chat Section */
+.chatContent {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
 }
 
 .chatBox {
-    background: #111;
+    flex: 1;
+    background: #0f172a;
+    border-radius: 12px;
     padding: 1rem;
-    border-radius: 8px;
-    max-height: 200px;
-    overflow-y: auto;
     margin-bottom: 1rem;
+    overflow-y: auto;
 }
 
 .chatMessage {
-    background: rgba(233, 30, 99, 0.2);
-    margin-bottom: 0.5rem;
-    padding: 0.5rem;
-    border-radius: 4px;
+    background: #1e293b;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    color: #e2e8f0;
 }
 
 .chatForm {
     display: flex;
-    gap: 0.5rem;
+    gap: 0.75rem;
 }
 
 .chatInput {
     flex: 1;
-    padding: 0.5rem;
-    border: 1px solid #5b21b6;
-    border-radius: 4px;
-    background: #111;
-    color: #fff;
+    padding: 0.875rem;
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    color: #e2e8f0;
+    font-size: 1rem;
 }
 
 .chatButton {
-    background: linear-gradient(to right, #ec4899, #9333ea);
+    background: #3b82f6;
     border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    color: #fff;
+    padding: 0.875rem 1.5rem;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: background 0.3s;
 }
 
     .chatButton:hover {
-        transform: scale(1.05);
+        background: #2563eb;
+    }
+
+.exampleQuestions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.exampleButton {
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid #3b82f6;
+    color: #3b82f6;
+    padding: 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+    .exampleButton:hover {
+        background: rgba(59, 130, 246, 0.2);
     }
