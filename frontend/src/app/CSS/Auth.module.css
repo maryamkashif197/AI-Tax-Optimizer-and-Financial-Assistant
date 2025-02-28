@@ -2,13 +2,14 @@
 
 .authContainer {
     position: relative;
-    min-height: 100vh;
+    height: calc(100vh - 6rem);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
-    background-color: #f5f5f7;
+    padding: 4rem 0 2rem 0;
+    background-color: #0f0a1e; /* Darker background */
     overflow: hidden;
+    font-family: sans-serif;
 }
 
 .backgroundEffects {
@@ -25,7 +26,7 @@
     position: absolute;
     width: 50rem;
     height: 50rem;
-    background: radial-gradient(circle, rgba(128, 0, 255, 0.15) 0%, rgba(128, 0, 255, 0) 70%);
+    background: radial-gradient(circle, rgba(128, 0, 255, 0.25) 0%, rgba(128, 0, 255, 0) 70%); /* Enhanced purple glow */
     top: -20rem;
     right: -10rem;
     border-radius: 50%;
@@ -35,7 +36,7 @@
     position: absolute;
     width: 40rem;
     height: 40rem;
-    background: radial-gradient(circle, rgba(255, 0, 128, 0.1) 0%, rgba(255, 0, 128, 0) 70%);
+    background: radial-gradient(circle, rgba(255, 0, 128, 0.2) 0%, rgba(255, 0, 128, 0) 70%); /* Enhanced pink glow */
     bottom: -10rem;
     left: -10rem;
     border-radius: 50%;
@@ -45,9 +46,9 @@
     position: relative;
     width: 100%;
     max-width: 32rem;
-    background-color: white;
+    background-color: #151025; /* Dark card background */
     border-radius: 1.5rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(128, 0, 255, 0.1); /* Purple tinted shadow */
     padding: 2.5rem;
     z-index: 1;
 }
@@ -63,7 +64,7 @@
     align-self: flex-start;
     display: flex;
     align-items: center;
-    color: #666;
+    color: #b19cd9; /* Light purple */
     text-decoration: none;
     font-size: 0.875rem;
     margin-bottom: 1.5rem;
@@ -71,7 +72,7 @@
 }
 
     .backLink:hover {
-        color: #333;
+        color: #ff80bf; /* Pink on hover */
     }
 
     .backLink span {
@@ -92,7 +93,7 @@
 .logoNeuralText {
     font-size: 1.75rem;
     font-weight: 800;
-    background: linear-gradient(90deg, #8000ff, #dd00ff);
+    background: linear-gradient(90deg, #a64dff, #dd00ff); /* Enhanced purple gradient */
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -102,7 +103,7 @@
 .logoPiggyText {
     font-size: 1.75rem;
     font-weight: 800;
-    background: linear-gradient(90deg, #dd00ff, #ff0080);
+    background: linear-gradient(90deg, #dd00ff, #ff4da6); /* Enhanced pink gradient */
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -111,21 +112,21 @@
 .logoBankText {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #333;
+    color: #e6e6fa; /* Light lavender */
     margin-top: -0.25rem;
 }
 
 .authTitle {
     font-size: 1.75rem;
     font-weight: 700;
-    color: #333;
+    color: #ffffff; /* White text */
     text-align: center;
     margin-bottom: 0.5rem;
 }
 
 .authSubtitle {
     font-size: 1rem;
-    color: #666;
+    color: #b19cd9; /* Light purple */
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -150,22 +151,24 @@
 .formLabel {
     font-size: 0.875rem;
     font-weight: 600;
-    color: #555;
+    color: #d6b8ff; /* Light purple */
     margin-bottom: 0.5rem;
 }
 
 .formInput {
     padding: 0.75rem 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid #352a5a; /* Dark purple border */
     border-radius: 0.5rem;
     font-size: 1rem;
+    background-color: #211a35; /* Dark purple input background */
+    color: #ffffff; /* White text */
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
     .formInput:focus {
         outline: none;
-        border-color: #8000ff;
-        box-shadow: 0 0 0 2px rgba(128, 0, 255, 0.1);
+        border-color: #a64dff; /* Bright purple */
+        box-shadow: 0 0 0 2px rgba(166, 77, 255, 0.3); /* Purple glow */
     }
 
 .passwordInputWrapper {
@@ -174,12 +177,18 @@
     align-items: center;
 }
 
+    .passwordInputWrapper input {
+        flex: 1;
+        box-sizing: border-box;
+    }
+
 .passwordToggle {
     position: absolute;
     right: 1rem;
+    top: 0.75rem;
     background: none;
     border: none;
-    color: #666;
+    color: #b19cd9; /* Light purple */
     cursor: pointer;
     padding: 0;
     display: flex;
@@ -187,7 +196,7 @@
 }
 
     .passwordToggle:hover {
-        color: #333;
+        color: #ff80bf; /* Pink on hover */
     }
 
 .authButton {
@@ -195,16 +204,18 @@
     padding: 0.875rem;
     border: none;
     border-radius: 0.5rem;
-    background: linear-gradient(90deg, #8000ff, #ff0080);
+    background: linear-gradient(90deg, #9933ff, #ff3399); /* Vibrant purple to pink */
     color: white;
     font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
-    transition: transform 0.2s ease, opacity 0.2s ease;
+    transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 15px rgba(153, 51, 255, 0.4); /* Purple glow */
 }
 
     .authButton:hover:not(:disabled) {
         transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(255, 51, 153, 0.5); /* Pink glow on hover */
     }
 
     .authButton:disabled {
@@ -228,23 +239,23 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: #555;
+    color: #b19cd9; /* Light purple */
 }
 
 .checkbox {
     width: 1rem;
     height: 1rem;
-    accent-color: #8000ff;
+    accent-color: #9933ff; /* Purple checkbox */
 }
 
 .forgotPassword {
-    color: #8000ff;
+    color: #ff80bf; /* Pink link */
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
     .forgotPassword:hover {
-        color: #ff0080;
+        color: #ff3399; /* Darker pink on hover */
     }
 
 .authFooter {
@@ -254,18 +265,18 @@
     gap: 0.5rem;
     margin-top: 2rem;
     font-size: 0.875rem;
-    color: #666;
+    color: #b19cd9; /* Light purple */
 }
 
 .authLink {
-    color: #8000ff;
+    color: #ff80bf; /* Pink link */
     font-weight: 600;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
     .authLink:hover {
-        color: #ff0080;
+        color: #ff3399; /* Darker pink on hover */
     }
 
 .termsContainer {
@@ -273,13 +284,13 @@
 }
 
 .termsLink {
-    color: #8000ff;
+    color: #b19cd9; /* Light purple */
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
     .termsLink:hover {
-        color: #ff0080;
+        color: #ff80bf; /* Pink on hover */
     }
 
 /* Password strength indicators */
@@ -289,24 +300,24 @@
 }
 
 .weak {
-    color: #e74c3c;
+    color: #ff5c8d; /* Pink-red */
 }
 
 .strong {
-    color: #2ecc71;
+    color: #7fff00; /* Neon green for contrast */
 }
 
 .match {
-    border-color: #2ecc71;
+    border-color: #7fff00; /* Neon green */
 }
 
 .mismatch {
-    border-color: #e74c3c;
+    border-color: #ff5c8d; /* Pink-red */
 }
 
 .passwordMismatch {
     font-size: 0.75rem;
-    color: #e74c3c;
+    color: #ff5c8d; /* Pink-red */
     margin-top: 0.5rem;
 }
 
