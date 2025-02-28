@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "ai-finance-project",
+  "private_key_id": "a1d34c56650bbef4cb742a9fbb2af42be4422a3d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCWKuzb1VcA8w3E\nYsxqLZRP9gpcBxtvWwmIo+VCLIZoeBruQdocDLjKyztLbX3rYzjOmhEGhtvk1MU/\nVUbqq6ovxEly7+TKc7TA8f82dUSfKSB6M45fF9HOv1d1ykuqnKgEx2isv9FPMotZ\nB0XlmXFRIWopGMfrkzsyNRGMGruEJ4EXbplsHBKL4ERYeWITvOd42ud7YiJ/uzGG\nmN70mr+X3452PYMocR1ctRzqtLrLs6AnywVnA/pNZ7us2P02V8vaDn/ABtYOvp9X\nlZkfpNQVu/3bZuvhsLwhQUyz+mUVa0A1BYB52OLvQk6b76GfZne2n1w5GvLDieB0\njpcqfQq3AgMBAAECggEADGVRtQSDezq/sFjez9r1qwi/1Ss/BVj/TKNe1DC8Yu5F\n0X9nw438nmeFUat29qceSYD9QSEru1Qho3c6HzqkFe+ph86BVSw/nPe880qzK0I9\nVz5fP76bHT+9NqYddeFwRdNiHXRzZjVhZwF12xyTS+OqvDwP8K8azAEGcvQX9jIe\nNLEZA2Eg3u6busIKxI1F+iDHIyD699Z5U6KsyO1rHDF4jEQWKodC0iCNYF9LpQyl\nxbjEXrbaWyx7zqCf1GlrIAd0yz/zegG52h7DWlphDgaDDRc94vFUzgmthMpKzeW0\n3tZIvImcgcaZTSoE/od83PAdfbO5gZOhyODZIScCeQKBgQDN7Ay87IFXR7BYeOjY\n1EAjSVW7D34u+OnzKOuiK2WNXghVyiEvqRMSe5TS4u3RUqsoVIe90iePh57Gv01g\nKy5QKtiL+M1/3cs4IFdi8oaIXIhnUTsspYdq7cuocM8kDJhLaPDu33ACT+JS17sR\n21tFhfK48Wp42xPkv13BOjj8yQKBgQC6r8/ptcXMOmiQrQM92FVAcq4+Yl+Qxpvv\ntHi/BmJxAAq4GOFJyo5tfofL3Bloa1nun54hzeNozrhzT05v36+M417kvHBcTjef\nmTNOK6X2VjfV39UGJyX6Ku1AVE7l8qlTFSsnPckaYir01E2SPW5zFjsP9DpoYosK\nNA+DZwMLfwKBgBakS8pCHv6fzU4NDV06CUtX9us4iuFTUTYBW9da+jGPE0+LiBab\nepNfrz944DlR46vtj3dZsivf959WzYUzekYqT+EkHERg+MVVGQayMASyV/U0Q1Nn\nZ/pj5y7AKKaIE/7GrSc2vjQi4HnHarRN8D02uzeGo/Rh8lAGkqJ6amWxAoGAJg9L\n0vjU/4L06HHtVEFzd/UpYtyJYSmsht0DNOanUSRSCyA/Zdze1qHSK5SOtYQVTJnM\nElY4Q5jJb/C+K/6teoqsQPPN8HOd0XLZS9mIN0Vykq7UbjGzA2KXBeNqRmUHckHB\nj3mAM1nKKinSOrs9dkcU+XawJbHZaNYeR4rLyx8CgYAuL7m0vWmwkl3+Fnm7iN1l\njC4bt3Ca1L8Pp/I9yunT06XOlhNoVle2rQR4FS26I0iCDDRT0I72TKIt8h7sKB1L\noDSiYCWNRjQ8RAHfB3MCc05NVP1bynWvvkreyuqGUrrqqrWBcHZxXAfHA/KCyDUg\ni7HifmUOF0/xThw5gpBgVQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "document-ai-editor@ai-finance-project.iam.gserviceaccount.com",
+  "client_id": "106474278081565591242",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/document-ai-editor%40ai-finance-project.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
