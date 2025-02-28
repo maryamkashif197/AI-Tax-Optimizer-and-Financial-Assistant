@@ -5,6 +5,10 @@
     color: #fff;
     min-height: 100vh;
     font-family: 'Segoe UI', system-ui, sans-serif;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
 }
 
 .title {
@@ -282,3 +286,87 @@
     .exampleButton:hover {
         background: rgba(59, 130, 246, 0.2);
     }
+
+
+/* Add gradient text effects */
+.logoBankText {
+    background: linear-gradient(to right, #a855f7, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Enhance feature cards */
+.featureCard {
+    background: linear-gradient(to bottom right, #111, #000);
+    border: 1px solid #6b21a8;
+    transition: all 0.3s;
+}
+
+    .featureCard:hover {
+        transform: scale(1.02);
+        box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.2);
+    }
+
+/* Update primary button styles */
+.primaryButton {
+    background: linear-gradient(to right, #ec4899, #9333ea);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    transition: all 0.3s;
+}
+
+    .primaryButton:hover:not(:disabled) {
+        transform: scale(1.05);
+        background: linear-gradient(to right, #db2777, #7e22ce);
+    }
+
+/* Add trust card styling */
+.trustCard {
+    background: linear-gradient(to bottom right, #111, #000);
+    border: 1px solid #6b21a8;
+}
+
+/* Footer styles */
+.footer {
+    margin-top: 4rem;
+    padding: 2rem 1rem;
+    background-color: #000;
+    border-top: 1px solid #5b21b6;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footerLogo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #ec4899, #9333ea);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.footerLink {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+    .footerLink:hover {
+        color: #a855f7;
+    }
+
+
+
+
+
+
+
+
