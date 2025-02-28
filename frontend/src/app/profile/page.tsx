@@ -10,6 +10,55 @@ interface ChatMessage {
 }
 
 export default function ProfilePage() {
+    const [showManualForm, setShowManualForm] = useState(false);
+    const [transactions, setTransactions] = useState([
+        {
+            transaction_id: 1,
+            user_id: "user_123",
+            date: "2023-01-01",
+            amount: 150.00,
+            currency: "USD",
+            category: "Office Supplies",
+            description: "Printer paper purchase",
+            deduction_rate: 0.3,
+            max_limit: 1000,
+            merchant: "Office Depot",
+            payment_method: "Credit Card",
+            country: "US",
+            tax_deductible: true
+        },
+        {
+            transaction_id: 2,
+            user_id: "user_123",
+            date: "2023-01-15",
+            amount: 275.50,
+            currency: "USD",
+            category: "Software",
+            description: "Design software license",
+            deduction_rate: 0.2,
+            max_limit: 500,
+            merchant: "Adobe",
+            payment_method: "PayPal",
+            country: "US",
+            tax_deductible: true
+        },
+        {
+            transaction_id: 3,
+            user_id: "user_123",
+            date: "2023-02-03",
+            amount: 89.99,
+            currency: "USD",
+            category: "Education",
+            description: "Online course subscription",
+            deduction_rate: 0.15,
+            max_limit: 300,
+            merchant: "Udemy",
+            payment_method: "Credit Card",
+            country: "US",
+            tax_deductible: false
+        }
+    ]);
+
     const [files, setFiles] = useState<File[]>([]);
     const [messageInput, setMessageInput] = useState("");
     const [report, setReport] = useState<string | null>(null);
@@ -85,6 +134,33 @@ export default function ProfilePage() {
         await axios.delete("/api/chat/reset");
     };
 
+    // Helper function to calculate total taxes and savings
+    const calculateTaxSavings = (transactions: any[]) => {
+        const taxDeductibleTransactions = transactions.filter((t: { tax_deductible: any; }) => t.tax_deductible);
+
+        const { totalTax, totalSavedAmount } = taxDeductibleTransactions.reduce(
+            (acc: { totalTax: number; totalSavedAmount: number }, t: { amount: number; deduction_rate: number }) => {
+                const savedAmount = t.amount * (t.deduction_rate || 0); // Use deduction_rate from the transaction
+                return {
+                    totalTax: acc.totalTax + t.amount,
+                    totalSavedAmount: acc.totalSavedAmount + savedAmount,
+                };
+            },
+            { totalTax: 0, totalSavedAmount: 0 } // Initial values
+        );
+
+        const percentage = totalTax > 0 ? (totalSavedAmount / totalTax) * 100 : 0;
+
+        return {
+            totalTax,
+            savedAmount: totalSavedAmount,
+            percentage,
+        };
+    };
+
+    // Then use the function
+    const { percentage, savedAmount, totalTax } = calculateTaxSavings(transactions);
+
     return (
         <div className={styles.profileContainer}>
             <div className={styles.gridLayout}>
@@ -97,56 +173,61 @@ export default function ProfilePage() {
                         <div className={styles.uploadOptions}>
                             <button className={styles.uploadBtn}>
                                 <span className={styles.btnIcon}>📄</span>
-                                Upload CSV
+                                Upload Transaction
                             </button>
-                            <button className={styles.manualBtn}>
+                            <button className={styles.manualBtn} onClick={() => setShowManualForm(true)}>
                                 <span className={styles.btnIcon}>✍️</span>
-                                Add Manual Entry
+                                Manual Entry
                             </button>
                         </div>
                     </div>
 
                     <div className={styles.transactionsList}>
-                        <div className={styles.transactionItem}>
-                            <span className={styles.transactionIcon}>💳</span>
-                            <div className={styles.transactionDetails}>
-                                <div className={styles.transactionTitle}>Transaction 1</div>
-                                <div className={styles.transactionDate}>Jan 1, 2023</div>
-                            </div>
-                            <span className={styles.transactionAmount}>$150.00</span>
-                        </div>
-                        <div className={styles.transactionItem}>
-                            <span className={styles.transactionIcon}>💳</span>
-                            <div className={styles.transactionDetails}>
-                                <div className={styles.transactionTitle}>Transaction 1</div>
-                                <div className={styles.transactionDate}>Jan 1, 2023</div>
-                            </div>
-                            <span className={styles.transactionAmount}>$150.00</span>
-                        </div>
-                        <div className={styles.transactionItem}>
-                            <span className={styles.transactionIcon}>💳</span>
-                            <div className={styles.transactionDetails}>
-                                <div className={styles.transactionTitle}>Transaction 1</div>
-                                <div className={styles.transactionDate}>Jan 1, 2023</div>
-                            </div>
-                            <span className={styles.transactionAmount}>$150.00</span>
-                        </div>
-                        <div className={styles.transactionItem}>
-                            <span className={styles.transactionIcon}>💸</span>
-                            <div className={styles.transactionDetails}>
-                                <div className={styles.transactionTitle}>Transaction 2</div>
-                                <div className={styles.transactionDate}>Jan 15, 2023</div>
-                            </div>
-                            <span className={styles.transactionAmount}>$275.50</span>
-                        </div>
-                        <div className={styles.transactionItem}>
-                            <span className={styles.transactionIcon}>🛒</span>
-                            <div className={styles.transactionDetails}>
-                                <div className={styles.transactionTitle}>Transaction 3</div>
-                                <div className={styles.transactionDate}>Feb 3, 2023</div>
-                            </div>
-                            <span className={styles.transactionAmount}>$89.99</span>
-                        </div>
+                        {transactions.map((transaction) => {
+                            const getPaymentIcon = (method: string) => {
+                                switch (method.toLowerCase()) {
+                                    case 'credit card':
+                                        return '💳'; // Credit card icon
+                                    case 'paypal':
+                                        return '📱'; // Mobile icon for PayPal
+                                    case 'bank transfer':
+                                        return '🏦'; // Bank icon
+                                    case 'cash':
+                                        return '💰'; // Money stack icon
+                                    case 'crypto':
+                                        return '🪙'; // Coin icon for crypto
+                                    default:
+                                        return '💳'; // Default icon (credit card)
+                                }
+                            };
+                            return (
+                                <div key={transaction.transaction_id} className={styles.transactionItem}>
+                                    
+                                    <div className={styles.transactionDetails}>
+                                        <div className={styles.transactionTitle}>
+                                            <span className={styles.transactionIcon}>{getPaymentIcon(transaction.payment_method)} </span>
+                                            {transaction.description}
+                                            <span className={styles.transactionMerchant}> - {transaction.merchant}</span>
+                                        </div>
+                                        <div className={styles.transactionSubdetails}>
+                                            <span className={styles.transactionDate}>
+                                                {new Date(transaction.date).toDateString()}
+                                            </span>
+                                            <span className={styles.transactionCategory}> - {transaction.category}</span>
+                                            {transaction.tax_deductible && (
+                                                <span className={styles.taxBadge}> - Tax Deductible</span>
+                                            )}
+                                        </div>
+                                    </div>
+                                    <div className={styles.transactionAmount}>
+                                        <div>${transaction.amount.toFixed(2)}</div>
+                                        <div className={styles.deductionRate}>
+                                            {transaction.deduction_rate * 100}% Deduction
+                                        </div>
+                                    </div>
+                                </div>
+                            );
+                        })}
                     </div>
 
                     <div className={styles.taxSection}>
@@ -179,21 +260,23 @@ export default function ProfilePage() {
                     <section className={styles.savingsCard}>
                         <div className={styles.savingsHeader}>
                             <span className={styles.savingsIcon}>💰</span>
-                            <h2 className={styles.savingsTitle}>Total Savings</h2>
+                            <h2 className={styles.savingsTitle}>Tax Savings</h2>
                         </div>
                         <div className={styles.savingsContent}>
                             <div className={styles.savingsAmount}>
-                                $12,345
+                                ${calculateTaxSavings(transactions).savedAmount.toLocaleString()}
                             </div>
                             <div className={styles.savingsProgress}>
                                 <div className={styles.progressBar}>
                                     <div
                                         className={styles.progressFill}
-                                        style={{ width: '65%' }}
+                                        style={{
+                                            width: `${calculateTaxSavings(transactions).percentage.toFixed(1)}%`
+                                        }}
                                     ></div>
                                 </div>
                                 <div className={styles.progressText}>
-                                    65% of your goal
+                                    {calculateTaxSavings(transactions).percentage.toFixed(1)}% saved paying only ${calculateTaxSavings(transactions).totalTax.toLocaleString()} total taxes
                                 </div>
                             </div>
                         </div>
